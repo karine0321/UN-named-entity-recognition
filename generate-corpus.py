@@ -48,8 +48,13 @@ def prepare_for_tagging(df, directory):
 
         # one word per line, including punctuation
         split_by_lines = re.sub(r"([,;'])", r"\n\1", "\n".join(text))
-        split_by_lines = re.sub(r"([.?!])", r"\n\1\n", split_by_lines) # extra newline following EOS punctuation
-        split_by_lines = re.sub(r"('s)", r"\n\1", split_by_lines) # possessive 's on separate line
+        split_by_lines = re.sub(r"’", r"'", split_by_lines) # deal with bad chars
+        split_by_lines = re.sub(r'“', r'"', split_by_lines)
+        split_by_lines = re.sub(r'”', r'"', split_by_lines)
+
+
+        split_by_lines = re.sub(r"([.?!\"])", r"\n\1\n", split_by_lines) # extra newline following EOS punctuation
+        split_by_lines = re.sub(r"'s", r"\n's", split_by_lines) # possessive 's on separate line
         split_by_lines = re.sub(r"(n't)", r"\n\1", split_by_lines) # n't contraction on separate line
         split_by_lines = re.sub(r"Mr\n.\n\n", r"Mr.\n", split_by_lines) # make Mr. one word
 

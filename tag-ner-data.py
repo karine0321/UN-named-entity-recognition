@@ -12,14 +12,14 @@
 
 import argparse
 import collections
-import geotext
+from geotext import GeoText
 import itertools
 from nltk.corpus import stopwords
 import os
 import re
 import sys
 
-directory = "training"
+directory = "test"
 files = os.listdir(directory)
 
 countries_list = ["Afghanistan", "Algeria", "Argentina", "Austalia",
@@ -61,6 +61,7 @@ def change_tags(text_tag):
         tag = tag_stopwords(word, tag)
         tag = tag_orgs(word, tag)
         tag = tag_progs(word, tag)
+        tag = tag_geo(word, tag)
 
         new_tags.append((word, tag))
 
@@ -78,7 +79,6 @@ def tag_stopwords(word, tag):
     else:
         return tag
 
-
 def tag_orgs(word, tag):
     if word in orgs_list:
         return "I-ORG"
@@ -91,6 +91,12 @@ def tag_progs(word, tag):
     else:
         return tag
 
+def tag_geo(word, tag):
+    if GeoText(word).cities or GeoText(word).countries:
+        return "I-LOC"
+    else:
+        return tag
+
 def convert_text_tags(text_tag):
     text = []
 
@@ -98,7 +104,7 @@ def convert_text_tags(text_tag):
         if tag is not None:
             text.append("{}\t{}\n".format(word, tag))
         else:
-            text.append("\n\n")
+            text.append("\n")
 
     return text
 
