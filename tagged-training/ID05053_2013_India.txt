@@ -130,7 +130,7 @@ of	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Charter	O
+Charter	I-MISC
 ,	O
 basing	O
 our	O
@@ -174,7 +174,7 @@ ways	O
 
 Asia	I-LOC
 and	O
-Africa	O
+Africa	I-LOC
 are	O
 independent	O
 and	O
@@ -523,7 +523,7 @@ shaped	O
 by	O
 the	O
 Member	O
-States	I-LOC
+States	O
 so	O
 that	O
 it	O
@@ -829,7 +829,7 @@ built	O
 strong	O
 ties	O
 with	O
-Africa	O
+Africa	I-LOC
 and	O
 the	O
 least	O
@@ -845,7 +845,7 @@ building	O
 100	O
 institutions	O
 in	O
-Africa	O
+Africa	I-LOC
 and	O
 have	O
 offered	O
@@ -877,7 +877,7 @@ are	O
 engaging	O
 through	O
 the	O
-India-Africa	O
+India-Africa	I-LOC
 Forum	O
 Summit	I-LOC
 process	O
@@ -893,13 +893,13 @@ actively	O
 in	O
 the	O
 third	O
-International	O
-Conference	O
-on	O
-Small	O
-Island	O
-Developing	O
-States	I-LOC
+International	I-MISC
+Conference	I-MISC
+on	I-MISC
+Small	I-MISC
+Island	I-MISC
+Developing	I-MISC
+States	I-MISC
 ,	O
 to	O
 be	O
@@ -969,7 +969,7 @@ about	O
 the	O
 future	O
 of	O
-West	O
+West	I-LOC
 Asia	I-LOC
 ,	O
 a	O
@@ -1001,7 +1001,7 @@ the	O
 nearly	O
 7	O
 million	O
-Indians	O
+Indians	I-MISC
 who	O
 work	O
 and	O
@@ -1120,12 +1120,10 @@ is	O
 essential	O
 that	O
 the	O
-
 "	O
 Geneva	I-LOC
 II	O
 "	O
-
 conference	O
 be	O
 convened	O
@@ -1168,7 +1166,7 @@ of	O
 Palestine	I-LOC
 ,	O
 with	O
-East	O
+East	I-LOC
 Jerusalem	I-LOC
 as	O
 its	O
@@ -1286,7 +1284,7 @@ world	O
 .	O
 
 From	O
-Africa	O
+Africa	I-LOC
 to	O
 Asia	I-LOC
 ,	O
@@ -1348,8 +1346,8 @@ yesterday	O
 ,	O
 Prime	O
 Minister	O
-Nawaz	O
-Sharif	O
+Nawaz	I-PER
+Sharif	I-PER
 of	O
 Pakistan	I-LOC
 spoke	O
@@ -1395,7 +1393,7 @@ issue	O
 of	O
 Jammu	I-LOC
 and	O
-Kashmir	O
+Kashmir	I-LOC
 ,	O
 through	O
 bilateral	O
@@ -1405,8 +1403,8 @@ the	O
 basis	O
 of	O
 the	O
-Simla	O
-Agreement	O
+Simla	I-MISC
+Agreement	I-MISC
 .	O
 
 However	O
@@ -1475,7 +1473,7 @@ fact	O
 that	O
 Jammu	I-LOC
 and	O
-Kashmir	O
+Kashmir	I-LOC
 is	O
 an	O
 integral	O
@@ -1535,7 +1533,7 @@ be	O
 no	O
 tolerance	O
 for	O
-States	I-LOC
+States	O
 sheltering	O
 ,	O
 arming	O
@@ -1608,8 +1606,8 @@ years	O
 after	O
 Prime	O
 Minister	O
-Rajiv	O
-Gandhi	O
+Rajiv	I-PER
+Gandhi	I-PER
 put	O
 forward	O
 a	O
@@ -1736,7 +1734,7 @@ much-needed	O
 reforms	O
 of	O
 the	O
-Organization	O
+Organization	I-ORG
 and	O
 its	O
 Security	I-ORG

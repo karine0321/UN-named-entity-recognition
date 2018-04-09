@@ -1,7 +1,7 @@
 I	O
 congratulate	O
 Mr.	O
-Kavan	O
+Kavan	I-PER
 on	O
 his	O
 election	O
@@ -25,8 +25,8 @@ best	O
 wishes	O
 to	O
 Secretary-General	O
-Kofi	O
-Annan	O
+Kofi	I-PER
+Annan	I-PER
 in	O
 this	O
 first	O
@@ -115,7 +115,7 @@ the	O
 pain	O
 of	O
 the	O
-American	O
+American	I-MISC
 people	O
 ,	O
 admired	O
@@ -180,9 +180,9 @@ decisions	O
 
 The	O
 Council	I-ORG
-'s	O
-Counter-Terrorism	O
-Committee	O
+'s	I-ORG
+Counter-Terrorism	I-ORG
+Committee	I-ORG
 should	O
 now	O
 move	O
@@ -196,7 +196,7 @@ to	O
 enforcing	O
 compliance	O
 by	O
-States	I-LOC
+States	O
 known	O
 to	O
 be	O
@@ -214,8 +214,8 @@ terrorists	O
 
 In	O
 our	O
-South	O
-Asian	O
+South	I-MISC
+Asian	I-MISC
 region	O
 ,	O
 nuclear	O
@@ -397,7 +397,7 @@ civilians	O
 in	O
 Jammu	I-LOC
 and	O
-Kashmir	O
+Kashmir	I-LOC
 is	O
 actually	O
 a	O
@@ -483,9 +483,9 @@ the	O
 command	O
 of	O
 the	O
-Inter-Services	O
-Intelligence	O
-Agency	O
+Inter-Services	I-ORG
+Intelligence	I-ORG
+Agency	I-ORG
 of	O
 Pakistan	I-LOC
 to	O
@@ -536,7 +536,7 @@ the	O
 international	O
 coalition	O
 condone	O
-Pakistan-directed	I-LOC
+Pakistan-directed	I-MISC
 killings	O
 of	O
 thousands	O
@@ -591,7 +591,7 @@ September	O
 attacks	O
 on	O
 the	O
-United	I-ORG
+United	I-LOC
 States	I-LOC
 or	O
 the	O
@@ -600,7 +600,7 @@ December	O
 attack	O
 on	O
 our	O
-Parliament	O
+Parliament	I-ORG
 .	O
 
 Yesterday	O
@@ -616,7 +616,7 @@ claim	O
 that	O
 in	O
 India	I-LOC
-Muslims	O
+Muslims	I-MISC
 and	O
 other	O
 minorities	O
@@ -624,21 +624,21 @@ are	O
 the	O
 target	O
 of	O
-Hindu	O
+Hindu	I-MISC
 extremists	O
 .	O
 
 With	O
 150	O
 million	O
-Muslims	O
+Muslims	I-MISC
 ,	O
 India	I-LOC
 has	O
 the	O
 second	O
 largest	O
-Muslim	O
+Muslim	I-MISC
 population	O
 in	O
 the	O
@@ -810,9 +810,9 @@ are	O
 to	O
 achieve	O
 the	O
-World	O
-Food	O
-Summit	I-LOC
+World	I-MISC
+Food	I-MISC
+Summit	I-MISC
 goal	O
 of	O
 halving	O
@@ -934,7 +934,7 @@ and	O
 forest	O
 fires	O
 in	O
-Europe	O
+Europe	I-LOC
 are	O
 a	O
 forewarning	O
@@ -944,7 +944,7 @@ countries	O
 of	O
 Asia	I-LOC
 and	O
-Africa	O
+Africa	I-LOC
 are	O
 not	O
 the	O
@@ -960,7 +960,7 @@ environment	O
 .	O
 
 The	O
-Earth	O
+Earth	I-LOC
 's	O
 atmosphere	O
 and	O
@@ -1004,9 +1004,9 @@ month	O
 ,	O
 the	O
 Johannesburg	I-LOC
-Summit	I-LOC
+Summit	I-MISC
 for	O
-Sustainable	O
+Sustainable	I-MISC
 Development	I-MISC
 debated	O
 some	O
@@ -1036,7 +1036,7 @@ We	O
 emerged	O
 from	O
 the	O
-Summit	I-LOC
+Summit	I-MISC
 with	O
 some	O
 encouraging	O
@@ -1267,9 +1267,9 @@ ago	O
 and	O
 in	O
 the	O
-United	I-ORG
+United	I-LOC
 States	I-LOC
-Congress	O
+Congress	I-ORG
 the	O
 year	O
 before	O
@@ -1348,7 +1348,7 @@ collective	O
 commitment	O
 to	O
 the	O
-Charter	O
+Charter	I-MISC
 ,	O
 its	O
 purposes	O
@@ -1529,7 +1529,7 @@ religious	O
 extremism	O
 .	O
 
-Democratic	O
+Democratic	I-MISC
 societies	O
 are	O
 far	O
@@ -1602,7 +1602,7 @@ the	O
 challenges	O
 .	O
 
-Most	I-LOC
+Most	O
 of	O
 us	O
 are	O

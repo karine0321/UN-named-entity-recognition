@@ -55,7 +55,7 @@ pending	O
 reforms	O
 of	O
 the	O
-Organization	O
+Organization	I-ORG
 .	O
 
 At	O
@@ -73,7 +73,7 @@ gratitude	O
 to	O
 all	O
 Member	O
-States	I-LOC
+States	O
 for	O
 the	O
 recent	O
@@ -92,10 +92,10 @@ to	O
 annually	O
 observe	O
 the	O
-International	O
-Day	O
-of	O
-Non-Violence	O
+International	I-MISC
+Day	I-MISC
+of	I-MISC
+Non-Violence	I-MISC
 ,	O
 on	O
 2	O
@@ -107,8 +107,8 @@ of	O
 the	O
 birth	O
 of	O
-Mahatma	O
-Gandhi	O
+Mahatma	I-PER
+Gandhi	I-PER
 .	O
 
 I	O
@@ -119,7 +119,7 @@ to	O
 participation	O
 by	O
 Member	O
-States	I-LOC
+States	O
 in	O
 the	O
 informal	O
@@ -143,11 +143,11 @@ to	O
 mark	O
 the	O
 first	O
-International	O
-Day	O
-of	O
-Non-	O
-Violence	O
+International	I-MISC
+Day	I-MISC
+of	I-MISC
+Non-	I-MISC
+Violence	I-MISC
 .	O
 
 A	O
@@ -223,11 +223,11 @@ of	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Framework	O
-Convention	O
-on	O
-Climate	O
-Change	O
+Framework	I-MISC
+Convention	I-MISC
+on	I-MISC
+Climate	I-MISC
+Change	I-MISC
 to	O
 be	O
 held	O
@@ -609,7 +609,7 @@ goals	O
 ,	O
 including	O
 the	O
-Millennium	O
+Millennium	I-MISC
 Development	I-MISC
 Goals	I-MISC
 .	O
@@ -759,8 +759,8 @@ developing	O
 countries	O
 in	O
 the	O
-Bretton	O
-Woods	O
+Bretton	I-LOC
+Woods	I-LOC
 institutions	O
 .	O
 
@@ -1140,8 +1140,8 @@ a	O
 member	O
 of	O
 the	O
-Human	O
-Rights	O
+Human	I-ORG
+Rights	I-ORG
 Council	I-ORG
 ,	O
 we	O
@@ -1213,17 +1213,17 @@ first	O
 signatories	O
 of	O
 the	O
-International	O
-Convention	O
-for	O
-the	O
-Protection	O
-of	O
-All	O
-Persons	O
-from	O
-Enforced	O
-Disappearance	O
+International	I-MISC
+Convention	I-MISC
+for	I-MISC
+the	I-MISC
+Protection	I-MISC
+of	I-MISC
+All	I-MISC
+Persons	I-MISC
+from	I-MISC
+Enforced	I-MISC
+Disappearance	I-MISC
 .	O
 
 Earlier	O
@@ -1245,14 +1245,14 @@ of	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Convention	O
-on	O
-the	O
-Rights	O
-of	O
-Persons	O
-with	O
-Disabilities	O
+Convention	I-MISC
+on	I-MISC
+the	I-MISC
+Rights	I-MISC
+of	I-MISC
+Persons	I-MISC
+with	I-MISC
+Disabilities	I-MISC
 .	O
 
 As	O
@@ -1382,8 +1382,8 @@ of	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Democracy	O
-Fund	O
+Democracy	I-MISC
+Fund	I-MISC
 .	O
 
 We	O
@@ -1443,8 +1443,8 @@ to	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Democracy	O
-Fund	O
+Democracy	I-MISC
+Fund	I-MISC
 .	O
 
 The	O
@@ -1466,7 +1466,7 @@ Nations	I-ORG
 
 If	O
 the	O
-Organization	O
+Organization	I-ORG
 is	O
 to	O
 remain	O
@@ -1506,8 +1506,8 @@ emerged	O
 from	O
 the	O
 2005	O
-World	O
-Summit	I-LOC
+World	I-MISC
+Summit	I-MISC
 Outcome	O
 ,	O
 such	O
@@ -1589,9 +1589,9 @@ together	O
 with	O
 partners	O
 from	O
-Africa	O
+Africa	I-LOC
 ,	O
-Latin	O
+Latin	I-LOC
 America	I-LOC
 and	O
 Asia	I-LOC
@@ -1674,7 +1674,7 @@ for	O
 island	O
 and	O
 small	O
-States	I-LOC
+States	O
 .	O
 
 We	O
@@ -1686,10 +1686,10 @@ this	O
 podium	O
 by	O
 President	O
-Bush	O
+Bush	I-PER
 of	O
 the	O
-United	I-ORG
+United	I-LOC
 States	I-LOC
 of	O
 America	I-LOC
@@ -1770,7 +1770,7 @@ originally	O
 envisaged	O
 in	O
 the	O
-Charter	O
+Charter	I-MISC
 .	O
 
 Given	O
@@ -1814,7 +1814,7 @@ the	O
 work	O
 of	O
 Member	O
-States	I-LOC
+States	O
 ,	O
 it	O
 follows	O
@@ -2026,7 +2026,7 @@ bringing	O
 proposals	O
 to	O
 Member	O
-States	I-LOC
+States	O
 and	O
 this	O
 Organization	O
@@ -2198,9 +2198,9 @@ of	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Global	O
-Counter-Terrorism	O
-Strategy	O
+Global	I-MISC
+Counter-Terrorism	I-MISC
+Strategy	I-MISC
 last	O
 September	O
 was	O

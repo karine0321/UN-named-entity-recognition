@@ -95,7 +95,7 @@ experience	O
 .	O
 
 The	O
-Iraqi	O
+Iraqi	I-MISC
 people	O
 lived	O
 isolated	O
@@ -187,12 +187,12 @@ such	O
 as	O
 during	O
 the	O
-al-	O
-Anfaal	O
+al-	I-MISC
+Anfaal	I-MISC
 campaign	O
 and	O
 in	O
-Halabja	O
+Halabja	I-LOC
 .	O
 
 In	O
@@ -606,9 +606,9 @@ was	O
 elected	O
 and	O
 a	O
-National	O
-Unity	O
-Government	O
+National	I-MISC
+Unity	I-MISC
+Government	I-MISC
 was	O
 established	O
 .	O
@@ -770,9 +770,9 @@ Prime	O
 Minister	O
 of	O
 the	O
-National	O
-Unity	O
-Government	O
+National	I-MISC
+Unity	I-MISC
+Government	I-MISC
 did	O
 not	O
 come	O
@@ -787,7 +787,7 @@ strength	O
 arises	O
 from	O
 the	O
-Iraqi	O
+Iraqi	I-MISC
 people	O
 's	O
 civilization	O
@@ -804,7 +804,7 @@ to	O
 humankind	O
 .	O
 
-Iraqis	O
+Iraqis	I-MISC
 have	O
 lived	O
 in	O
@@ -916,7 +916,7 @@ active	O
 powers	O
 in	O
 the	O
-Iraqi	O
+Iraqi	I-MISC
 arena	O
 .	O
 
@@ -959,7 +959,7 @@ tomb	O
 of	O
 the	O
 two	O
-Askari	O
+Askari	I-MISC
 imams	O
 in	O
 Samara	I-LOC
@@ -1079,7 +1079,7 @@ some	O
 ,000	O
 citizens	O
 from	O
-Iraqi	O
+Iraqi	I-MISC
 tribes	O
 to	O
 join	O
@@ -1109,7 +1109,7 @@ provinces	O
 ,	O
 including	O
 in	O
-Al-Anbar	O
+Al-Anbar	I-MISC
 province	O
 ,	O
 which	O
@@ -1118,7 +1118,7 @@ been	O
 liberated	O
 from	O
 the	O
-Al-Qaida	O
+Al-Qaida	I-ORG
 terrorist	O
 organization	O
 .	O
@@ -1138,13 +1138,13 @@ defeat	O
 this	O
 time	O
 in	O
-Diyala	O
+Diyala	I-LOC
 province	O
 .	O
 
 Thus	O
 ,	O
-Al-Qaida	O
+Al-Qaida	I-ORG
 is	O
 losing	O
 its	O
@@ -1190,7 +1190,7 @@ that	O
 splintered	O
 off	O
 from	O
-Al-Qaida	O
+Al-Qaida	I-ORG
 .	O
 
 Those	O
@@ -1205,7 +1205,7 @@ the	O
 multinational	O
 forces	O
 battling	O
-Al-Qaida	O
+Al-Qaida	I-ORG
 ,	O
 dealing	O
 devastating	O
@@ -1527,10 +1527,10 @@ those	O
 achievements	O
 ,	O
 the	O
-Government	O
-of	O
-National	O
-Unity	O
+Government	I-MISC
+of	I-MISC
+National	I-MISC
+Unity	I-MISC
 has	O
 begun	O
 the	O
@@ -1868,9 +1868,9 @@ world	O
 
 After	O
 the	O
-Government	O
-of	O
-National	O
+Government	I-MISC
+of	I-MISC
+National	I-MISC
 Unity	O
 was	O
 formed	O
@@ -2199,7 +2199,7 @@ must	O
 recall	O
 that	O
 the	O
-Iraqi	O
+Iraqi	I-MISC
 people	O
 continue	O
 to	O
@@ -2391,8 +2391,8 @@ the	O
 signing	O
 of	O
 the	O
-International	O
-Compact	O
+International	I-MISC
+Compact	I-MISC
 with	O
 Iraq	I-LOC
 and	O
@@ -2495,8 +2495,8 @@ the	O
 provisions	O
 of	O
 the	O
-International	O
-Compact	O
+International	I-MISC
+Compact	I-MISC
 with	O
 Iraq	I-LOC
 .	O
@@ -2592,7 +2592,7 @@ the	O
 rights	O
 of	O
 the	O
-Palestinian	O
+Palestinian	I-MISC
 people	O
 ,	O
 for	O
@@ -2611,7 +2611,7 @@ the	O
 return	O
 of	O
 occupied	O
-Arab	O
+Arab	I-MISC
 lands	O
 in	O
 accordance	O
@@ -2629,8 +2629,8 @@ mass	O
 destruction	O
 in	O
 the	O
-Middle	O
-East	O
+Middle	I-LOC
+East	I-LOC
 will	O
 indeed	O
 guarantee	O
@@ -2649,7 +2649,7 @@ intensification	O
 of	O
 national	O
 ,	O
-Arab	O
+Arab	I-MISC
 and	O
 international	O
 efforts	O
@@ -2732,7 +2732,7 @@ and	O
 balanced	O
 relationships	O
 among	O
-States	I-LOC
+States	O
 and	O
 developing	O
 a	O
@@ -2875,7 +2875,7 @@ on	O
 behalf	O
 of	O
 the	O
-Iraqi	O
+Iraqi	I-MISC
 people	O
 ,	O
 I	O
@@ -2883,8 +2883,8 @@ wish	O
 to	O
 congratulate	O
 Mr.	O
-Srgjan	O
-Kerim	O
+Srgjan	I-PER
+Kerim	I-PER
 ,	O
 President	O
 of	O
@@ -2903,8 +2903,8 @@ want	O
 to	O
 thank	O
 Secretary-General	O
-Ban	O
-Ki-moon	O
+Ban	I-PER
+Ki-moon	I-PER
 ,	O
 who	O
 played	O
@@ -2918,8 +2918,8 @@ Nations	I-ORG
 adoption	O
 of	O
 the	O
-International	O
-Compact	O
+International	I-MISC
+Compact	I-MISC
 with	O
 Iraq	I-LOC
 to	O
@@ -2950,5 +2950,5 @@ countries	O
 that	O
 signed	O
 the	O
-Compact	O
+Compact	I-MISC
 .	O
