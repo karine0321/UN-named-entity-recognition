@@ -6,9 +6,9 @@ our	O
 congratulations	O
 to	O
 Mr.	O
-Nassir	O
-Abdulaziz	O
-Al-Nasser	O
+Nassir	I-PER
+Abdulaziz	I-PER
+Al-Nasser	I-PER
 on	O
 his	O
 assumption	O
@@ -72,8 +72,8 @@ our	O
 appreciation	O
 to	O
 Mr.	O
-Joseph	O
-Deiss	O
+Joseph	I-PER
+Deiss	I-PER
 for	O
 his	O
 able	O
@@ -107,8 +107,8 @@ the	O
 Secretary-General	O
 ,	O
 Mr.	O
-Ban	O
-Ki-moon	O
+Ban	I-PER
+Ki-moon	I-PER
 ,	O
 for	O
 his	O
@@ -166,11 +166,11 @@ Foreign	O
 Affairs	O
 of	O
 the	O
-Republic	O
-of	O
-the	O
+Republic	I-LOC
+of	I-LOC
+the	I-LOC
 Union	I-LOC
-of	O
+of	I-LOC
 Myanmar	I-LOC
 ,	O
 I	O
@@ -194,11 +194,11 @@ country	O
 .	O
 
 The	O
-Republic	O
-of	O
-the	O
+Republic	I-LOC
+of	I-LOC
+the	I-LOC
 Union	I-LOC
-of	O
+of	I-LOC
 Myanmar	I-LOC
 has	O
 emerged	O
@@ -289,8 +289,8 @@ regular	O
 session	O
 of	O
 the	O
-Pyidaungsu	O
-Hluttaw	O
+Pyidaungsu	I-MISC
+Hluttaw	I-MISC
 on	O
 30	O
 March	I-LOC
@@ -300,7 +300,7 @@ stated	O
 that	O
 all	O
 elected	O
-Hluttaw	O
+Hluttaw	I-MISC
 members	O
 ,	O
 including	O
@@ -317,11 +317,11 @@ the	O
 Constitution	O
 of	O
 the	O
-Republic	O
-of	O
-the	O
+Republic	I-LOC
+of	I-LOC
+the	I-LOC
 Union	I-LOC
-of	O
+of	I-LOC
 Myanmar	I-LOC
 .	O
 
@@ -447,22 +447,22 @@ In	O
 return	O
 ,	O
 President	O
-Thein	O
-Sein	O
+Thein	I-PER
+Sein	I-PER
 paid	O
 official	O
 visits	O
 to	O
 the	O
-Republic	O
-of	O
+Republic	I-LOC
+of	I-LOC
 Indonesia	I-LOC
 and	O
 the	O
-People	O
-'s	O
-Republic	O
-of	O
+People	I-LOC
+'s	I-LOC
+Republic	I-LOC
+of	I-LOC
 China	I-LOC
 .	O
 
@@ -475,12 +475,14 @@ eighteenth	O
 summit	O
 of	O
 the	O
-Association	O
+Association	I-ORG
 of	O
-Southeast	O
-Asian	O
+Southeast	I-ORG
+Asian	I-ORG
 Nations	I-ORG
-(ASEAN)	O
+(	O
+ASEAN	I-ORG
+)	O
 in	O
 Jakarta	I-LOC
 .	O
@@ -613,13 +615,13 @@ Government	O
 has	O
 adopted	O
 the	O
-National	O
-Rural	O
+National	I-MISC
+Rural	I-MISC
 Development	I-MISC
-and	O
-Poverty	O
-Reduction	O
-Plan	O
+and	I-MISC
+Poverty	I-MISC
+Reduction	I-MISC
+Plan	I-MISC
 to	O
 alleviate	O
 poverty	O
@@ -655,8 +657,8 @@ laid	O
 down	O
 under	O
 the	O
-National	O
-Plan	O
+National	I-MISC
+Plan	I-MISC
 .	O
 
 Furthermore	O
@@ -777,10 +779,12 @@ efforts	O
 to	O
 achieve	O
 our	O
-Millennium	O
+Millennium	I-MISC
 Development	I-MISC
-Goal	O
-(MDG)	O
+Goal	I-MISC
+(	O
+MDG	I-MISC
+)	O
 targets	O
 .	O
 
@@ -839,10 +843,10 @@ Constitution	O
 ,	O
 the	O
 Myanmar	I-LOC
-National	O
-Human	O
-Rights	O
-Commission	O
+National	I-ORG
+Human	I-ORG
+Rights	I-ORG
+Commission	I-ORG
 was	O
 formed	O
 on	O
@@ -873,9 +877,9 @@ fourth	O
 visit	O
 of	O
 Mr.	O
-Tomás	O
-Ojea	O
-Quintana	O
+Tomás	I-PER
+Ojea	I-PER
+Quintana	I-PER
 ,	O
 the	O
 Special	O
@@ -894,7 +898,7 @@ August	O
 .	O
 
 Mr.	O
-Quintana	O
+Quintana	I-PER
 recognized	O
 and	O
 welcomed	O
@@ -944,17 +948,19 @@ with	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Human	O
-Rights	O
+Human	I-ORG
+Rights	I-ORG
 Council	I-ORG
 .	O
 
 Myanmar	I-LOC
 's	O
-Universal	O
-Periodic	O
-Review	O
-(UPR)	O
+Universal	I-MISC
+Periodic	I-MISC
+Review	I-MISC
+(	0
+UPR	I-MISC
+)	O
 report	O
 was	O
 submitted	O
@@ -975,8 +981,8 @@ seventeenth	O
 session	O
 of	O
 the	O
-Human	O
-Rights	O
+Human	I-ORG
+Rights	I-ORG
 Council	I-ORG
 last	O
 June	O
@@ -1003,7 +1009,7 @@ strongly	O
 believe	O
 that	O
 the	O
-UPR	O
+UPR	I-ORG
 process	O
 is	O
 the	O
@@ -1050,7 +1056,6 @@ through	O
 Announcement	O
 No	O
 .	O
-
 1/2011	O
 on	O
 18	O
@@ -1158,10 +1163,10 @@ Accordingly	O
 he	O
 received	O
 Daw	O
-Aung	O
-San	I-LOC
-Suu	O
-Kyi	O
+Aung	I-PER
+San	I-PER
+Suu	I-PER
+Kyi	I-PER
 on	O
 19	O
 August	O
@@ -1327,11 +1332,11 @@ to	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Framework	O
-Convention	O
-on	O
-Climate	O
-Change	O
+Framework	I-MISC
+Convention	I-MISC
+on	I-MISC
+Climate	I-MISC
+Change	I-MISC
 and	O
 the	O
 seventh	O
@@ -1352,12 +1357,12 @@ Parties	O
 to	O
 the	O
 Kyoto	I-LOC
-Protocol	O
+Protocol	I-MISC
 in	O
 Durban	I-LOC
 ,	O
-South	O
-Africa	O
+South	I-LOC
+Africa	I-LOC
 .	O
 
 Although	O
@@ -1509,7 +1514,7 @@ We	O
 welcome	O
 the	O
 Secretary-	O
-General	I-ORG
+General	O
 's	O
 commitment	O
 to	O
@@ -1588,7 +1593,7 @@ beyond	O
 .	O
 
 The	O
-Millennium	O
+Millennium	I-MISC
 Declaration	I-MISC
 set	O
 2015	O
@@ -1599,7 +1604,7 @@ date	O
 for	O
 achieving	O
 the	O
-Millennium	O
+Millennium	I-MISC
 Development	I-MISC
 Goals	I-MISC
 ,	O
@@ -1784,13 +1789,13 @@ year	O
 .	O
 
 The	O
-Treaty	O
-on	O
-the	O
-Non-Proliferation	O
-of	O
-Nuclear	O
-Weapons	O
+Treaty	I-MISC
+on	I-MISC
+the	I-MISC
+Non-Proliferation	I-MISC
+of	I-MISC
+Nuclear	I-MISC
+Weapons	I-MISC
 is	O
 the	O
 cornerstone	O
@@ -1868,7 +1873,7 @@ wide	O
 support	O
 from	O
 Member	O
-States	I-LOC
+States	O
 .	O
 
 Myanmar	I-LOC

@@ -15,9 +15,9 @@ September	O
 2001	O
 in	O
 the	O
-United	I-ORG
+United	I-LOC
 States	I-LOC
-of	O
+of	I-LOC
 America	I-LOC
 shook	O
 the	O
@@ -148,7 +148,7 @@ the	O
 coming	O
 together	O
 of	O
-States	I-LOC
+States	O
 to	O
 achieve	O
 common	O
@@ -157,9 +157,9 @@ goals	O
 unprecedented	O
 since	O
 the	O
-Second	O
-World	O
-War	O
+Second	I-MISC
+World	I-MISC
+War	I-MISC
 —	O
 is	O
 clear	O
@@ -406,7 +406,9 @@ Security	I-ORG
 Council	I-ORG
 resolution	O
 1373	O
-(2001)	O
+(	O
+2001	O
+)	O
 —	O
 is	O
 under	O
@@ -423,7 +425,7 @@ is	O
 binding	O
 on	O
 all	O
-States	I-LOC
+States	O
 ,	O
 and	O
 we	O
@@ -437,7 +439,7 @@ unconditional	O
 implementation	O
 by	O
 all	O
-States	I-LOC
+States	O
 .	O
 
 A	O
@@ -482,15 +484,15 @@ Having	O
 ratified	O
 the	O
 1999	O
-Convention	O
-for	O
-the	O
-Suppression	O
-of	O
-the	O
-Financing	O
-of	O
-Terrorism	O
+Convention	I-MISC
+for	I-MISC
+the	I-MISC
+Suppression	I-MISC
+of	I-MISC
+the	I-MISC
+Financing	I-MISC
+of	I-MISC
+Terrorism	I-MISC
 ,	O
 Russia	I-LOC
 is	O
@@ -549,7 +551,7 @@ in	O
 the	O
 approaches	O
 of	O
-States	I-LOC
+States	O
 to	O
 the	O
 provisions	O
@@ -626,7 +628,7 @@ the	O
 obligation	O
 of	O
 all	O
-States	I-LOC
+States	O
 to	O
 protect	O
 the	O
@@ -715,7 +717,7 @@ achieved	O
 only	O
 if	O
 all	O
-States	I-LOC
+States	O
 agree	O
 on	O
 a	O
@@ -800,7 +802,7 @@ measures	O
 shared	O
 by	O
 all	O
-States	I-LOC
+States	O
 .	O
 
 The	O
@@ -853,15 +855,15 @@ the	O
 framework	O
 of	O
 the	O
-Commonwealth	O
-of	O
-Independent	O
-States	I-LOC
+Commonwealth	I-ORG
+of	I-ORG
+Independent	I-ORG
+States	I-ORG
 and	O
 the	O
-Shanghai	I-LOC
-Cooperation	O
-Organization	O
+Shanghai	I-ORG
+Cooperation	I-ORG
+Organization	I-ORG
 ,	O
 are	O
 gaining	O
@@ -894,10 +896,10 @@ the	O
 countries	O
 of	O
 the	O
-North	O
-Atlantic	O
-Treaty	O
-Organization	O
+North	I-ORG
+Atlantic	I-ORG
+Treaty	I-ORG
+Organization	I-ORG
 .	O
 
 The	O
@@ -932,12 +934,12 @@ China	I-LOC
 India	I-LOC
 and	O
 the	O
-States	I-LOC
+States	O
 members	O
 of	O
 the	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 .	O
 
 We	O
@@ -1013,7 +1015,7 @@ Russia	I-LOC
 and	O
 of	O
 the	O
-United	I-ORG
+United	I-LOC
 States	I-LOC
 ,	O
 at	O
@@ -1025,10 +1027,10 @@ Moscow	I-LOC
 ,	O
 of	O
 the	O
-Strategic	O
-Offensive	O
-Reductions	O
-Treaty	O
+Strategic	I-MISC
+Offensive	I-MISC
+Reductions	I-MISC
+Treaty	I-MISC
 ,	O
 which	O
 was	O
@@ -1229,11 +1231,9 @@ Furthermore	O
 ,	O
 we	O
 should	O
-
 "	O
 universalize	O
 "	O
-
 the	O
 most	O
 important	O
@@ -1340,7 +1340,7 @@ the	O
 interests	O
 of	O
 all	O
-States	I-LOC
+States	O
 ,	O
 and	O
 expect	O
@@ -1448,7 +1448,7 @@ visible	O
 involvement	O
 in	O
 the	O
-post-Taliban	O
+post-Taliban	I-MISC
 reconstruction	O
 of	O
 Afghanistan	I-LOC
@@ -1485,8 +1485,8 @@ comprehensive	O
 settlement	O
 in	O
 the	O
-Middle	O
-East	O
+Middle	I-LOC
+East	I-LOC
 and	O
 the	O
 resolution	O
@@ -1496,7 +1496,7 @@ in	O
 a	O
 number	O
 of	O
-African	O
+African	I-MISC
 countries	O
 .	O
 
@@ -1561,7 +1561,7 @@ of	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Charter	O
+Charter	I-MISC
 pertaining	O
 to	O
 the	O
@@ -1758,25 +1758,25 @@ international	O
 forums	O
 —	O
 the	O
-International	O
-Conference	O
-on	O
-Financing	O
-for	O
+International	I-MISC
+Conference	I-MISC
+on	I-MISC
+Financing	I-MISC
+for	I-MISC
 Development	I-MISC
 in	O
 Monterey	I-LOC
 ,	O
-World	O
-Food	O
-Summit	I-LOC
+World	I-MISC
+Food	I-MISC
+Summit	I-MISC
 in	O
 Rome	I-LOC
 ,	O
-World	O
-Summit	I-LOC
-on	O
-Sustainable	O
+World	I-MISC
+Summit	I-MISC
+on	I-MISC
+Sustainable	I-MISC
 Development	I-MISC
 in	O
 Johannesburg	I-LOC
@@ -1877,7 +1877,7 @@ the	O
 egoism	O
 of	O
 individual	O
-States	I-LOC
+States	O
 .	O
 
 The	O
@@ -1885,22 +1885,21 @@ initiative	O
 of	O
 Russian	I-LOC
 President	O
-Vladimir	I-LOC
-V	O
-.	O
-
-Putin	O
+Vladimir	I-PER
+V	I-PER
+.	I-PER
+Putin	I-PER
 on	O
 holding	O
 in	O
 autumn	O
 2003	O
 a	O
-World	O
-Conference	O
-on	O
-Climate	O
-Change	O
+World	I-MISC
+Conference	I-MISC
+on	I-MISC
+Climate	I-MISC
+Change	I-MISC
 in	O
 Moscow	I-LOC
 is	O
@@ -2136,7 +2135,7 @@ we	O
 will	O
 direct	O
 all	O
-States	I-LOC
+States	O
 towards	O
 the	O
 joint	O
@@ -2287,7 +2286,7 @@ law	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Charter	O
+Charter	I-MISC
 above	O
 all	O
 .	O

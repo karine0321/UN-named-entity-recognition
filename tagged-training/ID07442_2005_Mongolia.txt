@@ -17,8 +17,8 @@ Assembly	I-ORG
 His	O
 Excellency	O
 Mr.	O
-Jean	O
-Ping	O
+Jean	I-PER
+Ping	I-PER
 ,	O
 for	O
 his	O
@@ -44,8 +44,10 @@ of	O
 the	O
 outcome	O
 document	O
-(resolution	O
-60/1)	O
+(	O
+resolution	O
+60/1	O
+)	O
 .	O
 
 Mongolia	I-LOC
@@ -101,11 +103,11 @@ to	O
 commend	O
 our	O
 Secretary-	O
-General	I-ORG
+General	O
 ,	O
 Mr.	O
-Kofi	O
-Annan	O
+Kofi	I-PER
+Annan	I-PER
 ,	O
 for	O
 his	O
@@ -129,8 +131,8 @@ also	O
 warmly	O
 congratulate	O
 Mr.	O
-Jan	O
-Eliasson	O
+Jan	I-PER
+Eliasson	I-PER
 on	O
 his	O
 well-deserved	O
@@ -184,10 +186,12 @@ achieve	O
 most	O
 of	O
 its	O
-Millennium	O
+Millennium	I-MISC
 Development	I-MISC
 Goals	I-MISC
-(MDGs)	O
+(	O
+MDGs	I-MISC
+)	O
 on	O
 education	O
 ,	O
@@ -488,9 +492,9 @@ of	O
 Action	O
 and	O
 the	O
-Sao	O
-Paulo	O
-Consensus	O
+Sao	I-LOC
+Paulo	I-LOC
+Consensus	I-MISC
 adopted	O
 at	O
 the	O
@@ -500,10 +504,10 @@ of	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Conference	O
-on	O
-Trade	O
-and	O
+Conference	I-MISC
+on	I-MISC
+Trade	I-MISC
+and	I-MISC
 Development	I-MISC
 will	O
 provide	O
@@ -536,7 +540,9 @@ its	O
 gross	O
 domestic	O
 product	O
-(GDP)	O
+(	O
+GDP	I-MISC
+)	O
 on	O
 transit	O
 transportation	O
@@ -665,11 +671,12 @@ call	O
 made	O
 in	O
 the	O
-Summit	I-LOC
-Outcome	O
+Summit	I-MISC
+Outcome	I-MISC
 document	O
 (resolution	O
-60/1)	O
+60/1	O
+)	O
 on	O
 the	O
 need	O
@@ -722,8 +729,8 @@ recommendations	O
 derived	O
 from	O
 the	O
-Multi-Stakeholder	O
-Consultations	O
+Multi-Stakeholder	I-MISC
+Consultations	I-MISC
 organized	O
 by	O
 the	O
@@ -881,7 +888,9 @@ in	O
 official	O
 development	O
 assistance	O
-(ODA)	O
+(	O
+ODA	I-MISC
+)	O
 in	O
 recent	O
 years	O
@@ -937,7 +946,7 @@ world	O
 leaders	O
 to	O
 increase	O
-ODA	O
+ODA	I-MISC
 to	O
 developing	O
 countries	O
@@ -1009,11 +1018,11 @@ of	O
 the	O
 Paris	I-LOC
 Declaration	I-MISC
-on	O
-Aid	O
-Effectiveness	O
+on	I-MISC
+Aid	I-MISC
+Effectiveness	I-MISC
 of	O
-March	I-LOC
+March	O
 2005	O
 ,	O
 with	O
@@ -1105,7 +1114,7 @@ them	O
 to	O
 achieve	O
 their	O
-Millennium	O
+Millennium	I-MISC
 Development	I-MISC
 Goals	I-MISC
 .	O
@@ -1122,16 +1131,16 @@ financing	O
 ,	O
 including	O
 an	O
-International	O
-Finance	O
-Facility	O
+International	I-MISC
+Finance	I-MISC
+Facility	I-MISC
 ,	O
 quick-impact	O
 initiatives	O
 and	O
 debt-conversion	O
 for	O
-MDG	O
+MDG	I-MISC
 implementation	O
 projects	O
 should	O
@@ -1193,9 +1202,9 @@ According	O
 to	O
 the	O
 2005	O
-Human	O
+Human	I-MISC
 Development	I-MISC
-Report	O
+Report	I-MISC
 ,	O
 trade	O
 barriers	O
@@ -1252,7 +1261,7 @@ agenda	O
 
 The	O
 Doha	I-LOC
-Round	O
+Round	I-MISC
 ,	O
 to	O
 be	O
@@ -1305,7 +1314,7 @@ decision	O
 of	O
 the	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 to	O
 provide	O
 duty-free	O
@@ -1355,8 +1364,8 @@ behind	O
 .	O
 
 The	O
-Summit	I-LOC
-Outcome	O
+Summit	I-MISC
+Outcome	I-MISC
 emphasized	O
 once	O
 again	O
@@ -1408,13 +1417,11 @@ rigid	O
 categorizations	O
 such	O
 as	O
-
 "	O
 least	O
 developed	O
 countries	O
 "	O
-
 .	O
 
 Debt	O
@@ -1636,7 +1643,7 @@ the	O
 universal	O
 usage	O
 of	O
-English	O
+English	I-MISC
 .	O
 
 These	O
@@ -1649,15 +1656,15 @@ accordance	O
 with	O
 the	O
 Dakar	I-LOC
-Framework	O
-for	O
-Action	O
-and	O
-the	O
+Framework	I-MISC
+for	I-MISC
+Action	I-MISC
+and	I-MISC
+the	I-MISC
 United	I-ORG
 Nations	I-ORG
-Literacy	O
-Decade	O
+Literacy	I-MISC
+Decade	I-MISC
 .	O
 
 Mongolia	I-LOC
@@ -1676,8 +1683,8 @@ and	O
 democracy	O
 in	O
 the	O
-Summit	I-LOC
-Outcome	O
+Summit	I-MISC
+Outcome	I-MISC
 .	O
 
 Democracy	O
@@ -1761,8 +1768,8 @@ that	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Democracy	O
-Fund	O
+Democracy	I-MISC
+Fund	I-MISC
 is	O
 an	O
 important	O
@@ -1802,7 +1809,7 @@ instrument	O
 to	O
 assist	O
 Member	O
-States	I-LOC
+States	O
 in	O
 the	O
 consolidation	O
@@ -1819,20 +1826,20 @@ the	O
 Ulaanbaatar	I-LOC
 Declaration	I-MISC
 and	O
-Plan	O
-of	O
-Action	O
+Plan	I-MISC
+of	I-MISC
+Action	I-MISC
 adopted	O
 at	O
 the	O
 fifth	O
-International	O
-Conference	O
-of	O
-New	I-LOC
-or	O
-Restored	O
-Democracies	O
+International	I-MISC
+Conference	I-MISC
+of	I-MISC
+New	I-MISC
+or	I-MISC
+Restored	I-MISC
+Democracies	I-MISC
 in	O
 2003	O
 and	O
@@ -2090,7 +2097,7 @@ us	O
 ,	O
 the	O
 Member	O
-States	I-LOC
+States	O
 .	O
 
 In	O
@@ -2115,7 +2122,7 @@ in	O
 reforming	O
 our	O
 world	O
-Organization	O
+Organization	I-ORG
 ,	O
 and	O
 the	O

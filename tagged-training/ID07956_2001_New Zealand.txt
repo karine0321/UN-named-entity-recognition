@@ -76,8 +76,7 @@ the	O
 lives	O
 of	O
 nearly	O
-5	O
-,000	O
+5,000	O
 people	O
 from	O
 79	O
@@ -252,7 +251,9 @@ Security	I-ORG
 Council	I-ORG
 resolution	O
 1373	O
-(2001)	O
+(	0
+2001	O
+)	O
 ,	O
 adopted	O
 unanimously	O
@@ -375,7 +376,7 @@ has	O
 called	O
 on	O
 the	O
-Taliban	O
+Taliban	I-ORG
 to	O
 prevent	O
 the	O
@@ -405,7 +406,7 @@ been	O
 ignored	O
 by	O
 the	O
-Taliban	O
+Taliban	I-ORG
 .	O
 
 Where	O
@@ -546,7 +547,7 @@ New	I-LOC
 York	I-LOC
 .	O
 
-Nations	I-ORG
+Nations	O
 yet	O
 to	O
 sign	O
@@ -555,12 +556,12 @@ ratify	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Conventions	O
-on	O
-Chemical	O
-and	O
-Biological	O
-Weapons	O
+Conventions	I-MISC
+on	I-MISC
+Chemical	I-MISC
+and	I-MISC
+Biological	I-MISC
+Weapons	I-MISC
 and	O
 treaties	O
 to	O
@@ -574,7 +575,7 @@ do	O
 so	O
 .	O
 
-Nations	I-ORG
+Nations	O
 must	O
 equally	O
 commit	O
@@ -593,9 +594,9 @@ into	O
 force	O
 of	O
 the	O
-Comprehensive	O
-Nuclear-Test-Ban	O
-Treaty	O
+Comprehensive	I-MISC
+Nuclear-Test-Ban	I-MISC
+Treaty	I-MISC
 ,	O
 and	O
 an	O
@@ -631,9 +632,9 @@ bring	O
 into	O
 effect	O
 the	O
-International	O
-Criminal	O
-Court	O
+International	I-ORG
+Criminal	I-ORG
+Court	I-ORG
 as	O
 a	O
 forum	O
@@ -663,7 +664,7 @@ its	O
 causes	O
 .	O
 
-States	I-LOC
+States	O
 must	O
 consider	O
 whether	O
@@ -721,8 +722,8 @@ peaceful	O
 solution	O
 to	O
 the	O
-Middle	O
-East	O
+Middle	I-LOC
+East	I-LOC
 crisis	O
 .	O
 
@@ -732,9 +733,9 @@ a	O
 peaceful	O
 solution	O
 between	O
-Palestinians	O
+Palestinians	I-MISC
 and	O
-Israelis	O
+Israelis	I-MISC
 requires	O
 good	O
 will	O
@@ -875,7 +876,7 @@ from	O
 famine	O
 and	O
 from	O
-Taliban	O
+Taliban	I-ORG
 oppression	O
 .	O
 
@@ -887,9 +888,7 @@ carried	O
 the	O
 burden	O
 of	O
-3	O
-.	O
-6	O
+3.6	O
 million	O
 refugees	O
 ,	O
@@ -926,9 +925,8 @@ shown	O
 internationally	O
 to	O
 the	O
-300	O
-,000	O
-Afghan	O
+300,000	O
+Afghan	I-MISC
 children	O
 who	O
 have	O
@@ -1005,7 +1003,7 @@ failure	O
 to	O
 remove	O
 the	O
-Taliban	O
+Taliban	I-ORG
 regime	O
 and	O
 a	O
@@ -1013,7 +1011,7 @@ failure	O
 to	O
 assist	O
 the	O
-Afghan	O
+Afghan	I-MISC
 people	O
 to	O
 put	O
@@ -1030,7 +1028,7 @@ Government	O
 to	O
 replace	O
 the	O
-Taliban	O
+Taliban	I-ORG
 will	O
 mean	O
 the	O
@@ -1048,7 +1046,7 @@ continued	O
 suffering	O
 of	O
 the	O
-Afghan	O
+Afghan	I-MISC
 people	O
 .	O
 
@@ -1115,7 +1113,7 @@ broad	O
 a	O
 coalition	O
 of	O
-Afghan	O
+Afghan	I-MISC
 groups	O
 as	O
 is	O
@@ -1292,7 +1290,7 @@ own	O
 region	O
 of	O
 the	O
-Pacific	O
+Pacific	I-LOC
 has	O
 not	O
 been	O
@@ -1312,8 +1310,8 @@ have	O
 seen	O
 conflict	O
 in	O
-East	O
-Timor	O
+East	I-LOC
+Timor	I-LOC
 ,	O
 violence	O
 between	O
@@ -1325,14 +1323,14 @@ within	O
 Indonesia	I-LOC
 and	O
 in	O
-Bougainville	O
+Bougainville	I-LOC
 ,	O
 ethnic	O
 conflict	O
 in	O
 the	O
-Solomon	O
-Islands	O
+Solomon	I-LOC
+Islands	I-LOC
 and	O
 a	O
 coup	O
@@ -1368,7 +1366,7 @@ has	O
 been	O
 signed	O
 in	O
-Bougainville	O
+Bougainville	I-LOC
 .	O
 
 Fiji	I-LOC
@@ -1392,8 +1390,8 @@ autonomy	O
 .	O
 
 In	O
-East	O
-Timor	O
+East	I-LOC
+Timor	I-LOC
 ,	O
 there	O
 have	O
@@ -1465,8 +1463,8 @@ United	I-ORG
 Nations	I-ORG
 presence	O
 in	O
-East	O
-Timor	O
+East	I-ORG
+Timor	I-ORG
 to	O
 consolidate	O
 what	O
@@ -1513,8 +1511,8 @@ workers	O
 in	O
 Atambua	I-LOC
 ,	O
-West	O
-Timor	O
+West	I-LOC
+Timor	I-LOC
 ,	O
 and	O
 the	O
@@ -1659,7 +1657,7 @@ in	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Millennium	O
+Millennium	I-MISC
 Declaration	I-MISC
 last	O
 year	O
@@ -1700,7 +1698,7 @@ General	I-ORG
 Assembly	I-ORG
 and	O
 the	O
-Secretariat	O
+Secretariat	I-ORG
 from	O
 becoming	O
 overwhelmed	O
@@ -1886,9 +1884,9 @@ was	O
 founded	O
 after	O
 the	O
-Second	O
-World	O
-War	O
+Second	I-MISC
+World	I-MISC
+War	I-MISC
 to	O
 build	O
 a	O
@@ -1906,7 +1904,7 @@ human	O
 rights	O
 .	O
 
-Nations	I-ORG
+Nations	O
 committed	O
 themselves	O
 to	O

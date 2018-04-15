@@ -73,8 +73,8 @@ Mexican	O
 people	O
 thank	O
 Mr.	O
-Jan	O
-Eliasson	O
+Jan	I-PER
+Eliasson	I-PER
 for	O
 his	O
 leadership	O
@@ -105,7 +105,7 @@ of	O
 Montenegro	I-LOC
 to	O
 this	O
-Organization	O
+Organization	I-ORG
 of	O
 free	O
 and	O
@@ -230,7 +230,7 @@ and	O
 purposes	O
 of	O
 our	O
-Organization	O
+Organization	I-ORG
 .	O
 
 Throughout	O
@@ -625,7 +625,7 @@ commitments	O
 such	O
 as	O
 the	O
-Millennium	O
+Millennium	I-MISC
 Development	I-MISC
 Goals	I-MISC
 ,	O
@@ -816,8 +816,8 @@ founding	O
 member	O
 of	O
 the	O
-Human	O
-Rights	O
+Human	I-ORG
+Rights	I-ORG
 Council	I-ORG
 and	O
 to	O
@@ -921,7 +921,7 @@ In	O
 May	O
 ,	O
 a	O
-Rarámuri	O
+Rarámuri	I-MISC
 woman	O
 from	O
 the	O
@@ -929,12 +929,11 @@ state	O
 of	O
 Chihuahua	I-LOC
 named	O
-Isabel	O
+Isabel	I-PER
 said	O
 to	O
 me	O
 ,	O
-
 "	O
 Mr.	O
 President	O
@@ -985,7 +984,6 @@ dignity	O
 and	O
 stature	O
 "	O
-
 .	O
 
 She	O
@@ -1016,7 +1014,7 @@ my	O
 word	O
 by	O
 bringing	O
-Isabel	O
+Isabel	I-PER
 's	O
 voice	O
 and	O
@@ -1033,7 +1031,7 @@ this	O
 forum	O
 .	O
 
-Isabel	O
+Isabel	I-PER
 's	O
 voice	O
 is	O
@@ -1041,7 +1039,7 @@ the	O
 voice	O
 of	O
 all	O
-Mexican	O
+Mexican	I-MISC
 women	O
 and	O
 men	O
@@ -1060,8 +1058,8 @@ the	O
 members	O
 of	O
 the	O
-Human	O
-Rights	O
+Human	I-ORG
+Rights	I-ORG
 Council	I-ORG
 ,	O
 the	O
@@ -1080,10 +1078,10 @@ Nations	I-ORG
 Declaration	I-MISC
 on	O
 the	O
-Rights	O
-of	O
-Indigenous	O
-Peoples	O
+Rights	I-MISC
+of	I-MISC
+Indigenous	I-MISC
+Peoples	I-MISC
 .	O
 
 On	O
@@ -1112,7 +1110,7 @@ State	O
 Member	O
 of	O
 this	O
-Organization	O
+Organization	I-ORG
 to	O
 adopt	O
 that	O
@@ -1360,18 +1358,18 @@ their	O
 support	O
 for	O
 the	O
-Mexican	O
+Mexican	I-MISC
 initiative	O
 to	O
 establish	O
 the	O
-Group	O
-of	O
-Friends	O
-for	O
+Group	I-ORG
+of	I-ORG
+Friends	I-ORG
+for	I-ORG
 United	I-ORG
 Nations	I-ORG
-Reform	O
+Reform	I-ORG
 .	O
 
 Together	O
@@ -1389,9 +1387,11 @@ Secretary-General	O
 's	O
 report	O
 of	O
-March	I-LOC
+March	O
 2005	O
-(A/59/2005)	O
+(	O
+A/59/2005	O
+)	O
 .	O
 
 I	O
@@ -1503,7 +1503,7 @@ participation	O
 by	O
 all	O
 Member	O
-States	I-LOC
+States	O
 in	O
 the	O
 activities	O
@@ -1565,7 +1565,7 @@ gratitude	O
 to	O
 all	O
 Member	O
-States	I-LOC
+States	O
 for	O
 their	O
 support	O
@@ -1593,8 +1593,8 @@ deep	O
 appreciation	O
 to	O
 Secretary-General	O
-Kofi	O
-Annan	O
+Kofi	I-PER
+Annan	I-PER
 ,	O
 a	O
 good	O
@@ -1615,7 +1615,7 @@ reform	O
 and	O
 strengthen	O
 this	O
-Organization	O
+Organization	I-ORG
 and	O
 for	O
 his	O
@@ -1644,8 +1644,8 @@ objectives	O
 of	O
 the	O
 San	I-LOC
-Francisco	O
-Charter	O
+Francisco	I-LOC
+Charter	I-MISC
 ,	O
 to	O
 the	O
@@ -1719,8 +1719,8 @@ peace	O
 process	O
 in	O
 the	O
-Middle	O
-East	O
+Middle	I-LOC
+East	I-LOC
 .	O
 
 There	O

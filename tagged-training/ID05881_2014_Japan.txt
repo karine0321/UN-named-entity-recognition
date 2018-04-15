@@ -88,7 +88,7 @@ peace	O
 and	O
 security	O
 of	O
-Africa	O
+Africa	I-LOC
 .	O
 
 In	O
@@ -124,16 +124,16 @@ the	O
 initiative	O
 of	O
 Secretary-General	O
-Ban	O
-Ki-moon	O
+Ban	I-PER
+Ki-moon	I-PER
 ,	O
 and	O
 His	O
 Excellency	O
 Mr.	O
-Sam	O
-Kahamba	O
-Kutesa	O
+Sam	I-PER
+Kahamba	I-PER
+Kutesa	I-PER
 ,	O
 President	O
 of	O
@@ -146,21 +146,21 @@ establish	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Mission	I-LOC
+Mission	I-MISC
 for	O
-Ebola	O
-Emergency	O
-Response	O
+Ebola	I-MISC
+Emergency	I-MISC
+Response	I-MISC
 .	O
 
 At	O
 the	O
 fifth	O
 Tokyo	I-LOC
-International	O
-Conference	O
-on	O
-African	O
+International	I-MISC
+Conference	I-MISC
+on	I-MISC
+African	I-MISC
 Development	I-MISC
 ,	O
 held	O
@@ -188,15 +188,14 @@ address	O
 health	O
 issues	O
 in	O
-Africa	O
+Africa	I-LOC
 and	O
 launch	O
 training	O
 programmes	O
 for	O
 some	O
-120	O
-,000	O
+120,000	O
 health	O
 and	O
 medical-service	O
@@ -208,7 +207,7 @@ a	O
 response	O
 to	O
 the	O
-Ebola	O
+Ebola	I-MISC
 outbreak	O
 ,	O
 we	O
@@ -218,15 +217,15 @@ highly	O
 knowledgeable	O
 and	O
 experienced	O
-Japanese	O
+Japanese	I-MISC
 experts	O
 ,	O
 as	O
 members	O
 of	O
-World	O
-Health	O
-Organization	O
+World	I-ORG
+Health	I-ORG
+Organization	I-ORG
 missions	O
 .	O
 
@@ -237,7 +236,8 @@ extended	O
 a	O
 total	O
 of	O
-$5	O
+$	0
+5	O
 million	O
 in	O
 financial	O
@@ -245,8 +245,8 @@ assistance	O
 and	O
 will	O
 provide	O
-$500	O
-,000	O
+$
+500,000	O
 worth	O
 of	O
 personal	O
@@ -291,7 +291,7 @@ sending	O
 more	O
 experts	O
 to	O
-Africa	O
+Africa	I-LOC
 and	O
 sharing	O
 a	O
@@ -302,13 +302,13 @@ developed	O
 by	O
 Japan	I-LOC
 's	O
-Toyama	O
-Chemical	O
-Company	O
+Toyama	I-ORG
+Chemical	I-ORG
+Company	I-ORG
 and	O
-Fujifilm	O
-Holdings	O
-Corporation	O
+Fujifilm	I-ORG
+Holdings	I-ORG
+Corporation	I-ORG
 ,	O
 which	O
 could	O
@@ -319,12 +319,12 @@ the	O
 post-exposure	O
 phase	O
 of	O
-Ebola	O
+Ebola	I-MISC
 .	O
 
 The	O
-Middle	O
-East	O
+Middle	I-LOC
+East	I-LOC
 is	O
 in	O
 a	O
@@ -342,13 +342,13 @@ the	O
 activities	O
 of	O
 the	O
-Islamic	O
-State	O
+Islamic	I-ORG
+State	I-ORG
 in	O
 Iraq	I-LOC
 and	O
 the	O
-Levant	O
+Levant	I-LOC
 —	O
 which	O
 extends	O
@@ -425,7 +425,7 @@ of	O
 Ukraine	I-LOC
 ,	O
 in	O
-March	I-LOC
+March	O
 Japan	I-LOC
 swiftly	O
 announced	O
@@ -602,7 +602,7 @@ and	O
 fostered	O
 by	O
 the	O
-Japanese	O
+Japanese	I-MISC
 people	O
 for	O
 generations	O
@@ -763,8 +763,8 @@ of	O
 them	O
 is	O
 Mr.	O
-Najjar	O
-Osama	O
+Najjar	I-PER
+Osama	I-PER
 ,	O
 a	O
 young	O
@@ -775,17 +775,16 @@ an	O
 official	O
 with	O
 the	O
-Palestinian	O
-Energy	O
-and	O
-Natural	O
-Resources	O
-Authority	O
+Palestinian	I-ORG
+Energy	I-ORG
+and	I-ORG
+Natural	I-ORG
+Resources	I-ORG
+Authority	I-ORG
 .	O
 
 He	O
 said:	O
-
 "	O
 Gaza	I-LOC
 has	O
@@ -827,7 +826,6 @@ ever	O
 giving	O
 up	O
 .	O
-
 "	O
 
 After	O
@@ -839,8 +837,8 @@ for	O
 a	O
 month	O
 ,	O
-Najjar	O
-Osama	O
+Najjar	I-PER
+Osama	I-PER
 brought	O
 solar-power	O
 technology	O
@@ -880,7 +878,7 @@ hospital	O
 in	O
 the	O
 Gaza	I-LOC
-Strip	O
+Strip	I-LOC
 has	O
 endured	O
 the	O
@@ -925,8 +923,8 @@ most	O
 important	O
 thing	O
 for	O
-Hamidah	O
-Hassan	I-LOC
+Hamidah	I-PER
+Hassan	I-PER
 —	O
 a	O
 girl	O
@@ -989,17 +987,16 @@ young	O
 girls	O
 such	O
 as	O
-Hamidah	O
+Hamidah	I-PER
 ,	O
 some	O
-2	O
-,500	O
+2,500	O
 small	O
 lanterns	O
 ,	O
 made	O
 by	O
-Panasonic	O
+Panasonic	I-ORG
 ,	O
 that	O
 bank	O
@@ -1019,7 +1016,7 @@ at	O
 night	O
 .	O
 
-Hamidah	O
+Hamidah	I-PER
 is	O
 now	O
 working	O
@@ -1060,7 +1057,7 @@ hatred	O
 Japan	I-LOC
 and	O
 the	O
-Japanese	O
+Japanese	I-MISC
 people	O
 will	O
 continue	O
@@ -1283,7 +1280,7 @@ peace	O
 borne	O
 by	O
 the	O
-Japanese	O
+Japanese	I-MISC
 Government	O
 is	O
 a	O
@@ -1608,9 +1605,8 @@ which	O
 women	O
 shine	O
 (see	O
-A/68/PV	O
-.	O
-12)	O
+A/68/PV.12	O
+)	O
 .	O
 
 Japan	I-LOC
@@ -1805,7 +1801,7 @@ girls	O
 and	O
 mothers	O
 in	O
-Africa	O
+Africa	I-LOC
 ,	O
 a	O
 region	O
@@ -1969,22 +1965,22 @@ with	O
 Ms	O
 .	O
 
-Zainab	O
-Bangura	O
+Zainab	I-PER
+Bangura	I-PER
 's	O
-Office	O
-of	O
-the	O
-Special	O
-Representative	O
-of	O
-the	O
-Secretary-General	O
-on	O
-Sexual	O
-Violence	O
-in	O
-Conflict	O
+Office	I-ORG
+of	I-ORG
+the	I-ORG
+Special	I-ORG
+Representative	I-ORG
+of	I-ORG
+the	I-ORG
+Secretary-General	I-ORG
+on	I-ORG
+Sexual	I-ORG
+Violence	I-ORG
+in	I-ORG
+Conflict	I-ORG
 .	O
 
 Fundamental	O
@@ -2176,7 +2172,7 @@ respected	O
 the	O
 activities	O
 of	O
-UN-Women	O
+UN-Women	I-ORG
 ,	O
 which	O
 is	O
@@ -2221,7 +2217,7 @@ increased	O
 its	O
 contributions	O
 to	O
-UN-Women	O
+UN-Women	I-ORG
 fivefold	O
 ,	O
 and	O
@@ -2248,7 +2244,7 @@ pleased	O
 that	O
 next	O
 year	O
-UN-Women	O
+UN-Women	I-ORG
 will	O
 open	O
 its	O
@@ -2361,7 +2357,9 @@ its	O
 official	O
 development	O
 assistance	O
-(ODA)	O
+(	O
+ODA	I-MISC
+)	O
 .	O
 
 Having	O
@@ -2378,7 +2376,7 @@ began	O
 working	O
 to	O
 extend	O
-ODA	O
+ODA	I-MISC
 a	O
 mere	O
 nine	O
@@ -2406,7 +2404,7 @@ guiding	O
 principles	O
 for	O
 our	O
-ODA	O
+ODA	I-MISC
 .	O
 
 We	O
@@ -2551,8 +2549,7 @@ Japan	I-LOC
 has	O
 sent	O
 about	O
-9	O
-,700	O
+9,700	O
 people	O
 on	O
 13	O
@@ -2571,16 +2568,16 @@ the	O
 establishment	O
 of	O
 the	O
-Peacebuilding	O
-Commission	O
+Peacebuilding	I-MISC
+Commission	I-MISC
 ,	O
 Japan	I-LOC
 's	O
 contributions	O
 to	O
 the	O
-Peacebuilding	O
-Fund	O
+Peacebuilding	I-MISC
+Fund	I-MISC
 have	O
 surpassed	O
 $40	O
@@ -2641,20 +2638,20 @@ lead	O
 discussions	O
 in	O
 the	O
-Review	O
-Conference	O
-of	O
-the	O
-Parties	O
-to	O
-the	O
-Treaty	O
-on	O
-the	O
-Non-Proliferation	O
-of	O
-Nuclear	O
-Weapons	O
+Review	I-MISC
+Conference	I-MISC
+of	I-MISC
+the	I-MISC
+Parties	I-MISC
+to	I-MISC
+the	I-MISC
+Treaty	I-MISC
+on	I-MISC
+the	I-MISC
+Non-Proliferation	I-MISC
+of	I-MISC
+Nuclear	I-MISC
+Weapons	I-MISC
 to	O
 be	O
 convened	O

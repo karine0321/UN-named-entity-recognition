@@ -218,7 +218,7 @@ the	O
 benefit	O
 of	O
 the	O
-Iraqi	O
+Iraqi	I-MISC
 people	O
 .	O
 
@@ -290,7 +290,7 @@ of	O
 power	O
 to	O
 an	O
-Iraqi	O
+Iraqi	I-MISC
 government	O
 .	O
 
@@ -345,7 +345,7 @@ which	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Charter	O
+Charter	I-MISC
 is	O
 based	O
 .	O
@@ -355,7 +355,7 @@ overwhelming	O
 majority	O
 of	O
 Member	O
-States	I-LOC
+States	O
 have	O
 joined	O
 forces	O
@@ -486,7 +486,7 @@ concerns	O
 of	O
 all	O
 Member	O
-States	I-LOC
+States	O
 .	O
 
 It	O
@@ -575,7 +575,7 @@ ideals	O
 enshrined	O
 in	O
 the	O
-Charter	O
+Charter	I-MISC
 ,	O
 the	O
 United	I-ORG
@@ -617,9 +617,9 @@ The	O
 establishment	O
 of	O
 the	O
-International	O
-Criminal	O
-Court	O
+International	I-ORG
+Criminal	I-ORG
+Court	I-ORG
 is	O
 a	O
 historic	O
@@ -650,7 +650,7 @@ related	O
 
 In	O
 the	O
-Millennium	O
+Millennium	I-MISC
 Development	I-MISC
 Goals	I-MISC
 ,	O
@@ -703,9 +703,9 @@ the	O
 chairmanship	O
 of	O
 the	O
-Commission	O
-on	O
-Sustainable	O
+Commission	I-MISC
+on	I-MISC
+Sustainable	I-MISC
 Development	I-MISC
 ,	O
 and	O
@@ -755,7 +755,7 @@ to	O
 the	O
 Doha	I-LOC
 Development	I-MISC
-Agenda	O
+Agenda	I-MISC
 .	O
 
 We	O
@@ -931,24 +931,26 @@ soundest	O
 investment	O
 possible	O
 in	O
-Africa	O
+Africa	I-LOC
 .	O
 
 We	O
 will	O
 assist	O
 the	O
-African	O
+African	I-MISC
 Union	I-LOC
 and	O
 the	O
-New	I-LOC
-Partnership	O
-for	O
-Africa	O
-'s	O
+New	I-MISC
+Partnership	I-MISC
+for	I-MISC
+Africa	I-MISC
+'s	I-MISC
 Development	I-MISC
-(NEPAD)	O
+(	0
+NEPAD	I-MISC
+)	O
 in	O
 their	O
 endeavours	O
@@ -961,7 +963,7 @@ and	O
 political	O
 stability	O
 in	O
-Africa	O
+Africa	I-LOC
 .	O
 
 Norway	I-LOC
@@ -974,9 +976,9 @@ and	O
 stability	O
 in	O
 the	O
-Horn	O
-of	O
-Africa	O
+Horn	I-LOC
+of	I-LOC
+Africa	I-LOC
 .	O
 
 The	O
@@ -1084,8 +1086,8 @@ Kosovo	I-LOC
 Sierra	I-LOC
 Leone	I-LOC
 and	O
-Timor-	O
-Leste	O
+Timor-	I-LOC
+Leste	I-LOC
 ,	O
 as	O
 well	O
@@ -1096,16 +1098,16 @@ the	O
 capabilities	O
 of	O
 the	O
-Department	O
-of	O
-Peacekeeping	O
-Operations	O
+Department	I-ORG
+of	I-ORG
+Peacekeeping	I-ORG
+Operations	I-ORG
 and	O
 strengthening	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Standby	O
+Standby	0
 Arrangement	O
 System	O
 .	O
@@ -1113,8 +1115,8 @@ System	O
 The	O
 United	I-ORG
 Nations	I-ORG
-Assistance	O
-Mission	I-LOC
+Assistance	I-MISC
+Mission	I-MISC
 in	O
 Afghanistan	I-LOC
 is	O
@@ -1157,7 +1159,7 @@ implementation	O
 of	O
 the	O
 Bonn	I-LOC
-Agreement	O
+Agreement	I-MISC
 is	O
 not	O
 in	O
@@ -1227,21 +1229,23 @@ future	O
 .	O
 
 With	O
-NATO	O
+NATO	I-ORG
 in	O
 command	O
 of	O
 the	O
-International	O
+International	I-ORG
 Security	I-ORG
-Assistance	O
+Assistance	I-ORG
 Force	O
-(ISAF)	O
+(	O
+ISAF	I-ORG		
+)	O
 ,	O
 Norway	I-LOC
 as	O
 a	O
-NATO	O
+NATO	I-ORG
 member	O
 has	O
 an	O
@@ -1280,8 +1284,8 @@ cooperation	O
 .	O
 
 In	O
-Sri	O
-Lanka	O
+Sri	I-LOC
+Lanka	I-LOC
 the	O
 peace	O
 process	O
@@ -1312,8 +1316,8 @@ interim	O
 administration	O
 for	O
 the	O
-North-East	O
-Province	O
+North-East	I-LOC
+Province	I-LOC
 .	O
 
 It	O
@@ -1335,7 +1339,7 @@ timeframe	O
 envisaged	O
 .	O
 
-Development	I-MISC
+Development	O
 of	O
 the	O
 economic	O
@@ -1346,8 +1350,8 @@ important	O
 for	O
 all	O
 in	O
-Sri	O
-Lanka	O
+Sri	I-LOC
+Lanka	I-LOC
 .	O
 
 In	O
@@ -1393,11 +1397,11 @@ between	O
 the	O
 Government	O
 of	O
-Sri	O
-Lanka	O
+Sri	I-LOC
+Lanka	I-LOC
 and	O
 the	O
-LTTE	O
+LTTE	I-ORG
 .	O
 
 We	O
@@ -1416,8 +1420,8 @@ reconstruction	O
 and	O
 rehabilitation	O
 in	O
-Sri	O
-Lanka	O
+Sri	I-LOC
+Lanka	I-LOC
 .	O
 
 In	O
@@ -1459,10 +1463,10 @@ would	O
 be	O
 to	O
 release	O
-Aung	O
-San	I-LOC
-Suu	O
-Kyi	O
+Aung	I-PER
+San	I-PER
+Suu	I-PER
+Kyi	I-PER
 immediately	O
 and	O
 without	O
@@ -1543,9 +1547,9 @@ a	O
 tragic	O
 one	O
 for	O
-Israelis	O
+Israelis	I-MISC
 and	O
-Palestinians	O
+Palestinians	I-MISC
 .	O
 
 Their	O
@@ -1597,8 +1601,8 @@ occupation	O
 and	O
 where	O
 the	O
-Palestinian	O
-Authority	O
+Palestinian	I-ORG
+Authority	I-ORG
 takes	O
 determined	O
 steps	O
@@ -1623,7 +1627,7 @@ is	O
 that	O
 of	O
 two	O
-States	I-LOC
+States	O
 —	O
 Israel	I-LOC
 and	O
@@ -1653,7 +1657,7 @@ living	O
 conditions	O
 of	O
 the	O
-Palestinians	O
+Palestinians	I-MISC
 .	O
 
 In	O
@@ -1671,7 +1675,7 @@ for	O
 assistance	O
 to	O
 the	O
-Palestinian	O
+Palestinian	I-MISC
 people	O
 ,	O
 Norway	I-LOC
@@ -1680,7 +1684,7 @@ committed	O
 to	O
 rebuilding	O
 the	O
-Palestinian	O
+Palestinian	I-MISC
 areas	O
 .	O
 
@@ -1799,12 +1803,12 @@ Norway	I-LOC
 shares	O
 the	O
 Secretary-	O
-General	I-ORG
+General	O
 's	O
 view	O
 that	O
 Member	O
-States	I-LOC
+States	O
 need	O
 to	O
 take	O
@@ -1865,16 +1869,16 @@ General	I-ORG
 Assembly	I-ORG
 ,	O
 the	O
-Economic	O
-and	O
-Social	O
+Economic	I-ORG
+and	I-ORG
+Social	I-ORG
 Council	I-ORG
 and	O
 the	O
-Commission	O
-on	O
-Human	O
-Rights	O
+Commission	I-ORG
+on	I-ORG
+Human	I-ORG
+Rights	I-ORG
 .	O
 
 Norway	I-LOC
@@ -1933,7 +1937,7 @@ Norway	I-LOC
 together	O
 with	O
 the	O
-Nordic	O
+Nordic	I-MISC
 countries	O
 ,	O
 has	O
@@ -2030,7 +2034,7 @@ it	O
 I	O
 urge	O
 Member	O
-States	I-LOC
+States	O
 to	O
 come	O
 together	O
@@ -2061,5 +2065,5 @@ the	O
 core	O
 of	O
 the	O
-Charter	O
+Charter	I-MISC
 .	O

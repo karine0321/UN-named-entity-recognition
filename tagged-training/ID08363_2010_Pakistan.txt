@@ -52,8 +52,8 @@ to	O
 my	O
 brother	O
 ,	O
-Ali	O
-Treki	O
+Ali	I-PER
+Treki	I-PER
 ,	O
 the	O
 outgoing	O
@@ -96,9 +96,8 @@ floods	O
 in	O
 Pakistan	I-LOC
 (see	O
-A/64/PV	O
-.	O
-110)	O
+A/64/PV.110	0
+)	O
 .	O
 
 I	O
@@ -447,7 +446,7 @@ ago	O
 The	O
 United	I-ORG
 Nations	I-ORG
-Charter	O
+Charter	I-MISC
 envisages	O
 a	O
 world	O
@@ -657,12 +656,12 @@ particularly	O
 small	O
 and	O
 medium	O
-States	I-LOC
+States	O
 ,	O
 developing	O
 countries	O
 and	O
-Africa	O
+Africa	I-LOC
 .	O
 
 Pakistan	I-LOC
@@ -901,8 +900,7 @@ cost	O
 
 More	O
 than	O
-20	O
-,000	O
+20,000	O
 innocent	O
 civilians	O
 have	O
@@ -914,8 +912,7 @@ terrorism	O
 and	O
 more	O
 than	O
-2	O
-,500	O
+2,500	O
 personnel	O
 of	O
 the	O
@@ -938,7 +935,7 @@ billion	O
 .	O
 
 The	O
-Pakistani	O
+Pakistani	I-MISC
 nation	O
 will	O
 persist	O
@@ -1040,12 +1037,12 @@ accept	O
 the	O
 stereotyping	O
 of	O
-Muslims	O
+Muslims	I-MISC
 as	O
 terrorists	O
 .	O
 
-Islam	O
+Islam	I-MISC
 is	O
 a	O
 religion	O
@@ -1063,7 +1060,7 @@ a	O
 complete	O
 antithesis	O
 to	O
-Islam	O
+Islam	I-MISC
 's	O
 humanistic	O
 outlook	O
@@ -1079,7 +1076,7 @@ just	O
 cause	O
 of	O
 the	O
-Palestinian	O
+Palestinian	I-MISC
 people	O
 for	O
 restitution	O
@@ -1092,13 +1089,13 @@ rights	O
 including	O
 their	O
 independent	O
-Palestinian	O
+Palestinian	I-MISC
 State	O
 with	O
-Al	O
-Quds	O
-Al	O
-Sharif	O
+Al	I-LOC
+Quds	I-LOC
+Al	I-LOC
+Sharif	I-LOC
 as	O
 its	O
 capital	O
@@ -1155,8 +1152,7 @@ the	O
 incident	O
 by	O
 the	O
-Secretary-	O
-General	I-ORG
+Secretary-General	O
 's	O
 Panel	O
 of	O
@@ -1168,7 +1164,7 @@ dispute	O
 over	O
 Jammu	I-LOC
 and	O
-Kashmir	O
+Kashmir	I-LOC
 is	O
 one	O
 of	O
@@ -1196,7 +1192,7 @@ self-	O
 determination	O
 by	O
 the	O
-Kashmiri	O
+Kashmiri	I-MISC
 people	O
 through	O
 a	O
@@ -1219,7 +1215,7 @@ prevailing	O
 situation	O
 in	O
 Indian-occupied	O
-Kashmir	O
+Kashmir	I-LOC
 with	O
 grave	O
 concern	O
@@ -1234,16 +1230,16 @@ months	O
 more	O
 than	O
 100	O
-Kashmiris	O
+Kashmiris	I-MISC
 have	O
 been	O
 killed	O
 by	O
-Indian	O
+Indian	I-MISC
 security	O
 forces	O
 in	O
-Kashmir	O
+Kashmir	I-LOC
 .	O
 
 We	O
@@ -1258,7 +1254,7 @@ human	O
 rights	O
 of	O
 the	O
-Kashmiri	O
+Kashmiri	I-MISC
 people	O
 must	O
 be	O
@@ -1281,7 +1277,7 @@ the	O
 long-standing	O
 Jammu	I-LOC
 and	O
-Kashmir	O
+Kashmir	I-LOC
 dispute	O
 .	O
 
@@ -1292,7 +1288,7 @@ complete	O
 solidarity	O
 with	O
 the	O
-Kashmiri	O
+Kashmiri	I-MISC
 people	O
 and	O
 urges	O
@@ -1307,7 +1303,7 @@ end	O
 its	O
 repression	O
 in	O
-Kashmir	O
+Kashmir	I-LOC
 .	O
 
 Pakistan	I-LOC
@@ -1343,7 +1339,7 @@ dispute	O
 of	O
 Jammu	I-LOC
 and	O
-Kashmir	O
+Kashmir	I-LOC
 .	O
 
 A	O
@@ -1383,8 +1379,8 @@ and	O
 stability	O
 in	O
 the	O
-South	O
-Asian	O
+South	I-MISC
+Asian	I-MISC
 region	O
 .	O
 
@@ -1422,7 +1418,7 @@ continue	O
 to	O
 host	O
 our	O
-Afghan	O
+Afghan	I-MISC
 brothers	O
 as	O
 a	O
@@ -1534,9 +1530,9 @@ national	O
 reconciliation	O
 that	O
 are	O
-Afghan-owned	O
+Afghan-owned	I-MISC
 and	O
-Afghan-led	O
+Afghan-led	I-MISC
 .	O
 
 We	O
@@ -1556,7 +1552,7 @@ They	O
 will	O
 strengthen	O
 President	O
-Karzai	O
+Karzai	I-PER
 's	O
 initiation	O
 of	O
@@ -1636,7 +1632,7 @@ the	O
 security	O
 interests	O
 of	O
-States	I-LOC
+States	O
 seriously	O
 erode	O
 globally	O
@@ -1677,7 +1673,7 @@ with	O
 conflict	O
 resolution	O
 in	O
-South	O
+South	I-LOC
 Asia	I-LOC
 .	O
 
@@ -1721,9 +1717,7 @@ the	O
 world	O
 and	O
 only	O
-0	O
-.	O
-4	O
+0.4	O
 per	O
 cent	O
 of	O
@@ -1801,12 +1795,14 @@ under	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Framework	O
-Convention	O
-on	O
-Climate	O
-Change	O
-(UNFCCC)	O
+Framework	I-MISC
+Convention	I-MISC
+on	I-MISC
+Climate	I-MISC
+Change	I-MISC
+(	0
+UNFCCC	I-MISC
+)	O
 ,	O
 climate	O
 change	O
@@ -1818,7 +1814,7 @@ reality	O
 for	O
 170	O
 million	O
-Pakistanis	O
+Pakistanis	I-MISC
 .	O
 
 The	O
@@ -1906,7 +1902,7 @@ an	O
 active	O
 and	O
 empowered	O
-Parliament	O
+Parliament	I-MISC
 ,	O
 a	O
 vigilant	O
@@ -1954,9 +1950,9 @@ by	O
 the	O
 vision	O
 of	O
-Shaheed	O
-Benazir	O
-Bhutto	O
+Shaheed	I-PER
+Benazir	I-PER
+Bhutto	I-PER
 ,	O
 attaches	O
 special	O
@@ -1990,28 +1986,28 @@ May	O
 Pakistan	I-LOC
 ratified	O
 the	O
-International	O
-Covenant	O
-on	O
-Civil	O
-and	O
-Political	O
-Rights	O
+International	I-MISC
+Covenant	I-MISC
+on	I-MISC
+Civil	I-MISC
+and	I-MISC
+Political	I-MISC
+Rights	I-MISC
 and	O
 the	O
-Convention	O
-against	O
-Torture	O
-and	O
-Other	O
-Cruel	O
-,	O
-Inhuman	O
-or	O
-Degrading	O
-Treatment	O
-or	O
-Punishment	O
+Convention	I-MISC
+against	I-MISC
+Torture	I-MISC
+and	I-MISC
+Other	I-MISC
+Cruel	I-MISC
+,	I-MISC
+Inhuman	I-MISC
+or	I-MISC
+Degrading	I-MISC
+Treatment	I-MISC
+or	I-MISC
+Punishment	I-MISC
 .	O
 
 Pakistan	I-LOC
@@ -2039,8 +2035,8 @@ composite	O
 gender	O
 entity	O
 ,	O
-UN	I-LOC
-Women	O
+UN	I-ORG
+Women	I-MISC
 .	O
 
 We	O
@@ -2095,17 +2091,17 @@ working	O
 through	O
 both	O
 the	O
-Economic	O
-Cooperation	O
-Organization	O
+Economic	I-ORG
+Cooperation	I-ORG
+Organization	I-ORG
 and	O
 the	O
-South	O
-Asian	O
-Association	O
-for	O
-Regional	O
-Cooperation	O
+South	I-ORG
+Asian	I-ORG
+Association	I-ORG
+for	I-ORG
+Regional	I-ORG
+Cooperation	I-ORG
 to	O
 further	O
 deepen	O
@@ -2263,7 +2259,7 @@ of	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Charter	O
+Charter	I-MISC
 .	O
 
 We	O

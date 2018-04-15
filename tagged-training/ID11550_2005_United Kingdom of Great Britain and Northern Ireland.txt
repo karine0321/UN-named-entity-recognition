@@ -11,8 +11,8 @@ to	O
 your	O
 predecessor	O
 ,	O
-Jean	O
-Ping	O
+Jean	I-PER
+Ping	I-PER
 ,	O
 for	O
 his	O
@@ -61,12 +61,12 @@ behalf	O
 of	O
 the	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 and	O
 all	O
 its	O
 member	O
-States	I-LOC
+States	O
 ,	O
 our	O
 deepest	O
@@ -78,14 +78,14 @@ the	O
 people	O
 of	O
 the	O
-United	I-ORG
+United	I-LOC
 States	I-LOC
 ,	O
 particularly	O
 those	O
 in	O
 the	O
-Gulf	O
+Gulf	I-LOC
 states	O
 ,	O
 in	O
@@ -108,12 +108,12 @@ presidency	O
 of	O
 the	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 was	O
 to	O
 go	O
 to	O
-Srebrenica	O
+Srebrenica	I-LOC
 to	O
 mark	O
 the	O
@@ -127,25 +127,24 @@ there	O
 the	O
 worst	O
 in	O
-Europe	O
+Europe	I-LOC
 since	O
 the	O
 end	O
 of	O
 the	O
-Second	O
-World	O
-War	O
+Second	I-MISC
+World	I-MISC
+War	I-MISC
 .	O
 
 More	O
 than	O
-8	O
-,000	O
+8,000	O
 people	O
 ,	O
 mainly	O
-Muslim	O
+Muslim	I-MISC
 ,	O
 were	O
 taken	O
@@ -228,7 +227,7 @@ we	O
 in	O
 the	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 have	O
 learned	O
 in	O
@@ -240,7 +239,7 @@ period	O
 Today	O
 ,	O
 the	O
-Union	I-LOC
+Union	I-ORG
 is	O
 on	O
 the	O
@@ -254,30 +253,30 @@ or	O
 civilian	O
 presence	O
 in	O
-Bosnia	O
+Bosnia	I-LOC
 ,	O
 in	O
-Aceh	O
+Aceh	I-LOC
 ,	O
 in	O
 Iraq	I-LOC
 ,	O
 in	O
 the	O
-Democratic	O
-Republic	O
-of	O
-the	O
-Congo	O
+Democratic	I-LOC
+Republic	I-LOC
+of	I-LOC
+the	I-LOC
+Congo	I-LOC
 and	O
 ,	O
 with	O
 the	O
-African	O
-Union	I-LOC
+African	I-ORG
+Union	I-ORG
 ,	O
 in	O
-Darfur	O
+Darfur	I-LOC
 .	O
 
 I	O
@@ -324,7 +323,7 @@ more	O
 effective	O
 .	O
 
-Of	I-LOC
+Of	O
 all	O
 that	O
 was	O
@@ -342,13 +341,11 @@ the	O
 agreement	O
 on	O
 our	O
-
 "	O
 responsibility	O
 to	O
 protect	O
 "	O
-
 that	O
 will	O
 be	O
@@ -760,10 +757,10 @@ of	O
 that	O
 .	O
 
-Much	I-LOC
+Much	O
 of	O
-sub-Saharan	O
-Africa	O
+sub-Saharan	I-LOC
+Africa	I-LOC
 remains	O
 blighted	O
 by	O
@@ -776,7 +773,7 @@ conflict	O
 
 The	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 has	O
 now	O
 set	O
@@ -786,9 +783,7 @@ timetable	O
 to	O
 achieve	O
 the	O
-0	O
-.	O
-7	O
+0.7	O
 per	O
 cent	O
 target	O
@@ -849,8 +844,8 @@ United	I-ORG
 Nations	I-ORG
 Special	O
 Envoy	O
-Anna	I-LOC
-Tibaijuka	O
+Anna	I-PER
+Tibaijuka	I-PER
 's	O
 damning	O
 assessment	O
@@ -865,8 +860,8 @@ graphically	O
 shows	O
 .	O
 
-Sub-Saharan	O
-Africa	O
+Sub-Saharan	I-LOC
+Africa	I-LOC
 is	O
 not	O
 alone	O
@@ -882,8 +877,8 @@ potential	O
 The	O
 American	O
 author	O
-Thomas	O
-Friedman	O
+Thomas	I-PER
+Friedman	I-PER
 ,	O
 in	O
 his	O
@@ -901,7 +896,7 @@ anomaly:	O
 it	O
 was	O
 the	O
-Arab	O
+Arab	I-MISC
 peoples	O
 whose	O
 forebears	O
@@ -957,10 +952,10 @@ United	I-ORG
 Nations	I-ORG
 Development	I-MISC
 Programme	I-MISC
-Arab	O
-Human	O
+Arab	I-MISC
+Human	I-MISC
 Development	I-MISC
-Reports	O
+Reports	I-MISC
 have	O
 now	O
 set	O
@@ -1020,10 +1015,10 @@ us	O
 to	O
 believe	O
 that	O
-Islam	O
+Islam	I-MISC
 and	O
 the	O
-West	O
+West	I-MISC
 are	O
 fundamentally	O
 different	O
@@ -1063,7 +1058,7 @@ how	O
 countries	O
 with	O
 predominantly	O
-Muslim	O
+Muslim	I-MISC
 populations	O
 can	O
 embrace	O
@@ -1076,12 +1071,12 @@ We	O
 in	O
 the	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 have	O
 seen	O
 the	O
 vibrant	O
-Muslim	O
+Muslim	I-MISC
 communities	O
 in	O
 our	O
@@ -1095,7 +1090,7 @@ experience	O
 have	O
 seen	O
 how	O
-Islamic	O
+Islamic	I-MISC
 and	O
 Western	O
 cultures	O
@@ -1112,7 +1107,7 @@ Everyone	O
 knows	O
 that	O
 the	O
-Arab	O
+Arab	I-MISC
 peoples	O
 want	O
 prosperity	O
@@ -1127,7 +1122,7 @@ much	O
 as	O
 anyone	O
 in	O
-Europe	O
+Europe	I-LOC
 or	O
 America	I-LOC
 .	O
@@ -1137,7 +1132,7 @@ the	O
 fact	O
 that	O
 the	O
-Arab	O
+Arab	I-MISC
 world	O
 has	O
 the	O
@@ -1195,7 +1190,7 @@ reform	O
 
 The	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 strongly	O
 supports	O
 such	O
@@ -1240,8 +1235,8 @@ With	O
 our	O
 High	O
 Representative	O
-Javier	O
-Solana	I-LOC
+Javier	I-PER
+Solana	I-PER
 and	O
 my	O
 French	O
@@ -1262,7 +1257,7 @@ relationship	O
 between	O
 the	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 and	O
 Iran	I-LOC
 to	O
@@ -1293,7 +1288,7 @@ framework	O
 between	O
 the	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 and	O
 Iran	I-LOC
 ,	O
@@ -1356,14 +1351,14 @@ new	O
 President	O
 of	O
 the	O
-Islamic	O
-Republic	O
-of	O
+Islamic	I-LOC
+Republic	I-LOC
+of	I-LOC
 Iran	I-LOC
 ,	O
 Mr.	O
-Mahmoud	O
-Ahmadinejad	O
+Mahmoud	I-PER
+Ahmadinejad	I-PER
 .	O
 
 On	O
@@ -1371,7 +1366,7 @@ Iraq	I-LOC
 ,	O
 the	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 now	O
 has	O
 a	O
@@ -1437,11 +1432,11 @@ between	O
 Israel	I-LOC
 and	O
 the	O
-Palestinians	O
+Palestinians	I-MISC
 ,	O
 with	O
 two	O
-States	I-LOC
+States	O
 living	O
 side	O
 by	O
@@ -1452,7 +1447,7 @@ We	O
 salute	O
 Prime	O
 Minister	O
-Sharon	O
+Sharon	I-PER
 's	O
 brave	O
 decision	O
@@ -1461,14 +1456,14 @@ withdraw	O
 from	O
 the	O
 Gaza	I-LOC
-Strip	O
+Strip	I-LOC
 ,	O
 and	O
 we	O
 salute	O
 President	O
-Mahmoud	O
-Abbas	O
+Mahmoud	I-PER
+Abbas	I-PER
 's	O
 work	O
 to	O
@@ -1491,7 +1486,7 @@ July	O
 ,	O
 the	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 again	O
 suffered	O
 the	O
@@ -1512,8 +1507,8 @@ my	O
 country	O
 ,	O
 the	O
-United	I-ORG
-Kingdom:	O
+United	I-LOC
+Kingdom:	I-LOC
 its	O
 capital	O
 ,	O
@@ -1614,7 +1609,7 @@ in	O
 Rwanda	I-LOC
 and	O
 in	O
-Bosnia	O
+Bosnia	I-LOC
 a	O
 decade	O
 ago	O
@@ -1625,14 +1620,14 @@ the	O
 conflicts	O
 in	O
 the	O
-Democratic	O
-Republic	O
-of	O
-the	O
-Congo	O
+Democratic	I-LOC
+Republic	I-LOC
+of	I-LOC
+the	I-LOC
+Congo	I-LOC
 and	O
 in	O
-Darfur	O
+Darfur	I-LOC
 today	O
 .	O
 
@@ -1655,7 +1650,7 @@ We	O
 in	O
 the	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 have	O
 a	O
 comprehensive	O
@@ -1708,7 +1703,7 @@ the	O
 killing	O
 fields	O
 of	O
-Europe	O
+Europe	I-LOC
 ,	O
 in	O
 two	O
@@ -1727,7 +1722,7 @@ and	O
 of	O
 the	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 became	O
 imperative	O
 .	O
@@ -1736,7 +1731,7 @@ Today	O
 ,	O
 the	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 's	O
 commitment	O
 to	O

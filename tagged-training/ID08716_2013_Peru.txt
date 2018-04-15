@@ -39,9 +39,9 @@ a	O
 dear	O
 friend	O
 from	O
-Antigua	O
-and	O
-Barbuda	O
+Antigua	I-LOC
+and	I-LOC
+Barbuda	I-LOC
 ,	O
 a	O
 member	O
@@ -49,11 +49,11 @@ of	O
 our	O
 community	O
 of	O
-Latin	O
-American	O
+Latin	I-LOC
+American	I-LOC
 and	O
-Caribbean	O
-States	I-LOC
+Caribbean	I-LOC
+States	O
 .	O
 
 You	O
@@ -249,7 +249,7 @@ populations	O
 
 Regarding	O
 the	O
-Syrian	O
+Syrian	I-MISC
 tragedy	O
 ,	O
 we	O
@@ -258,7 +258,7 @@ our	O
 solidarity	O
 with	O
 the	O
-Syrian	O
+Syrian	I-MISC
 people	O
 .	O
 
@@ -292,7 +292,7 @@ law	O
 .	O
 
 The	O
-Syrian	O
+Syrian	I-MISC
 people	O
 deserve	O
 an	O
@@ -388,7 +388,7 @@ rights	O
 enshrined	O
 in	O
 the	O
-Charter	O
+Charter	I-MISC
 of	O
 the	O
 United	I-ORG
@@ -480,10 +480,10 @@ be	O
 rendered	O
 by	O
 the	O
-International	O
-Court	O
-of	O
-Justice	O
+International	I-ORG
+Court	I-ORG
+of	I-ORG
+Justice	I-ORG
 .	O
 
 This	O
@@ -682,10 +682,12 @@ deadline	O
 for	O
 achieving	O
 the	O
-Millennium	O
+Millennium	I-MISC
 Development	I-MISC
 Goals	I-MISC
-(MDGs)	O
+(	O
+MDGs	I-MISC
+)	O
 .	O
 
 Our	O
@@ -755,7 +757,7 @@ more	O
 than	O
 half	O
 of	O
-Peruvians	O
+Peruvians	I-MISC
 lived	O
 in	O
 poverty	O
@@ -1001,13 +1003,12 @@ with	O
 Convention	O
 No	O
 .	O
-
 169	O
 of	O
 the	O
-International	O
-Labour	O
-Organization	O
+International	I-ORG
+Labour	I-ORG
+Organization	I-ORG
 .	O
 
 We	O
@@ -1079,8 +1080,8 @@ Peruvian	O
 nationals	O
 into	O
 the	O
-Schengen	O
-Area	O
+Schengen	I-MISC
+Area	I-MISC
 
 .	O
 
@@ -1093,31 +1094,31 @@ contained	O
 in	O
 the	O
 document	O
-
 "	O
 The	O
 future	O
 we	O
 want	O
 "	O
-
 ,	O
 adopted	O
 at	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Conference	O
-on	O
-Sustainable	O
+Conference	I-MISC
+on	I-MISC
+Sustainable	I-MISC
 Development	I-MISC
 held	O
 last	O
 year	O
-(resolution	O
+(	O
+resolution	O
 66/288	O
 ,	O
-annex)	O
+annex	O
+)	O
 .	O
 
 The	O
@@ -1245,13 +1246,11 @@ the	O
 right	O
 formula	O
 is	O
-
 "	O
 inclusion	O
 for	O
 growth	O
 .	O
-
 "	O
 
 That	O
@@ -1295,8 +1294,7 @@ has	O
 helped	O
 to	O
 create	O
-800	O
-,000	O
+800,000	O
 new	O
 jobs	O
 so	O
@@ -1478,7 +1476,8 @@ are	O
 a	O
 country	O
 of	O
-entrepreneurs:	O
+entrepreneurs	O
+:	O
 98	O
 per	O
 cent	O
@@ -1614,9 +1613,9 @@ of	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Industrial	O
-Development	I-MISC
-Organization	O
+Industrial	I-ORG
+Development	I-ORG
+Organization	I-ORG
 .	O
 
 Being	O
@@ -1626,7 +1625,7 @@ on	O
 the	O
 map	O
 of	O
-South	O
+South	I-LOC
 America	I-LOC
 and	O
 having	O
@@ -1635,8 +1634,8 @@ a	O
 key	O
 role	O
 in	O
-Latin	O
-American	O
+Latin	I-MISC
+American	I-MISC
 history	O
 ,	O
 Peru	I-LOC
@@ -1685,7 +1684,7 @@ development	O
 .	O
 
 We	O
-Peruvians	O
+Peruvians	I-MISC
 have	O
 an	O
 overriding	O
@@ -1719,8 +1718,8 @@ is	O
 part	O
 of	O
 the	O
-Pacific	O
-Alliance	I-LOC
+Pacific	I-ORG
+Alliance	I-ORG
 ,	O
 along	O
 with	O
@@ -1743,7 +1742,7 @@ strategic	O
 projection	O
 towards	O
 the	O
-Asia-Pacific	O
+Asia-Pacific	I-MISC
 region	O
 and	O
 the	O
@@ -1774,10 +1773,10 @@ part	O
 of	O
 the	O
 Asia-	I-LOC
-￼Pacific	O
-Economic	O
-Cooperation	O
-Forum	O
+Pacific	I-LOC
+Economic	I-ORG
+Cooperation	I-ORG
+Forum	I-ORG
 .	O
 
 We	O
@@ -1803,10 +1802,10 @@ a	O
 member	O
 of	O
 the	O
-Union	I-LOC
-of	O
-South	O
-American	O
+Union	I-ORG
+of	I-ORG
+South	I-ORG
+American	I-ORG
 Nations	I-ORG
 ,	O
 having	O
@@ -1823,13 +1822,13 @@ We	O
 participate	O
 in	O
 the	O
-Community	O
-of	O
-Latin	O
-American	O
-and	O
-Caribbean	O
-States	I-LOC
+Community	I-ORG
+of	I-ORG
+Latin	I-ORG
+American	I-ORG
+and	I-ORG
+Caribbean	I-ORG
+States	I-ORG
 ,	O
 which	O
 this	O
@@ -1848,7 +1847,7 @@ Government	O
 of	O
 the	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 .	O
 
 We	O
@@ -1858,10 +1857,10 @@ hemispheric	O
 roots	O
 through	O
 the	O
-Organization	O
-of	O
-American	O
-States	I-LOC
+Organization	I-ORG
+of	I-ORG
+American	I-ORG
+States	I-ORG
 ,	O
 and	O
 at	O
@@ -1877,8 +1876,8 @@ pro-tempore	O
 president	O
 of	O
 the	O
-Andean	O
-Community	O
+Andean	I-ORG
+Community	I-ORG
 .	O
 
 We	O
@@ -1995,7 +1994,7 @@ large	O
 number	O
 of	O
 Member	O
-States	I-LOC
+States	O
 on	O
 the	O
 need	O
@@ -2059,14 +2058,14 @@ thirty-fifth	O
 session	O
 of	O
 the	O
-Economic	O
-Commission	O
+Economic	I-ORG
+Commission	I-ORG
 for	O
-Latin	O
+Latin	I-LOC
 America	I-LOC
 and	O
 the	O
-Caribbean	O
+Caribbean	I-LOC
 and	O
 in	O
 2016	O
@@ -2074,10 +2073,10 @@ the	O
 fourteenth	O
 United	I-ORG
 Nations	I-ORG
-Conference	O
-on	O
-Trade	O
-and	O
+Conference	I-MISC
+on	I-MISC
+Trade	I-MISC
+and	I-MISC
 Development	I-MISC
 .	O
 
@@ -2090,7 +2089,7 @@ so	O
 that	O
 the	O
 Doha	I-LOC
-Round	O
+Round	I-MISC
 can	O
 be	O
 resumed	O
@@ -2100,9 +2099,9 @@ the	O
 scope	O
 of	O
 the	O
-World	O
-Trade	O
-Organization	O
+World	I-ORG
+Trade	I-ORG
+Organization	I-ORG
 ,	O
 with	O
 better	O
@@ -2114,14 +2113,14 @@ many	O
 parts	O
 of	O
 our	O
-Latin	O
+Latin	I-LOC
 America	I-LOC
 and	O
 in	O
 Peru	I-LOC
 ,	O
 republican	O
-States	I-LOC
+States	O
 were	O
 weak	O
 from	O
@@ -2179,7 +2178,8 @@ were	O
 different	O
 categories	O
 of	O
-Peruvians:	O
+Peruvians	I-MISC
+:	O
 those	O
 who	O
 received	O
@@ -2469,7 +2469,6 @@ stress	O
 the	O
 necessity	O
 of	O
-
 "	O
 including	O
 so	O
@@ -2477,7 +2476,6 @@ as	O
 to	O
 grow	O
 "	O
-
 .	O
 
 Two	O
@@ -2571,7 +2569,7 @@ one	O
 where	O
 all	O
 the	O
-Peruvians	O
+Peruvians	I-MISC
 ,	O
 women	O
 and	O

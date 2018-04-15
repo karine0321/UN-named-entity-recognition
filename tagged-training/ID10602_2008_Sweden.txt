@@ -13,14 +13,14 @@ norms	O
 The	O
 United	I-ORG
 Nations	I-ORG
-Charter	O
+Charter	I-MISC
 ,	O
 the	O
-Universal	O
+Universal	I-MISC
 Declaration	I-MISC
-of	O
-Human	O
-Rights	O
+of	I-MISC
+Human	I-MISC
+Rights	I-MISC
 and	O
 other	O
 key	O
@@ -62,7 +62,7 @@ apply	O
 equally	O
 to	O
 all	O
-States	I-LOC
+States	O
 ,	O
 large	O
 and	O
@@ -74,9 +74,8 @@ to	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Charter	O
+Charter	I-MISC
 ,	O
-
 "	O
 Members	O
 shall	O
@@ -88,9 +87,7 @@ by	O
 peaceful	O
 means	O
 "	O
-
 and	O
-
 "	O
 refrain	O
 …	O
@@ -112,9 +109,7 @@ of	O
 any	O
 State	O
 "	O
-
 .	O
-
 We	O
 look	O
 to	O
@@ -179,7 +174,7 @@ of	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Charter	O
+Charter	I-MISC
 .	O
 
 Russia	I-LOC
@@ -192,7 +187,7 @@ of	O
 Georgia	I-LOC
 as	O
 independent	O
-States	I-LOC
+States	O
 stands	O
 in	O
 stark	O
@@ -211,19 +206,19 @@ the	O
 context	O
 of	O
 the	O
-Organization	O
-for	O
+Organization	I-ORG
+for	I-ORG
 Security	I-ORG
-and	O
-Cooperation	O
+and	I-ORG
+Cooperation	I-ORG
 in	O
-Europe	O
+Europe	I-LOC
 ,	O
 including	O
 the	O
 Helsinki	I-LOC
-Final	O
-Act	O
+Final	I-MISC
+Act	I-MISC
 .	O
 
 Sweden	I-LOC
@@ -254,7 +249,7 @@ brokered	O
 by	O
 the	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 and	O
 to	O
 withdraw	O
@@ -279,11 +274,11 @@ the	O
 adoption	O
 of	O
 the	O
-Universal	O
+Universal	I-MISC
 Declaration	I-MISC
-of	O
-Human	O
-Rights	O
+of	I-MISC
+Human	I-MISC
+Rights	I-MISC
 .	O
 
 While	O
@@ -312,7 +307,6 @@ which	O
 reads	O
 in	O
 part:	O
-
 "	O
 Everyone	O
 has	O
@@ -335,7 +329,6 @@ freely	O
 chosen	O
 representatives	O
 "	O
-
 ,	O
 is	O
 a	O
@@ -392,7 +385,7 @@ efforts	O
 to	O
 make	O
 the	O
-Universal	O
+Universal	I-MISC
 Declaration	I-MISC
 and	O
 other	O
@@ -528,9 +521,9 @@ We	O
 must	O
 support	O
 the	O
-International	O
-Criminal	O
-Court	O
+International	I-ORG
+Criminal	I-ORG
+Court	I-ORG
 .	O
 
 Bringing	O
@@ -569,7 +562,7 @@ peace	O
 processes	O
 .	O
 
-States	I-LOC
+States	O
 have	O
 a	O
 responsibility	O
@@ -635,8 +628,8 @@ United	I-ORG
 Nations	I-ORG
 and	O
 the	O
-African	O
-Union	I-LOC
+African	I-ORG
+Union	I-ORG
 were	O
 able	O
 to	O
@@ -783,7 +776,9 @@ Security	I-ORG
 Council	I-ORG
 resolution	O
 1325	O
-(2000)	O
+(	0
+2000	0
+)	O
 on	O
 women	O
 and	O
@@ -798,7 +793,9 @@ Security	I-ORG
 Council	I-ORG
 resolution	O
 1820	O
-(2008)	O
+(	O
+2008	O
+)	O
 on	O
 sexual	O
 violence	O
@@ -866,7 +863,7 @@ Headquarters	O
 
 The	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 and	O
 the	O
 Council	I-ORG
@@ -878,7 +875,7 @@ established	O
 October	O
 as	O
 the	O
-European	I-ORG
+European	I-MISC
 Day	O
 against	O
 the	O
@@ -941,12 +938,12 @@ Recent	O
 developments	O
 in	O
 the	O
-Democratic	O
-People	O
-'s	O
-Republic	O
-of	O
-Korea	O
+Democratic	I-LOC
+People	I-LOC
+'s	I-LOC
+Republic	I-LOC
+of	I-LOC
+Korea	I-LOC
 also	O
 give	O
 cause	O
@@ -955,14 +952,16 @@ concern	O
 .	O
 
 The	O
-Treaty	O
-on	O
-the	O
-Non-Proliferation	O
-of	O
-Nuclear	O
-Weapons	O
-(NPT)	O
+Treaty	I-MISC
+on	I-MISC
+the	I-MISC
+Non-Proliferation	I-MISC
+of	I-MISC
+Nuclear	I-MISC
+Weapons	I-MISC
+(	O
+NPT	I-MISC
+)	O
 is	O
 the	O
 cornerstone	O
@@ -1006,7 +1005,7 @@ special	O
 commitments	O
 within	O
 the	O
-NPT	O
+NPT	I-MISC
 process	O
 .	O
 
@@ -1039,15 +1038,17 @@ needed	O
 in	O
 particular	O
 in	O
-Africa	O
+Africa	I-LOC
 ,	O
 to	O
 achieve	O
 the	O
-Millennium	O
+Millennium	I-MISC
 Development	I-MISC
 Goals	I-MISC
-(MDGs)	O
+(	O
+MDGs	I-MISC
+)	O
 by	O
 2015	O
 .	O
@@ -1060,7 +1061,7 @@ increasing	O
 its	O
 support	O
 to	O
-Africa	O
+Africa	I-LOC
 .	O
 
 We	O
@@ -1125,7 +1126,7 @@ the	O
 fulfilment	O
 of	O
 the	O
-MDGs	O
+MDGs	I-MISC
 and	O
 threaten	O
 progress	O
@@ -1138,7 +1139,7 @@ diseases	O
 ,	O
 not	O
 least	O
-HIV/AIDS	O
+HIV/AIDS	I-MISC
 ,	O
 are	O
 another	O
@@ -1148,7 +1149,7 @@ the	O
 achievement	O
 of	O
 the	O
-MDGs	O
+MDGs	I-MISC
 that	O
 we	O
 must	O
@@ -1305,11 +1306,11 @@ a	O
 breakthrough	O
 in	O
 the	O
-World	O
-Trade	O
-Organization	O
+World	I-ORG
+Trade	I-ORG
+Organization	I-ORG
 Doha	I-LOC
-Round	O
+Round	I-MISC
 .	O
 
 We	O
@@ -1404,13 +1405,13 @@ such	O
 as	O
 the	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 ,	O
-NATO	O
+NATO	I-ORG
 and	O
 the	O
-African	O
-Union	I-LOC
+African	I-ORG
+Union	I-ORG
 ,	O
 is	O
 essential	O
@@ -1440,8 +1441,8 @@ Burundi	I-LOC
 configuration	O
 of	O
 the	O
-Peacebuilding	O
-Commission	O
+Peacebuilding	I-ORG
+Commission	I-ORG
 ,	O
 we	O
 hope	O
@@ -1475,8 +1476,8 @@ review	O
 meeting	O
 of	O
 the	O
-International	O
-Compact	O
+International	I-MISC
+Compact	I-MISC
 with	O
 Iraq	I-LOC
 .	O
@@ -1614,7 +1615,7 @@ presidency	O
 of	O
 the	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 .	O
 
 In	O

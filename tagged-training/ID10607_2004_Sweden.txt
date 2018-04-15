@@ -17,8 +17,7 @@ Beslan	I-LOC
 Today	O
 alone	O
 ,	O
-1	O
-,700	O
+1,700	O
 children	O
 will	O
 be	O
@@ -27,7 +26,7 @@ marked	O
 by	O
 death	O
 from	O
-HIV/AIDS	O
+HIV/AIDS	I-MISC
 from	O
 their	O
 first	O
@@ -261,7 +260,7 @@ of	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Charter	O
+Charter	I-MISC
 remain	O
 as	O
 valid	O
@@ -376,14 +375,14 @@ the	O
 report	O
 of	O
 the	O
-High-Level	O
-Panel	O
-on	O
-Threats	O
-,	O
-Challenges	O
-and	O
-Change	O
+High-Level	I-MISC
+Panel	I-MISC
+on	I-MISC
+Threats	I-MISC
+,	I-MISC
+Challenges	I-MISC
+and	I-MISC
+Change	I-MISC
 .	O
 
 For	O
@@ -416,7 +415,7 @@ of	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Charter	O
+Charter	I-MISC
 ,	O
 a	O
 small	O
@@ -501,8 +500,8 @@ I	O
 hope	O
 that	O
 the	O
-High-Level	O
-Panel	O
+High-Level	I-MISC
+Panel	I-MISC
 will	O
 present	O
 a	O
@@ -522,7 +521,7 @@ seat	O
 for	O
 the	O
 European	I-ORG
-Union	I-LOC
+Union	I-ORG
 should	O
 not	O
 be	O
@@ -574,9 +573,9 @@ task	O
 .	O
 
 The	O
-Economic	O
-and	O
-Social	O
+Economic	I-ORG
+and	I-ORG
+Social	I-ORG
 Council	I-ORG
 must	O
 be	O
@@ -644,7 +643,7 @@ acute	O
 
 The	O
 nuclear-weapon	O
-States	I-LOC
+States	O
 must	O
 show	O
 real	O
@@ -748,7 +747,7 @@ lives	O
 .	O
 
 All	O
-States	I-LOC
+States	O
 must	O
 work	O
 together	O
@@ -799,7 +798,8 @@ me	O
 ,	O
 it	O
 is	O
-clear:	O
+clear	O
+:	O
 fanaticism	O
 and	O
 fundamentalism	O
@@ -895,7 +895,7 @@ equal	O
 ,	O
 so	O
 are	O
-States	I-LOC
+States	O
 ,	O
 big	O
 and	O
@@ -910,7 +910,7 @@ ultimate	O
 guarantee	O
 that	O
 all	O
-States	I-LOC
+States	O
 ,	O
 no	O
 matter	O
@@ -942,9 +942,9 @@ system	O
 The	O
 conflict	O
 between	O
-Israelis	O
+Israelis	I-MISC
 and	O
-Palestinians	O
+Palestinians	I-MISC
 continues	O
 to	O
 take	O
@@ -976,7 +976,7 @@ crucial	O
 
 On	O
 the	O
-Israeli	O
+Israeli	I-MISC
 side	O
 ,	O
 excessive	O
@@ -1045,8 +1045,8 @@ stop	O
 ,	O
 and	O
 the	O
-Palestinian	O
-Authority	O
+Palestinian	I-ORG
+Authority	I-ORG
 must	O
 do	O
 more	O
@@ -1061,7 +1061,7 @@ the	O
 vision	O
 of	O
 two	O
-States	I-LOC
+States	O
 —	O
 a	O
 viable	O
@@ -1093,10 +1093,14 @@ Security	I-ORG
 Council	I-ORG
 resolutions	O
 242	O
-(1967)	O
+(	O
+1967	O
+)	O
 and	O
 338	O
-(1973)	O
+(	O
+1973	O
+)	O
 —	O
 the	O
 parties	O
@@ -1142,7 +1146,7 @@ community	O
 should	O
 give	O
 the	O
-Iraqi	O
+Iraqi	I-MISC
 people	O
 all	O
 necessary	O
@@ -1297,8 +1301,8 @@ late	O
 Swedish	O
 Prime	O
 Minister	O
-Olof	O
-Palme	O
+Olof	I-PER
+Palme	I-PER
 used	O
 to	O
 say	O
@@ -1310,7 +1314,6 @@ meaningful	O
 to	O
 talk	O
 about	O
-
 "	O
 my	O
 children	O
@@ -1318,7 +1321,6 @@ and	O
 your	O
 children	O
 "	O
-
 ;	O
 it	O
 is	O
@@ -1358,7 +1360,9 @@ Security	I-ORG
 Council	I-ORG
 resolution	O
 1325	O
-(2000)	O
+(	O
+2000	O
+)	O
 on	O
 women	O
 ,	O
@@ -1412,7 +1416,7 @@ are	O
 set	O
 up	O
 in	O
-Africa	O
+Africa	I-LOC
 .	O
 
 While	O
@@ -1431,7 +1435,7 @@ on	O
 the	O
 continent	O
 ,	O
-Africa	O
+Africa	I-LOC
 today	O
 brings	O
 hope	O
@@ -1447,21 +1451,23 @@ challenges	O
 .	O
 
 President	O
-Thabo	O
-Mbeki	O
+Thabo	I-PER
+Mbeki	I-PER
 showed	O
 the	O
 way	O
 with	O
 his	O
 bold	O
-New	I-LOC
-Partnership	O
-for	O
-Africa	O
-'s	O
-Development	I-MISC
-(NEPAD)	O
+New	I-ORG
+Partnership	I-ORG
+for	I-ORG
+Africa	I-ORG
+'s	I-ORG
+Development	I-ORG
+(	O
+NEPAD	I-ORG
+)	O
 initiative	O
 .	O
 
@@ -1472,8 +1478,8 @@ the	O
 creation	O
 of	O
 the	O
-African	O
-Union	I-LOC
+African	I-ORG
+Union	I-ORG
 ,	O
 which	O
 is	O
@@ -1534,9 +1540,9 @@ the	O
 creation	O
 of	O
 the	O
-International	O
-Criminal	O
-Court	O
+International	I-ORG
+Criminal	I-ORG
+Court	I-ORG
 .	O
 
 I	O
@@ -1554,7 +1560,7 @@ referring	O
 matters	O
 to	O
 the	O
-Court	O
+Court	I-ORG
 .	O
 
 Sovereignty	O
@@ -1580,9 +1586,9 @@ responsibility	O
 
 At	O
 the	O
-Stockholm	I-LOC
-International	O
-Forum	O
+Stockholm	I-ORG
+International	I-ORG
+Forum	I-ORG
 on	O
 the	O
 prevention	O
@@ -1669,14 +1675,16 @@ resolution	O
 ,	O
 resolution	O
 1564	O
-(2004)	O
+(	O
+2004	O
+)	O
 ,	O
 on	O
 the	O
 terrible	O
 tragedy	O
 in	O
-Darfur	O
+Darfur	I-LOC
 is	O
 a	O
 necessary	O
@@ -1726,8 +1734,8 @@ the	O
 Secretary-General	O
 of	O
 Professor	O
-Juan	O
-Méndez	O
+Juan	I-PER
+Méndez	I-PER
 as	O
 his	O
 Special	O
@@ -1816,7 +1824,7 @@ Millennium	O
 Declaration	I-MISC
 and	O
 the	O
-Millennium	O
+Millennium	I-MISC
 Development	I-MISC
 Goals	I-MISC
 are	O
@@ -2062,7 +2070,7 @@ the	O
 implementation	O
 of	O
 the	O
-Millennium	O
+Millennium	I-MISC
 Declaration	I-MISC
 .	O
 

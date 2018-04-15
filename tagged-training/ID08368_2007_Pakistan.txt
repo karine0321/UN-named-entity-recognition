@@ -61,9 +61,9 @@ predecessor	O
 Her	O
 Excellency	O
 Sheikha	O
-Haya	O
-Rashed	O
-Al-Khalifa	O
+Haya	I-PER
+Rashed	I-PER
+Al-Khalifa	I-PER
 ,	O
 during	O
 her	O
@@ -84,7 +84,7 @@ are	O
 playing	O
 in	O
 the	O
-Muslim	O
+Muslim	I-MISC
 world	O
 .	O
 
@@ -97,8 +97,8 @@ high	O
 appreciation	O
 to	O
 Mr.	O
-Ban	O
-Ki-moon	O
+Ban	I-PER
+Ki-moon	I-PER
 for	O
 the	O
 distinctive	O
@@ -278,11 +278,11 @@ Afghanistan	I-LOC
 .	O
 
 In	O
-South	O
+South	I-LOC
 Asia	I-LOC
 ,	O
 the	O
-Kashmir	O
+Kashmir	I-LOC
 dispute	O
 is	O
 yet	O
@@ -433,12 +433,12 @@ the	O
 West	O
 and	O
 the	O
-Islamic	O
+Islamic	I-MISC
 world	O
 .	O
 
 Tolerating	O
-Islamophobia	O
+Islamophobia	I-MISC
 in	O
 the	O
 guise	O
@@ -479,9 +479,9 @@ such	O
 initiatives	O
 as	O
 the	O
-Alliance	I-LOC
-of	O
-Civilizations	O
+Alliance	I-MISC
+of	I-MISC
+Civilizations	I-MISC
 ,	O
 interfaith	O
 dialogue	O
@@ -495,14 +495,14 @@ and	O
 violence	O
 in	O
 the	O
-Middle	O
-East	O
+Middle	I-LOC
+East	I-LOC
 are	O
 fundamentally	O
 linked	O
 to	O
 the	O
-Palestinian	O
+Palestinian	I-MISC
 issue	O
 that	O
 has	O
@@ -510,9 +510,9 @@ agitated	O
 two	O
 generations	O
 of	O
-Palestinians	O
+Palestinians	I-MISC
 and	O
-Muslims	O
+Muslims	I-MISC
 around	O
 the	O
 world	O
@@ -528,14 +528,14 @@ of	O
 freedom	O
 .	O
 
-Security	I-ORG
+Security	O
 cannot	O
 be	O
 ensured	O
 by	O
 denying	O
 the	O
-Palestinians	O
+Palestinians	I-MISC
 their	O
 freedom	O
 .	O
@@ -545,7 +545,7 @@ lies	O
 in	O
 what	O
 the	O
-Arab	O
+Arab	I-MISC
 nations	O
 proposed	O
 in	O
@@ -573,7 +573,7 @@ the	O
 tragedy	O
 of	O
 the	O
-Palestinian	O
+Palestinian	I-MISC
 people	O
 by	O
 enabling	O
@@ -592,13 +592,17 @@ Security	I-ORG
 Council	I-ORG
 resolutions	O
 242	O
-(1967)	O
+(	O
+1967	O
+)	O
 and	O
 338	O
-(1973)	O
+(	0
+1973	0
+)	O
 and	O
 the	O
-Arab	O
+Arab	I-MISC
 peace	O
 plan	O
 .	O
@@ -611,7 +615,7 @@ from	O
 the	O
 other	O
 occupied	O
-Arab	O
+Arab	I-MISC
 territories	O
 and	O
 fully	O
@@ -683,7 +687,7 @@ vital	O
 both	O
 for	O
 the	O
-Iraqi	O
+Iraqi	I-MISC
 people	O
 and	O
 for	O
@@ -879,7 +883,7 @@ Afghanistan	I-LOC
 We	O
 are	O
 fighting	O
-Al-Qaida	O
+Al-Qaida	I-ORG
 and	O
 other	O
 terrorist	O
@@ -894,8 +898,7 @@ We	O
 have	O
 deployed	O
 nearly	O
-100	O
-,000	O
+100,000	O
 troops	O
 for	O
 that	O
@@ -1042,7 +1045,7 @@ that	O
 could	O
 help	O
 the	O
-Afghans	O
+Afghans	I-MISC
 to	O
 achieve	O
 national	O
@@ -1057,8 +1060,8 @@ country	O
 The	O
 recently	O
 convened	O
-Grand	O
-Jirga	O
+Grand	I-ORG
+Jirga	I-ORG
 in	O
 Kabul	I-LOC
 offers	O
@@ -1113,8 +1116,8 @@ help	O
 Afghanistan	I-LOC
 with	O
 a	O
-Marshall	I-LOC
-Plan-like	O
+Marshall	I-MISC
+Plan-like	I-MISC
 programme	O
 for	O
 reconstruction	O
@@ -1164,7 +1167,7 @@ especially	O
 the	O
 Jammu	I-LOC
 and	O
-Kashmir	O
+Kashmir	I-LOC
 dispute	O
 that	O
 has	O
@@ -1177,7 +1180,7 @@ conflict	O
 and	O
 tension	O
 in	O
-South	O
+South	I-LOC
 Asia	I-LOC
 .	O
 
@@ -1220,12 +1223,12 @@ people	O
 of	O
 Jammu	I-LOC
 and	O
-Kashmir	O
+Kashmir	I-LOC
 .	O
 
 President	O
-Pervez	O
-Musharraf	O
+Pervez	I-PER
+Musharraf	I-PER
 has	O
 offered	O
 important	O
@@ -1235,7 +1238,7 @@ have	O
 resonated	O
 with	O
 the	O
-Kashmiri	O
+Kashmiri	I-MISC
 people	O
 ,	O
 who	O
@@ -1265,7 +1268,7 @@ human	O
 rights	O
 violations	O
 in	O
-Kashmir	O
+Kashmir	I-LOC
 if	O
 there	O
 is	O
@@ -1286,7 +1289,7 @@ the	O
 aspirations	O
 of	O
 the	O
-Kashmiri	O
+Kashmiri	I-MISC
 people	O
 will	O
 usher	O
@@ -1300,7 +1303,7 @@ trust	O
 and	O
 cooperation	O
 in	O
-South	O
+South	I-LOC
 Asia	I-LOC
 .	O
 
@@ -1310,8 +1313,10 @@ region	O
 ,	O
 the	O
 incipient	O
-United	I-ORG
-States-India	O
+United	I-LOC
+States	I-LOC
+-	0
+India	I-LOC
 nuclear	O
 deal	O
 injects	O
@@ -1340,7 +1345,7 @@ an	O
 arms	O
 race	O
 in	O
-South	O
+South	I-LOC
 Asia	I-LOC
 .	O
 
@@ -1394,7 +1399,7 @@ disrupted	O
 by	O
 the	O
 first	O
-Indian	O
+Indian	I-MISC
 nuclear	O
 test	O
 .	O
@@ -1403,7 +1408,7 @@ Our	O
 initiatives	O
 to	O
 keep	O
-South	O
+South	I-LOC
 Asia	I-LOC
 free	O
 of	O
@@ -1431,7 +1436,7 @@ to	O
 respond	O
 to	O
 the	O
-Indian	O
+Indian	I-MISC
 tests	O
 to	O
 establish	O
@@ -1515,7 +1520,7 @@ capability	O
 against	O
 non-nuclear	O
 weapon	O
-States	I-LOC
+States	O
 .	O
 
 We	O
@@ -1608,18 +1613,20 @@ disarmament	O
 by	O
 the	O
 nuclear-weapon	O
-States	I-LOC
+States	O
 signatories	O
 to	O
 the	O
-Treaty	O
-on	O
-the	O
-Non-Proliferation	O
-of	O
-Nuclear	O
-Weapons	O
-(NPT)	O
+Treaty	I-MISC
+on	I-MISC
+the	I-MISC
+Non-Proliferation	I-MISC
+of	I-MISC
+Nuclear	I-MISC
+Weapons	I-MISC
+(	O
+NPT	I-MISC
+)	O
 ;	O
 the	O
 emergence	O
@@ -1627,12 +1634,12 @@ of	O
 de	O
 facto	O
 nuclear-weapon	O
-States	I-LOC
+States	O
 not	O
 parties	O
 to	O
 the	O
-NPT	O
+NPT	I-MISC
 ;	O
 the	O
 failure	O
@@ -1642,9 +1649,8 @@ the	O
 security	O
 concerns	O
 of	O
-non-nuclear-	O
-weapon	O
-States	I-LOC
+non-nuclear-weapon	O
+States	O
 ;	O
 and	O
 discrimination	O
@@ -1696,10 +1702,10 @@ coming	O
 months	O
 ,	O
 the	O
-Nuclear	O
-Suppliers	O
-Group	O
-States	I-LOC
+Nuclear	I-MISC
+Suppliers	I-MISC
+Group	I-MISC
+States	I-MISC
 have	O
 a	O
 heavy	O
@@ -1975,7 +1981,7 @@ the	O
 realization	O
 of	O
 the	O
-Millennium	O
+Millennium	I-MISC
 Development	I-MISC
 Goals	I-MISC
 and	O
@@ -1994,9 +2000,9 @@ current	O
 Chair	O
 of	O
 the	O
-Group	O
-of	O
-77	O
+Group	I-MISC
+of	I-MISC
+77	I-MISC
 and	O
 China	I-LOC
 ,	O
@@ -2026,9 +2032,9 @@ mandate	O
 adopted	O
 at	O
 the	O
-Second	O
-South	O
-Summit	I-LOC
+Second	I-MISC
+South	I-MISC
+Summit	I-MISC
 ,	O
 we	O
 will	O
@@ -2070,7 +2076,7 @@ that	O
 the	O
 management	O
 and	O
-Secretariat	O
+Secretariat	I-ORG
 of	O
 the	O
 United	I-ORG
@@ -2095,8 +2101,8 @@ system	O
 
 Prime	O
 Minister	O
-Shaukat	O
-Aziz	O
+Shaukat	I-PER
+Aziz	I-PER
 is	O
 the	O
 Co-Chair	O
@@ -2129,7 +2135,7 @@ the	O
 sovereign	O
 equality	O
 of	O
-States	I-LOC
+States	O
 in	O
 the	O
 decision-	O
@@ -2162,7 +2168,7 @@ representation	O
 of	O
 all	O
 Member	O
-States	I-LOC
+States	O
 rather	O
 than	O
 expand	O
@@ -2191,7 +2197,7 @@ do	O
 not	O
 eclipse	O
 the	O
-Charter	O
+Charter	I-MISC
 responsibilities	O
 of	O
 the	O
@@ -2257,7 +2263,7 @@ for	O
 a	O
 modern	O
 progressive	O
-Islamic	O
+Islamic	I-MISC
 state	O
 .	O
 
@@ -2271,7 +2277,7 @@ the	O
 Government	O
 of	O
 President	O
-Musharraf	O
+Musharraf	I-PER
 for	O
 setting	O
 priorities	O

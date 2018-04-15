@@ -1,8 +1,8 @@
 Kuwait	I-LOC
 congratulates	O
 Mr.	O
-Srgjan	O
-Kerim	O
+Srgjan	I-PER
+Kerim	I-PER
 upon	O
 his	O
 election	O
@@ -31,9 +31,9 @@ predecessor	O
 Her	O
 Excellency	O
 Sheikha	O
-Haya	O
-Rashed	O
-Al-Khalifa	O
+Haya	I-PER
+Rashed	I-PER
+Al-Khalifa	I-PER
 ,	O
 and	O
 her	O
@@ -59,15 +59,15 @@ elapsed	O
 since	O
 the	O
 2005	O
-World	O
-Summit	I-LOC
+World	I-MISC
+Summit	I-MISC
 and	O
 seven	O
 years	O
 since	O
 the	O
-Millennium	O
-Summit	I-LOC
+Millennium	I-MISC
+Summit	I-MISC
 ,	O
 we	O
 continue	O
@@ -97,7 +97,7 @@ dangerous	O
 infectious	O
 diseases	O
 like	O
-HIV/AIDS	O
+HIV/AIDS	I-MISC
 and	O
 malaria	O
 ,	O
@@ -130,25 +130,25 @@ the	O
 establishment	O
 of	O
 the	O
-Peacebuilding	O
-Commission	O
+Peacebuilding	I-ORG
+Commission	I-ORG
 ,	O
 the	O
-Human	O
-Rights	O
+Human	I-ORG
+Rights	I-ORG
 Council	I-ORG
 ,	O
 the	O
-Central	I-LOC
-Emergency	O
-Response	O
-Fund	O
+Central	I-MISC
+Emergency	I-MISC
+Response	I-MISC
+Fund	I-MISC
 and	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Democracy	O
-Fund	O
+Democracy	I-MISC
+Fund	I-MISC
 ,	O
 and	O
 the	O
@@ -163,7 +163,7 @@ the	O
 work	O
 of	O
 the	O
-Secretariat	O
+Secretariat	I-ORG
 .	O
 
 These	O
@@ -235,7 +235,7 @@ security	O
 .	O
 
 The	O
-Organization	O
+Organization	I-ORG
 must	O
 be	O
 strong	O
@@ -332,8 +332,8 @@ resolutions	O
 of	O
 the	O
 2005	O
-World	O
-Summit	I-LOC
+World	I-MISC
+Summit	I-MISC
 into	O
 tangible	O
 realities	O
@@ -344,7 +344,7 @@ has	O
 also	O
 attained	O
 the	O
-Millennium	O
+Millennium	I-MISC
 Development	I-MISC
 Goals	I-MISC
 ,	O
@@ -465,8 +465,8 @@ the	O
 Kuwait	I-LOC
 Fund	O
 for	O
-Arab	O
-Economic	O
+Arab	I-MISC
+Economic	I-MISC
 Development	I-MISC
 ,	O
 which	O
@@ -543,16 +543,16 @@ $300	O
 million	O
 to	O
 the	O
-Islamic	O
-Development	I-MISC
-Bank	O
+Islamic	I-ORG
+Development	I-ORG
+Bank	I-ORG
 for	O
 the	O
 elimination	O
 of	O
 poverty	O
 in	O
-Africa	O
+Africa	I-LOC
 .	O
 
 That	O
@@ -648,13 +648,13 @@ Kuwait	I-LOC
 calls	O
 upon	O
 the	O
-World	O
-Trade	O
-Organization	O
+World	I-ORG
+Trade	I-ORG
+Organization	I-ORG
 and	O
 the	O
-Bretton	O
-Woods	O
+Bretton	I-LOC
+Woods	I-LOC
 institutions	O
 to	O
 ease	O
@@ -739,7 +739,7 @@ with	O
 the	O
 participation	O
 of	O
-Iraqi	O
+Iraqi	I-MISC
 security	O
 forces	O
 .	O
@@ -804,7 +804,7 @@ our	O
 hope	O
 that	O
 the	O
-Iraqi	O
+Iraqi	I-MISC
 Government	O
 's	O
 efforts	O
@@ -843,7 +843,7 @@ all	O
 sectors	O
 of	O
 the	O
-Iraqi	O
+Iraqi	I-MISC
 people	O
 .	O
 
@@ -896,7 +896,9 @@ Security	I-ORG
 Council	I-ORG
 resolution	O
 1770	O
-(2007)	O
+(	0
+2007	O
+)	O
 ,	O
 which	O
 consolidated	O
@@ -909,8 +911,8 @@ of	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Assistance	O
-Mission	I-LOC
+Assistance	I-ORG
+Mission	I-ORG
 for	O
 Iraq	I-LOC
 .	O
@@ -941,8 +943,8 @@ the	O
 context	O
 of	O
 the	O
-International	O
-Compact	O
+International	I-MISC
+Compact	I-MISC
 with	O
 Iraq	I-LOC
 .	O
@@ -956,7 +958,7 @@ of	O
 the	O
 three	O
 occupied	O
-Emirati	O
+Emirati	I-MISC
 islands	O
 ,	O
 Kuwait	I-LOC
@@ -971,8 +973,8 @@ the	O
 position	O
 of	O
 the	O
-Gulf	O
-Cooperation	O
+Gulf	I-ORG
+Cooperation	I-ORG
 Council	I-ORG
 on	O
 this	O
@@ -993,15 +995,15 @@ intensify	O
 between	O
 the	O
 sisterly	O
-United	I-ORG
-Arab	O
-Emirates	O
+United	I-LOC
+Arab	I-LOC
+Emirates	I-LOC
 and	O
 the	O
 friendly	O
-Islamic	O
-Republic	O
-of	O
+Islamic	I-LOC
+Republic	I-LOC
+of	I-LOC
 Iran	I-LOC
 in	O
 order	O
@@ -1039,8 +1041,8 @@ region	O
 .	O
 
 The	O
-Middle	O
-East	O
+Middle	I-LOC
+East	I-LOC
 crisis	O
 has	O
 been	O
@@ -1058,7 +1060,7 @@ The	O
 plight	O
 of	O
 the	O
-Palestinian	O
+Palestinian	I-MISC
 people	O
 continues:	O
 their	O
@@ -1086,14 +1088,14 @@ efforts	O
 to	O
 revive	O
 the	O
-Middle	O
-East	O
+Middle	I-LOC
+East	I-LOC
 peace	O
 process	O
 .	O
 
 The	O
-Israeli	O
+Israeli	I-MISC
 Government	O
 ,	O
 instead	O
@@ -1211,7 +1213,7 @@ the	O
 security	O
 of	O
 the	O
-Palestinian	O
+Palestinian	I-MISC
 people	O
 is	O
 making	O
@@ -1283,7 +1285,7 @@ reference	O
 of	O
 the	O
 Madrid	I-LOC
-Conference	O
+Conference	I-MISC
 —	O
 including	O
 the	O
@@ -1293,10 +1295,14 @@ Security	I-ORG
 Council	I-ORG
 resolutions	O
 242	O
-(1967)	O
+(	O
+1967	O
+)	O
 and	O
 338	O
-(1973)	O
+(	O
+1973	0
+)	O
 —	O
 the	O
 principle	O
@@ -1306,8 +1312,8 @@ for	O
 peace	O
 ,	O
 the	O
-Road	O
-Map	O
+Road	I-MISC
+Map	I-MISC
 endorsed	O
 by	O
 the	O
@@ -1317,12 +1323,14 @@ in	O
 its	O
 resolution	O
 1515	O
-(2003)	O
+(	O
+2003	O
+)	O
 and	O
 the	O
-Arab	O
-Peace	O
-Initiative	O
+Arab	I-MISC
+Peace	I-MISC
+Initiative	I-MISC
 .	O
 
 The	O
@@ -1343,7 +1351,7 @@ must	O
 ensure	O
 that	O
 the	O
-Palestinian	O
+Palestinian	I-MISC
 people	O
 attain	O
 all	O
@@ -1384,7 +1392,7 @@ withdrawal	O
 from	O
 all	O
 the	O
-Arab	O
+Arab	I-MISC
 land	O
 occupied	O
 since	O
@@ -1392,9 +1400,9 @@ since	O
 ,	O
 including	O
 the	O
-Syrian	O
-Golan	O
-Heights	O
+Syrian	I-MISC
+Golan	I-LOC
+Heights	I-LOC
 .	O
 
 Turning	O
@@ -1404,7 +1412,7 @@ Lebanon	I-LOC
 we	O
 congratulate	O
 the	O
-Lebanese	O
+Lebanese	I-MISC
 Government	O
 on	O
 its	O
@@ -1416,8 +1424,8 @@ decisive	O
 end	O
 to	O
 the	O
-Nahr	O
-Al-Bared	O
+Nahr	I-PER
+Al-Bared	I-PER
 sedition	O
 .	O
 
@@ -1431,7 +1439,7 @@ our	O
 gratitude	O
 to	O
 the	O
-Lebanese	O
+Lebanese	I-MISC
 army	O
 ,	O
 which	O
@@ -1456,7 +1464,7 @@ the	O
 return	O
 of	O
 all	O
-Lebanese	O
+Lebanese	I-MISC
 parties	O
 to	O
 the	O
@@ -1467,7 +1475,7 @@ the	O
 resumption	O
 of	O
 a	O
-Lebanese	O
+Lebanese	I-MISC
 national	O
 dialogue	O
 to	O
@@ -1503,7 +1511,7 @@ national	O
 reconciliation	O
 among	O
 all	O
-Lebanese	O
+Lebanese	I-MISC
 parties	O
 ,	O
 we	O
@@ -1564,7 +1572,7 @@ for	O
 developments	O
 on	O
 the	O
-Iranian	O
+Iranian	I-MISC
 nuclear	O
 issue	O
 ,	O
@@ -1629,7 +1637,7 @@ and	O
 stability	O
 of	O
 the	O
-Gulf	O
+Gulf	I-LOC
 region	O
 .	O
 
@@ -1642,17 +1650,19 @@ agreement	O
 reached	O
 between	O
 the	O
-Islamic	O
-Republic	O
-of	O
+Islamic	I-LOC
+Republic	I-LOC
+of	I-LOC
 Iran	I-LOC
 and	O
 the	O
-International	O
-Atomic	O
-Energy	O
-Agency	O
-(IAEA)	O
+International	I-ORG
+Atomic	I-ORG
+Energy	I-ORG
+Agency	I-ORG
+(	O
+IAEA	I-ORG
+)	O
 as	O
 an	O
 important	O
@@ -1664,7 +1674,7 @@ and	O
 doubts	O
 surrounding	O
 the	O
-Iranian	O
+Iranian	I-MISC
 nuclear	O
 programme	O
 .	O
@@ -1707,8 +1717,8 @@ conducive	O
 to	O
 making	O
 the	O
-Middle	O
-East	O
+Middle	I-LOC
+East	I-LOC
 a	O
 zone	O
 free	O
@@ -1742,13 +1752,13 @@ Israel	I-LOC
 to	O
 join	O
 the	O
-Treaty	O
-on	O
-the	O
-Non-Proliferation	O
-of	O
-Nuclear	O
-Weapons	O
+Treaty	I-MISC
+on	I-MISC
+the	I-MISC
+Non-Proliferation	I-MISC
+of	I-MISC
+Nuclear	I-MISC
+Weapons	I-MISC
 and	O
 to	O
 place	O
@@ -1758,7 +1768,7 @@ its	O
 nuclear	O
 facilities	O
 under	O
-IAEA	O
+IAEA	I-ORG
 safeguards	O
 .	O
 
@@ -1769,7 +1779,7 @@ right	O
 of	O
 all	O
 the	O
-States	I-LOC
+States	O
 of	O
 the	O
 region	O

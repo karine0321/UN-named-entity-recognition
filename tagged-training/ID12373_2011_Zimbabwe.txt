@@ -8,7 +8,7 @@ opportunity	O
 to	O
 congratulate	O
 Mr.	O
-Al-Nasser	O
+Al-Nasser	I-PER
 on	O
 his	O
 election	O
@@ -62,8 +62,8 @@ his	O
 predecessor	O
 ,	O
 Mr.	O
-Joseph	O
-Deiss	O
+Joseph	I-PER
+Deiss	I-PER
 ,	O
 for	O
 having	O
@@ -89,8 +89,8 @@ the	O
 Secretary-General	O
 ,	O
 Mr.	O
-Ban	O
-Ki-moon	O
+Ban	I-PER
+Ki-moon	I-PER
 ,	O
 on	O
 his	O
@@ -166,13 +166,13 @@ the	O
 equality	O
 of	O
 sovereign	O
-States	I-LOC
+States	O
 as	O
 enshrined	O
 in	O
 the	O
 founding	O
-Charter	O
+Charter	I-MISC
 .	O
 
 I	O
@@ -184,9 +184,9 @@ heartfelt	O
 congratulations	O
 to	O
 the	O
-Republic	O
-of	O
-South	O
+Republic	I-LOC
+of	I-LOC
+South	I-LOC
 Sudan	I-LOC
 on	O
 its	O
@@ -262,7 +262,6 @@ end	O
 
 The	O
 theme	O
-
 "	O
 The	O
 role	O
@@ -277,7 +276,6 @@ by	O
 peaceful	O
 means	O
 "	O
-
 is	O
 most	O
 apt	O
@@ -335,7 +333,7 @@ principles	O
 upon	O
 which	O
 the	O
-Charter	O
+Charter	I-MISC
 of	O
 the	O
 United	I-ORG
@@ -405,8 +403,8 @@ position	O
 with	O
 regard	O
 to	O
-NATO	O
-States	I-LOC
+NATO	I-ORG
+States	O
 versus	O
 Libya	I-LOC
 .	O
@@ -457,7 +455,7 @@ Chapter	O
 VII	O
 of	O
 the	O
-Charter	O
+Charter	I-MISC
 ,	O
 with	O
 a	O
@@ -473,7 +471,7 @@ the	O
 mandate	O
 originally	O
 given	O
-NATO	O
+NATO	I-ORG
 to	O
 oversee	O
 and	O
@@ -554,13 +552,13 @@ prosperity	O
 in	O
 that	O
 sister	O
-African	O
+African	I-MISC
 country	O
 .	O
 
 Our	O
-African	O
-Union	I-LOC
+African	I-ORG
+Union	I-ORG
 would	O
 never	O
 have	O
@@ -577,7 +575,7 @@ of	O
 Libya	I-LOC
 ,	O
 as	O
-NATO	O
+NATO	I-ORG
 countries	O
 have	O
 illegally	O
@@ -600,8 +598,8 @@ very	O
 least	O
 ,	O
 the	O
-African	O
-Union	I-LOC
+African	I-ORG
+Union	I-ORG
 would	O
 have	O
 wished	O
@@ -626,8 +624,8 @@ Libya	I-LOC
 .	O
 
 The	O
-African	O
-Union	I-LOC
+African	I-ORG
+Union	I-ORG
 was	O
 and	O
 remains	O
@@ -698,7 +696,7 @@ principle	O
 enshrined	O
 in	O
 the	O
-Charter	O
+Charter	I-MISC
 of	O
 non-interference	O
 in	O
@@ -706,7 +704,7 @@ the	O
 domestic	O
 affairs	O
 of	O
-States	I-LOC
+States	O
 ,	O
 because	O
 to	O
@@ -751,7 +749,7 @@ Indeed	O
 more	O
 than	O
 other	O
-States	I-LOC
+States	O
 ,	O
 all	O
 five	O
@@ -782,7 +780,7 @@ protect	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Charter	O
+Charter	I-MISC
 than	O
 to	O
 breach	O
@@ -804,14 +802,14 @@ brutal	O
 callous	O
 and	O
 murderous	O
-NATO	O
+NATO	I-ORG
 bombings	O
 .	O
 
 There	O
 we	O
 see	O
-NATO	O
+NATO	I-ORG
 bombing	O
 places	O
 ,	O
@@ -824,7 +822,7 @@ hounding	O
 the	O
 children	O
 of	O
-Al-Qadhafi	O
+Al-Qadhafi	I-PER
 .	O
 
 Have	O
@@ -890,14 +888,13 @@ oil	O
 After	O
 more	O
 than	O
-20	O
-,000	O
-NATO	O
+20,000	O
+NATO	I-ORG
 bombing	O
 sorties	O
 that	O
 targeted	O
-Libyan	O
+Libyan	I-MISC
 towns	O
 ,	O
 including	O
@@ -914,10 +911,10 @@ disgraceful	O
 scramble	O
 by	O
 some	O
-NATO	O
+NATO	I-ORG
 countries	O
 for	O
-Libyan	O
+Libyan	I-MISC
 oil	O
 ,	O
 indicating	O
@@ -982,7 +979,7 @@ time	O
 it	O
 is	O
 the	O
-NATO	O
+NATO	I-ORG
 countries	O
 that	O
 are	O
@@ -1003,7 +1000,7 @@ of	O
 civilian	O
 lives	O
 by	O
-Al-Qadhafi	O
+Al-Qadhafi	I-PER
 .	O
 
 When	O
@@ -1101,15 +1098,17 @@ them	O
 We	O
 thank	O
 the	O
-Southern	O
-Africa	O
-Development	I-MISC
-Community	O
-(SADC)	O
+Southern	I-ORG
+Africa	I-ORG
+Development	I-ORG
+Community	I-ORG
+(	O
+SADC	I-ORG
+)	O
 and	O
 the	O
-African	O
-Union	I-LOC
+African	I-ORG
+Union	I-ORG
 for	O
 supporting	O
 us	O
@@ -1126,7 +1125,7 @@ sanctions	O
 
 We	O
 in	O
-Africa	O
+Africa	I-LOC
 are	O
 also	O
 duly	O
@@ -1136,10 +1135,12 @@ the	O
 activities	O
 of	O
 the	O
-International	O
-Criminal	O
-Court	O
-(ICC)	O
+International	I-ORG
+Criminal	I-ORG
+Court	I-ORG
+(	O
+ICC	I-ORG
+)	O
 ,	O
 which	O
 seems	O
@@ -1158,7 +1159,7 @@ the	O
 majority	O
 of	O
 them	O
-Africans	O
+Africans	I-MISC
 .	O
 
 A	O
@@ -1173,7 +1174,7 @@ of	O
 the	O
 powerful	O
 Western	O
-States	I-LOC
+States	O
 guilty	O
 of	O
 international	O
@@ -1181,9 +1182,9 @@ crimes	O
 ,	O
 such	O
 as	O
-Bush	O
+Bush	I-PER
 and	O
-Blair	O
+Blair	I-PER
 .	O
 
 Such	O
@@ -1195,10 +1196,10 @@ the	O
 credibility	O
 of	O
 the	O
-ICC	O
+ICC	I-ORG
 on	O
 the	O
-African	O
+African	I-MISC
 continent	O
 .	O
 
@@ -1233,7 +1234,7 @@ as	O
 well	O
 .	O
 
-Africa	O
+Africa	I-LOC
 's	O
 call	O
 for	O
@@ -1256,7 +1257,7 @@ for	O
 decades	O
 .	O
 
-Africa	O
+Africa	I-LOC
 cannot	O
 remain	O
 the	O
@@ -1335,7 +1336,7 @@ world	O
 to	O
 achieve	O
 the	O
-Millennium	O
+Millennium	I-MISC
 Development	I-MISC
 Goals	I-MISC
 .	O
@@ -1352,8 +1353,8 @@ Durban	I-LOC
 Declaration	I-MISC
 and	O
 Programme	I-MISC
-of	O
-Action	O
+of	I-MISC
+Action	I-MISC
 against	O
 racism	O
 ,	O
@@ -1451,10 +1452,10 @@ tormented	O
 people	O
 of	O
 the	O
-Sahrawi	O
-Arab	O
-Democratic	O
-Republic	O
+Sahrawi	I-LOC
+Arab	I-LOC
+Democratic	I-LOC
+Republic	I-LOC
 must	O
 not	O
 be	O
@@ -1487,11 +1488,11 @@ to	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Framework	O
-Convention	O
-on	O
-Climate	O
-Change	O
+Framework	I-MISC
+Convention	I-MISC
+on	I-MISC
+Climate	I-MISC
+Change	I-MISC
 ,	O
 to	O
 be	O
@@ -1530,7 +1531,7 @@ existence	O
 of	O
 small	O
 island	O
-States	I-LOC
+States	O
 in	O
 particular	O
 ,	O
@@ -1570,7 +1571,7 @@ aspirations	O
 enshrined	O
 in	O
 the	O
-Charter	O
+Charter	I-MISC
 of	O
 the	O
 United	I-ORG
@@ -1602,7 +1603,7 @@ My	O
 country	O
 celebrates	O
 the	O
-UN-Women	O
+UN-Women	I-MISC
 entity	O
 ,	O
 as	O
@@ -1623,8 +1624,8 @@ countries	O
 .	O
 
 The	O
-African	O
-Union	I-LOC
+African	I-ORG
+Union	I-ORG
 must	O
 not	O
 be	O
@@ -1660,24 +1661,23 @@ peaceful	O
 member	O
 of	O
 the	O
-African	O
-Union	I-LOC
+African	I-ORG
+Union	I-ORG
 ,	O
-SADC	O
+SADC	I-ORG
 ,	O
 the	O
-Common	O
-Market	O
+Common	I-ORG
+Market	I-ORG
 for	O
 Eastern	O
 and	O
 Southern	O
-Africa	O
+Africa	I-LOC
 ,	O
 the	O
-Non-	O
-Aligned	O
-Movement	O
+Non-Aligned	I-ORG
+Movement	I-ORG
 and	O
 many	O
 other	O

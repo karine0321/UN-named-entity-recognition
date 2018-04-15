@@ -7,9 +7,9 @@ wish	O
 to	O
 congratulate	O
 Sheikha	O
-Haya	O
-Rashed	O
-Al-Khalifa	O
+Haya	I-PER
+Rashed	I-PER
+Al-Khalifa	I-PER
 on	O
 her	O
 election	O
@@ -60,8 +60,8 @@ her	O
 predecessor	O
 ,	O
 Mr.	O
-Jan	O
-Eliasson	O
+Jan	I-PER
+Eliasson	I-PER
 ,	O
 who	O
 led	O
@@ -93,14 +93,14 @@ deep	O
 appreciation	O
 to	O
 Secretary-General	O
-Kofi	O
-Annan	O
+Kofi	I-PER
+Annan	I-PER
 ,	O
 whose	O
 stewardship	O
 of	O
 this	O
-Organization	O
+Organization	I-ORG
 over	O
 the	O
 past	O
@@ -180,13 +180,13 @@ the	O
 establishment	O
 of	O
 the	O
-Human	O
-Rights	O
+Human	I-ORG
+Rights	I-ORG
 Council	I-ORG
 and	O
 the	O
-Peacebuilding	O
-Commission	O
+Peacebuilding	I-ORG
+Commission	I-ORG
 ,	O
 progress	O
 has	O
@@ -223,7 +223,7 @@ contemporary	O
 needs	O
 of	O
 Member	O
-States	I-LOC
+States	O
 ,	O
 in	O
 particular	O
@@ -244,7 +244,7 @@ membership	O
 
 While	O
 many	O
-States	I-LOC
+States	O
 ,	O
 including	O
 the	O
@@ -296,7 +296,7 @@ some	O
 strong	O
 and	O
 powerful	O
-States	I-LOC
+States	O
 to	O
 impose	O
 their	O
@@ -342,7 +342,7 @@ Security	I-ORG
 Council	I-ORG
 by	O
 Member	O
-States	I-LOC
+States	O
 by	O
 unjustly	O
 placing	O
@@ -473,14 +473,14 @@ therefore	O
 urge	O
 all	O
 Member	O
-States	I-LOC
+States	O
 to	O
 resist	O
 attempts	O
 by	O
 those	O
 powerful	O
-States	I-LOC
+States	O
 to	O
 influence	O
 the	O
@@ -620,8 +620,8 @@ first	O
 session	O
 of	O
 the	O
-Human	O
-Rights	O
+Human	I-ORG
+Rights	I-ORG
 Council	I-ORG
 was	O
 successfully	O
@@ -1047,7 +1047,7 @@ regard	O
 Myanmar	I-LOC
 has	O
 designated	O
-HIV/AIDS	O
+HIV/AIDS	I-MISC
 ,	O
 malaria	O
 and	O
@@ -1069,7 +1069,7 @@ a	O
 high-level	O
 multisectoral	O
 national	O
-AIDS	O
+AIDS	I-MISC
 committee	O
 .	O
 
@@ -1088,7 +1088,7 @@ in	O
 ,	O
 our	O
 national	O
-AIDS	O
+AIDS	I-MISC
 programme	O
 and	O
 the	O
@@ -1097,8 +1097,10 @@ United	I-ORG
 Nations	I-ORG
 Programme	I-MISC
 on	O
-HIV/AIDS	O
-(UNAIDS)	O
+HIV/AIDS	I-MISC
+(	O
+UNAIDS	I-ORG
+)	O
 drew	O
 up	O
 a	O
@@ -1134,7 +1136,7 @@ only	O
 to	O
 level	O
 the	O
-HIV/AIDS	O
+HIV/AIDS	I-ORG
 infection	O
 rate	O
 ,	O
@@ -1150,10 +1152,10 @@ also	O
 serving	O
 on	O
 the	O
-UNAIDS	O
+UNAIDS	I-ORG
 Programme	I-MISC
-Coordinating	O
-Board	O
+Coordinating	I-MISC
+Board	I-MISC
 ,	O
 enabling	O
 us	O
@@ -1340,10 +1342,12 @@ major	O
 aspects	O
 of	O
 the	O
-Millennium	O
+Millennium	I-MISC
 Development	I-MISC
 Goals	I-MISC
-(MDGs)	O
+(	O
+MDGs	I-MISC
+)	O
 .	O
 
 We	O
@@ -1354,7 +1358,7 @@ progress	O
 towards	O
 achieving	O
 the	O
-MDGs	O
+MDGs	I-MISC
 by	O
 2015	O
 ,	O
@@ -1384,7 +1388,7 @@ sanitation	O
 In	O
 implementing	O
 the	O
-MDGs	O
+MDGs	I-MISC
 ,	O
 we	O
 are	O
@@ -1535,7 +1539,7 @@ principles	O
 enunciated	O
 in	O
 the	O
-Charter	O
+Charter	I-MISC
 of	O
 the	O
 United	I-ORG

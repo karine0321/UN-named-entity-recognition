@@ -37,7 +37,7 @@ are	O
 playing	O
 in	O
 the	O
-Muslim	O
+Muslim	I-MISC
 world	O
 .	O
 
@@ -203,7 +203,7 @@ the	O
 2005	O
 United	I-ORG
 Nations	I-ORG
-Summit	I-LOC
+Summit	I-MISC
 .	O
 
 Over	O
@@ -244,7 +244,7 @@ modern	O
 ,	O
 progressive	O
 ,	O
-Islamic	O
+Islamic	I-MISC
 and	O
 democratic	O
 republic	O
@@ -371,10 +371,10 @@ and	O
 communication	O
 corridors	O
 linking	O
-South	O
+South	I-LOC
 Asia	I-LOC
 ,	O
-West	O
+West	I-LOC
 Asia	I-LOC
 ,	O
 Central	I-LOC
@@ -465,7 +465,7 @@ including	O
 the	O
 Jammu	I-LOC
 and	O
-Kashmir	O
+Kashmir	I-LOC
 dispute	O
 —	O
 that	O
@@ -517,8 +517,8 @@ meeting	O
 with	O
 Prime	O
 Minister	O
-Manmohan	O
-Singh	O
+Manmohan	I-PER
+Singh	I-PER
 in	O
 Havana	I-LOC
 will	O
@@ -543,7 +543,7 @@ and	O
 for	O
 peace	O
 in	O
-South	O
+South	I-LOC
 Asia	I-LOC
 and	O
 beyond	O
@@ -574,7 +574,7 @@ strategic	O
 restraint	O
 regime	O
 in	O
-South	O
+South	I-LOC
 Asia	I-LOC
 ,	O
 encompassing	O
@@ -661,10 +661,10 @@ for	O
 power	O
 generation	O
 under	O
-International	O
-Atomic	O
-Energy	O
-Agency	O
+International	I-ORG
+Atomic	I-ORG
+Energy	I-ORG
+Agency	I-ORG
 safeguards	O
 .	O
 
@@ -715,7 +715,7 @@ linking	O
 Central	I-LOC
 Asia	I-LOC
 and	O
-South	O
+South	I-LOC
 Asia	I-LOC
 through	O
 Afghanistan	I-LOC
@@ -736,7 +736,7 @@ challenges	O
 including	O
 a	O
 resurgent	O
-Taliban	O
+Taliban	I-ORG
 that	O
 also	O
 threatens	O
@@ -788,7 +788,7 @@ of	O
 over	O
 3	O
 million	O
-Afghan	O
+Afghan	I-MISC
 refugees	O
 ,	O
 some	O
@@ -797,7 +797,7 @@ them	O
 sympathetic	O
 to	O
 the	O
-Taliban	O
+Taliban	I-ORG
 .	O
 
 The	O
@@ -862,11 +862,11 @@ countries	O
 ,	O
 including	O
 the	O
-United	I-ORG
+United	I-LOC
 States	I-LOC
 and	O
 the	O
-United	I-ORG
+United	I-LOC
 Kingdom	I-LOC
 .	O
 
@@ -899,7 +899,7 @@ past	O
 five	O
 years	O
 ,	O
-Al-Qaida	O
+Al-Qaida	I-ORG
 has	O
 been	O
 significantly	O
@@ -974,7 +974,7 @@ clear	O
 
 Across	O
 the	O
-Muslim	O
+Muslim	I-MISC
 world	O
 ,	O
 old	O
@@ -1001,8 +1001,8 @@ new	O
 battleground	O
 involving	O
 an	O
-Islamic	O
-State	O
+Islamic	I-ORG
+State	I-ORG
 has	O
 served	O
 as	O
@@ -1088,7 +1088,7 @@ the	O
 conflicts	O
 afflicting	O
 the	O
-Islamic	O
+Islamic	I-MISC
 world	O
 .	O
 
@@ -1099,12 +1099,12 @@ the	O
 foreign	O
 occupation	O
 of	O
-Muslim	O
+Muslim	I-MISC
 countries	O
 and	O
 suppression	O
 of	O
-Muslim	O
+Muslim	I-MISC
 peoples	O
 ,	O
 terrorism	O
@@ -1117,7 +1117,7 @@ find	O
 recruits	O
 among	O
 alienated	O
-Muslims	O
+Muslims	I-MISC
 in	O
 various	O
 parts	O
@@ -1142,7 +1142,7 @@ growing	O
 divide	O
 between	O
 the	O
-Islamic	O
+Islamic	I-MISC
 and	O
 Western	O
 worlds	O
@@ -1161,14 +1161,14 @@ and	O
 religious	O
 discrimination	O
 against	O
-Muslims	O
+Muslims	I-MISC
 and	O
 to	O
 prohibit	O
 the	O
 defamation	O
 of	O
-Islam	O
+Islam	I-MISC
 .	O
 
 It	O
@@ -1183,7 +1183,7 @@ high	O
 standing	O
 oblivious	O
 to	O
-Muslim	O
+Muslim	I-MISC
 sensitivities	O
 at	O
 these	O
@@ -1227,14 +1227,14 @@ conflict	O
 that	O
 is	O
 the	O
-Middle	O
-East	O
+Middle	I-LOC
+East	I-LOC
 —	O
 exemplified	O
 by	O
 the	O
 latest	O
-Israeli	O
+Israeli	I-MISC
 aggression	O
 against	O
 Lebanon	I-LOC
@@ -1258,7 +1258,7 @@ a	O
 rapid	O
 and	O
 complete	O
-Israeli	O
+Israeli	I-MISC
 withdrawal	O
 and	O
 the	O
@@ -1282,8 +1282,8 @@ far-reaching	O
 implications	O
 for	O
 the	O
-Middle	O
-East	O
+Middle	I-LOC
+East	I-LOC
 .	O
 
 The	O
@@ -1437,7 +1437,6 @@ are	O
 encouraged	O
 by	O
 the	O
-
 "	O
 Iran	I-LOC
 and	O
@@ -1445,7 +1444,6 @@ and	O
 +	O
 1	O
 "	O
-
 negotiations	O
 and	O
 believe	O
@@ -1538,7 +1536,7 @@ them	O
 With	O
 the	O
 Doha	I-LOC
-Round	O
+Round	I-MISC
 in	O
 the	O
 doldrums	O
@@ -1616,7 +1614,7 @@ Assembly	I-ORG
 should	O
 reassert	O
 its	O
-Charter	O
+Charter	I-MISC
 responsibilities	O
 ,	O
 and	O
@@ -1686,8 +1684,7 @@ will	O
 elect	O
 the	O
 next	O
-Secretary-	O
-General	I-ORG
+Secretary-General	O
 of	O
 the	O
 United	I-ORG
@@ -1725,8 +1722,7 @@ support	O
 to	O
 the	O
 new	O
-Secretary-	O
-General	I-ORG
+Secretary-General	O
 ,	O
 as	O
 we	O
@@ -1734,8 +1730,8 @@ have	O
 done	O
 to	O
 Mr.	O
-Kofi	O
-Annan	O
+Kofi	I-PER
+Annan	I-PER
 ,	O
 to	O
 build	O

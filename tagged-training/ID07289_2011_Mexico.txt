@@ -68,7 +68,7 @@ one	O
 of	O
 the	O
 founding	O
-States	I-LOC
+States	O
 of	O
 the	O
 United	I-ORG
@@ -81,7 +81,7 @@ to	O
 ensuring	O
 that	O
 the	O
-Organization	O
+Organization	I-ORG
 once	O
 again	O
 plays	O
@@ -191,7 +191,7 @@ turn	O
 this	O
 into	O
 an	O
-Organization	O
+Organization	I-ORG
 that	O
 is	O
 able	O
@@ -356,9 +356,9 @@ see	O
 famine	O
 in	O
 the	O
-Horn	O
-of	O
-Africa	O
+Horn	I-LOC
+of	I-LOC
+Africa	I-LOC
 ,	O
 in	O
 various	O
@@ -371,7 +371,7 @@ in	O
 Asia	I-LOC
 and	O
 in	O
-Latin	O
+Latin	I-LOC
 America	I-LOC
 .	O
 
@@ -644,7 +644,7 @@ certain	O
 regions	O
 ?	O
 
-Of	I-LOC
+Of	O
 course	O
 not	O
 .	O
@@ -853,7 +853,7 @@ thousands	O
 of	O
 people	O
 in	O
-Latin	O
+Latin	I-LOC
 America	I-LOC
 ,	O
 in	O
@@ -862,7 +862,7 @@ between	O
 Mexico	I-LOC
 and	O
 the	O
-Andes	O
+Andes	I-LOC
 —	O
 are	O
 dying	O
@@ -882,7 +882,7 @@ colleagues	O
 from	O
 Central	I-LOC
 and	O
-Latin	O
+Latin	I-LOC
 America	I-LOC
 who	O
 are	O
@@ -994,8 +994,7 @@ criminals	O
 and	O
 having	O
 seized	O
-120	O
-,000	O
+120,000	O
 weapons	O
 in	O
 five	O
@@ -1263,7 +1262,7 @@ case	O
 here	O
 in	O
 the	O
-United	I-ORG
+United	I-LOC
 States	I-LOC
 ,	O
 where	O
@@ -1408,14 +1407,14 @@ death	O
 ,	O
 especially	O
 in	O
-Latin	O
+Latin	I-LOC
 America	I-LOC
 and	O
 the	O
-Caribbean	O
+Caribbean	I-LOC
 and	O
 various	O
-African	O
+African	I-MISC
 countries	O
 .	O
 
@@ -1434,15 +1433,15 @@ climate	O
 change	O
 .	O
 
-Along	I-LOC
+Along	O
 with	O
 Mexico	I-LOC
 ,	O
 my	O
 Central	I-LOC
-American	O
+American	I-LOC
 and	O
-Caribbean	O
+Caribbean	I-LOC
 colleagues	O
 are	O
 experiencing	O
@@ -1482,7 +1481,7 @@ was	O
 headed	O
 for	O
 our	O
-Caribbean	O
+Caribbean	I-LOC
 coast	O
 landed	O
 instead	O
@@ -1574,19 +1573,19 @@ We	O
 organized	O
 the	O
 sixteenth	O
-Conference	O
-of	O
-the	O
-Parties	O
+Conference	I-MISC
+of	I-MISC
+the	I-MISC
+Parties	I-MISC
 to	O
 the	O
 United	I-ORG
 Nations	I-ORG
-Framework	O
-Convention	O
-on	O
-Climate	O
-Change	O
+Framework	I-MISC
+Convention	I-MISC
+on	I-MISC
+Climate	I-MISC
+Change	I-MISC
 ,	O
 in	O
 Cancún	I-LOC
@@ -1635,7 +1634,8 @@ of	O
 no	O
 more	O
 than	O
-2°	O
+2	O
+°	O
 centigrade	O
 by	O
 the	O
@@ -1651,8 +1651,8 @@ agreed	O
 to	O
 establish	O
 the	O
-Green	I-LOC
-Fund	O
+Green	I-MISC
+Fund	I-MISC
 ,	O
 to	O
 support	O
@@ -1772,10 +1772,10 @@ approach	O
 of	O
 the	O
 seventeenth	O
-Conference	O
-of	O
-the	O
-Parties	O
+Conference	I-MISC
+of	I-MISC
+the	I-MISC
+Parties	I-MISC
 ,	O
 in	O
 Durban	I-LOC
@@ -1792,7 +1792,7 @@ commitment	O
 to	O
 its	O
 own	O
-Convention	O
+Convention	I-MISC
 by	O
 the	O
 United	I-ORG
@@ -1821,7 +1821,7 @@ advance	O
 within	O
 the	O
 Kyoto	I-LOC
-Protocol	O
+Protocol	I-MISC
 ,	O
 keeping	O
 in	O
@@ -2011,7 +2011,7 @@ the	O
 health	O
 of	O
 all	O
-Mexicans	O
+Mexicans	I-MISC
 .	O
 
 In	O
@@ -2021,8 +2021,7 @@ years	O
 we	O
 have	O
 added	O
-2	O
-,000	O
+2,000	O
 new	O
 hospitals	O
 and	O
@@ -2043,8 +2042,7 @@ already	O
 covers	O
 more	O
 than	O
-100	O
-,000	O
+100,000	O
 people	O
 .	O
 
@@ -2105,7 +2103,7 @@ achieved	O
 almost	O
 all	O
 the	O
-Millennium	O
+Millennium	I-MISC
 Development	I-MISC
 Goals	I-MISC
 to	O
@@ -2145,8 +2143,8 @@ The	O
 conflict	O
 in	O
 the	O
-Middle	O
-East	O
+Middle	I-LOC
+East	I-LOC
 is	O
 a	O
 matter	O
@@ -2158,7 +2156,7 @@ the	O
 capacity	O
 of	O
 the	O
-Organization	O
+Organization	I-ORG
 .	O
 
 We	O
@@ -2174,9 +2172,9 @@ between	O
 Israel	I-LOC
 and	O
 the	O
-Palestinian	O
-National	O
-Authority	O
+Palestinian	I-ORG
+National	I-ORG
+Authority	I-ORG
 .	O
 
 The	O
@@ -2223,13 +2221,13 @@ the	O
 establishment	O
 of	O
 a	O
-Palestinian	O
+Palestinian	I-MISC
 State	O
 a	O
 reality	O
 .	O
 
-Of	I-LOC
+Of	O
 course	O
 ,	O
 we	O
@@ -2289,9 +2287,9 @@ that	O
 new	O
 generations	O
 of	O
-Israelis	O
+Israelis	I-MISC
 and	O
-Palestinians	O
+Palestinians	I-MISC
 can	O
 truly	O
 know	O
@@ -2381,7 +2379,7 @@ transforming	O
 and	O
 modernizing	O
 the	O
-Organization	O
+Organization	I-ORG
 .	O
 
 It	O
@@ -2404,7 +2402,7 @@ need	O
 to	O
 modernize	O
 the	O
-Organization	O
+Organization	I-ORG
 at	O
 its	O
 core	O
@@ -2429,7 +2427,7 @@ time	O
 that	O
 all	O
 Member	O
-States	I-LOC
+States	O
 play	O
 our	O
 parts	O
@@ -2437,7 +2435,7 @@ in	O
 ensuring	O
 that	O
 the	O
-Organization	O
+Organization	I-ORG
 has	O
 the	O
 strength	O
@@ -2640,7 +2638,7 @@ strategic	O
 ally	O
 of	O
 the	O
-Organization	O
+Organization	I-ORG
 in	O
 the	O
 struggle	O

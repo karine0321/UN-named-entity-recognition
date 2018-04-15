@@ -88,7 +88,7 @@ community	O
 .	O
 
 The	O
-Charter	O
+Charter	I-MISC
 goals	O
 of	O
 peace	O
@@ -170,9 +170,9 @@ headlines	O
 the	O
 Secretary-General	O
 's	O
-High-Level	O
-Task	O
-Force	O
+High-Level	I-ORG
+Task	I-ORG
+Force	I-ORG
 provided	O
 a	O
 mechanism	O
@@ -216,7 +216,7 @@ of	O
 the	O
 Doha	I-LOC
 Development	I-MISC
-Round	O
+Round	I-MISC
 would	O
 alleviate	O
 much	O
@@ -244,10 +244,12 @@ fully	O
 associates	O
 with	O
 the	O
-Millennium	O
+Millennium	I-MISC
 Development	I-MISC
-Goal	O
-(MDG)	O
+Goal	I-MISC
+(	O
+MDG	I-MISC
+)	O
 Global	O
 Call	O
 to	O
@@ -306,11 +308,11 @@ up	O
 official	O
 development	O
 assistance	O
-(ODA)	O
+(	O
+ODA	I-MISC
+)	O
 from	O
-0	O
-.	O
-27	O
+0.27	O
 per	O
 cent	O
 of	O
@@ -320,9 +322,7 @@ income	O
 in	O
 2007	O
 to	O
-0	O
-.	O
-35	O
+0.35	O
 per	O
 cent	O
 by	O
@@ -352,7 +352,7 @@ acutely	O
 aware	O
 that	O
 the	O
-Pacific	O
+Pacific	I-LOC
 is	O
 the	O
 second	O
@@ -368,7 +368,7 @@ likely	O
 to	O
 meet	O
 the	O
-MDG	O
+MDG	I-MISC
 targets	O
 .	O
 
@@ -380,12 +380,12 @@ to	O
 direct	O
 our	O
 increased	O
-ODA	O
+ODA	I-MISC
 there	O
 ,	O
 through	O
 a	O
-Pacific	O
+Pacific	I-LOC
 strategy	O
 ,	O
 which	O
@@ -535,9 +535,9 @@ immune	O
 
 At	O
 the	O
-Pacific	O
-Islands	O
-Forum	O
+Pacific	I-LOC
+Islands	I-MISC
+Forum	I-MISC
 held	O
 in	O
 Niue	I-LOC
@@ -551,8 +551,8 @@ other	O
 members	O
 of	O
 the	O
-Pacific	O
-Forum	O
+Pacific	I-MISC
+Forum	I-MISC
 community	O
 expressed	O
 profound	O
@@ -670,9 +670,9 @@ steps	O
 taken	O
 by	O
 the	O
-Pacific	O
-Islands	O
-Forum	O
+Pacific	I-LOC
+Islands	I-MISC
+Forum	I-MISC
 to	O
 encourage	O
 Fiji	I-LOC
@@ -695,7 +695,7 @@ is	O
 also	O
 home	O
 to	O
-Timor-Leste	O
+Timor-Leste	I-LOC
 ,	O
 a	O
 partner	O
@@ -736,8 +736,8 @@ despite	O
 assassination	O
 attempts	O
 on	O
-Timor-	O
-Leste	O
+Timor-	I-LOC
+Leste	I-LOC
 's	O
 leadership	O
 .	O
@@ -745,16 +745,18 @@ leadership	O
 The	O
 United	I-ORG
 Nations	I-ORG
-Integrated	O
-Mission	I-LOC
+Integrated	I-MISC
+Mission	I-MISC
 in	O
-Timor-Leste	O
-(UNMIT)	O
+Timor-Leste	I-LOC
+(	O
+UNMIT	I-MISC
+)	O
 and	O
 the	O
-International	O
-Stabilization	O
-Force	O
+International	I-MISC
+Stabilization	I-MISC
+Force	I-MISC
 continue	O
 to	O
 play	O
@@ -773,7 +775,7 @@ Zealand	I-LOC
 strongly	O
 supports	O
 the	O
-UNMIT	O
+UNMIT	I-MISC
 mandate	O
 and	O
 its	O
@@ -896,7 +898,7 @@ future	O
 
 On	O
 the	O
-African	O
+African	I-MISC
 continent	O
 ,	O
 the	O
@@ -907,7 +909,7 @@ by	O
 the	O
 conflict	O
 in	O
-Darfur	O
+Darfur	I-LOC
 is	O
 unacceptable	O
 .	O
@@ -961,7 +963,7 @@ human	O
 rights	O
 situation	O
 in	O
-Darfur	O
+Darfur	I-LOC
 .	O
 
 In	O
@@ -1051,8 +1053,8 @@ turn	O
 now	O
 to	O
 the	O
-Middle	O
-East	O
+Middle	I-LOC
+East	I-LOC
 .	O
 
 New	I-LOC
@@ -1072,8 +1074,8 @@ lasting	O
 solution	O
 to	O
 the	O
-Arab-	O
-Israeli	O
+Arab-	I-MISC
+Israeli	I-MISC
 conflict	O
 .	O
 
@@ -1090,7 +1092,7 @@ viable	O
 and	O
 territorially	O
 contiguous	O
-Palestinian	O
+Palestinian	I-MISC
 State	O
 ,	O
 existing	O
@@ -1270,15 +1272,17 @@ the	O
 establishment	O
 of	O
 the	O
-International	O
-Criminal	O
-Court	O
-(ICC)	O
+International	I-ORG
+Criminal	I-ORG
+Court	I-ORG
+(	O
+ICC	I-ORG
+)	O
 .	O
 
 When	O
 the	O
-ICC	O
+ICC	I-ORG
 was	O
 first	O
 established	O
@@ -1340,7 +1344,7 @@ the	O
 utmost	O
 importance	O
 that	O
-States	I-LOC
+States	O
 rise	O
 to	O
 those	O
@@ -1367,7 +1371,7 @@ crimes	O
 New	I-LOC
 Zealand	I-LOC
 urges	O
-States	I-LOC
+States	O
 to	O
 make	O
 every	O
@@ -1419,11 +1423,11 @@ anniversary	O
 year	O
 of	O
 the	O
-Universal	O
+Universal	I-MISC
 Declaration	I-MISC
-of	O
-Human	O
-Rights	O
+of	I-MISC
+Human	I-MISC
+Rights	I-MISC
 ,	O
 we	O
 acknowledge	O
@@ -1458,8 +1462,8 @@ design	O
 of	O
 the	O
 new	O
-Human	O
-Rights	O
+Human	I-ORG
+Rights	I-ORG
 Council	I-ORG
 ,	O
 and	O
@@ -1497,14 +1501,14 @@ rights	O
 treaties	O
 is	O
 the	O
-Convention	O
-on	O
-the	O
-Rights	O
-of	O
-Persons	O
-with	O
-Disabilities	O
+Convention	I-MISC
+on	I-MISC
+the	I-MISC
+Rights	I-MISC
+of	I-MISC
+Persons	I-MISC
+with	I-MISC
+Disabilities	I-MISC
 ,	O
 which	O
 New	I-LOC
