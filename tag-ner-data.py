@@ -33,9 +33,9 @@ countries_list = ["Afghanistan", "Algeria", "Argentina", "Austalia",
     "United States of America", "United Kingdom of Great Britain and Northern Ireland",
     "Zimbabwe"]
 
-orgs_list = ["United", "Nations", "European", "Union", "General", "Assembly", "Security", "Council"]
+orgs_list = ["United", "Nations", "European", "Union", "NATO", "General", "Assembly", "Security", "Council"]
 
-progs_list = ["Programme", "Millenium", "Development", "Goals", "Declaration"]
+progs_list = ["Programme", "Millennium", "Development", "Goals", "Declaration"]
 
 def extract_file(filename):
     with open(os.path.join(directory, filename), "r") as f:

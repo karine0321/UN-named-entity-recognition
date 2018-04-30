@@ -32,13 +32,13 @@ year_over_2000 = un_corpus["year"] >= 2000
 countries_subset = un_corpus["country"].isin(countries_list)
 un_corpus_2000 = un_corpus[year_over_2000 & countries_subset]
 
-# Select a sample of 75 documents (50 for training, 25 for test)
+# Select a sample of 75 documents (50 for training, 30 for test)
 
-sample_corpus = un_corpus_2000.sample(n = 75, replace = False, random_state = 1)
+sample_corpus = un_corpus_2000.sample(n = 80, replace = False, random_state = 1)
 
 training_corpus = sample_corpus.head(50)
 
-test_corpus = sample_corpus.tail(25)
+test_corpus = sample_corpus.tail(30)
 
 # Process each text (row)
 
