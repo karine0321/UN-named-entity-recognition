@@ -236,8 +236,7 @@ extended	O
 a	O
 total	O
 of	O
-$	0
-5	O
+$5	O
 million	O
 in	O
 financial	O
@@ -245,8 +244,7 @@ assistance	O
 and	O
 will	O
 provide	O
-$
-500,000	O
+$500,000	O
 worth	O
 of	O
 personal	O
