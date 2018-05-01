@@ -8,6 +8,7 @@ import itertools
 import nltk
 from nltk.corpus import brown
 import os
+import re
 import sys
 
 # Helper functions for class Data
@@ -16,7 +17,7 @@ def extract_tokens_tags(raw_data):
     """
     Helper function for group_words_sentences. Converts rawdata to List of Lists
     Args:
-        raw_data : list of lines
+        raw_data : list of lines, each of which is word\tNEtag
     Returns:
         [ [word, NEtag], [word, NEtag], "\n", ... ], where newlines designate end of sentence
     """
@@ -24,27 +25,34 @@ def extract_tokens_tags(raw_data):
 
 def group_words_sentences(raw_data):
     """
-    Returns List of Lists where inner lists are sentences. Thanks itertools!
+    Returns List of Lists where inner lists are sentences w/ or w/o NEtags. Thanks itertools!
     Args:
         raw_data : list of lines
     Returns:
-        List of lists, where each inner list contains words from a sentence.
+        token_and_tag_grouped_by_sentence :
+            List of lists, where each inner list is a sentence of (word, NEtag) tuples
+        tokens_grouped_by_sentence :
+            List of lists, where each inner list is a sentence
     """
 
     grouped_by_sentence = []
     for _, g in itertools.groupby(extract_tokens_tags(raw_data), lambda x: x == "\n"):
         grouped_by_sentence.append(list(g)) # Store group iterator as a list
 
-    grouped_by_sentence = [g for g in grouped_by_sentence if g != ["\n"]]
+    token_and_tag_grouped_by_sentence = [g for g in grouped_by_sentence if g != ["\n"]]
+    tokens_grouped_by_sentence = [ [i[0] for i in g] for g in grouped_by_sentence if g != ["\n"]]
 
-    return grouped_by_sentence
+    return token_and_tag_grouped_by_sentence, tokens_grouped_by_sentence
+
 
 def convert_data_to_dicts(grouped_by_sentence):
     """
     Args:
-        grouped_by_sentence : List of lists, where each inner list contains words from a sentence.
+        grouped_by_sentence : List of lists, where each inner list is a sentence of (word, NEtag) tuples
     Returns:
-        List of dicts, where each dict is a token and its features.
+        features, tags : lists of dicts.
+            Features is list of dicts of word and its features
+            Tags is list of dicts of word and its NEtag
     """
     features = []
     tags = []
@@ -77,10 +85,12 @@ class Data:
         self.is_training = is_training
         self.features = None
         self.sentences = None
+        self.tokens_grouped_by_sentence = None # [[words from a sentence], ...] input for NLTK POS Tagger
         self.NEtags = None
         self.predicted_tags = None # for test data only
 
         self.load_data(data_dir, self.is_training)
+
 
     def load_data(self, data_dir, is_training):
         """
@@ -90,37 +100,68 @@ class Data:
         """
         self.features = []
         self.tags = []
+        self.tokens_grouped_by_sentence = []
+
         for fn in os.listdir(data_dir):
             if fn.endswith(".txt"):
                 with open(os.path.join(data_dir, fn), "r") as f:
                     raw_data = f.readlines()
 
-                    tokens_grouped_by_sentence = group_words_sentences(raw_data)
+                    token_and_tag_grouped_by_sentence, tokens_grouped_by_sentence = group_words_sentences(raw_data)
 
-                    features, tags = convert_data_to_dicts(tokens_grouped_by_sentence)
+                    features, tags = convert_data_to_dicts(token_and_tag_grouped_by_sentence)
 
                     self.features.extend(features)
                     self.tags.extend(tags)
+                    self.tokens_grouped_by_sentence.extend(tokens_grouped_by_sentence)
 
 
 class posTagger:
 
-    def __init__(self):
-        self.tagged_corpus = None
+    def __init__(self, Data, re_expressions):
+        self.trained_sentences_brown = None
+        self.data = Data # Load a data object of training or test data
+        self.re_expressions = re_expressions # regex patterns for the RegexpTagger
 
         self.load_corpus()
 
     def load_corpus(self):
-        self.tagged_corpus = brown.tagged_sents()
+        """
+        Load tagged Brown corpus sentences
+        """
+        self.trained_sentences = brown.tagged_sents()
 
+    def tagger(self, sentence):
+        """
+        This method follows the NLTK Book, Chapter 5: http://www.nltk.org/book/ch05.html
+        Bigram, unigram, and regex taggers are used before the default tagger assigns
+        the most frequent tag from the Brown corpus
+        Args:
+            sentence : list of words
+        Returns:
+            list of (word, tag) tuples
 
+        """
+        defaultTagger = nltk.DefaultTagger(get_default_tag(self.trained_sentences))
+        reTagger = nltk.RegexpTagger(self.re_expressions, backoff = defaultTagger)
+        uniTagger = nltk.UnigramTagger(self.trained_sentences, backoff = reTagger)
+        biTagger = nltk.BigramTagger(self.trained_sentences, backoff = uniTagger)
 
-# brown_tags = brown.tagged_words(tagset = "universal")
-# tag_freq_dist = nltk.FreqDist(tag for (word, tag) in brown_tags)
-#print(tag_freq_dist.most_common())
+        return biTagger.tag(sentence)
 
-# brown_sentences = brown.tagged_sents()
-# bigram_tagger = nltk.BigramTagger(brown_sentences)
-# print(bigram_tagger.tag(["Thank", "you", "Mr.", "Secretary", "."]))
+    def get_default_tag(trained_sentences):
+        """
+        Helper function for tagger. Finds the most frequent tag from the corpus, to use as default
+        Args:
+            trained_sentences : trained nltk sentences
+        Returns:
+            str of most frequent tag
+        """
+        freq_dist = nltk.FreqDist(sent[0][1] for sent in trained_sentences)
+
+        return max(freq_dist)
+
+    def pos_tag_sentences():
+        pass
 
 
