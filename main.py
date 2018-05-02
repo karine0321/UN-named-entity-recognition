@@ -3,7 +3,7 @@
 # Leslie Huang
 # Natural Language Processing Final Assignment
 
-from data import Data, posTagger
+from rawdata import RawDocument, Sentence, Token, posTagger
 
 import argparse
 import itertools
@@ -34,29 +34,59 @@ re_expressions = patterns = [
 ]
 
 
+def load(dirname):
+
+    all_documents = []
+
+    # load training texts into a collection of RawDocument objects
+    for fn in os.listdir(dirname):
+        if fn.endswith(".txt"):
+            all_documents.append(
+                RawDocument(True, os.path.join(dirname, fn))
+            )
+
+    container = []
+
+    # Now convert each sentence into a Sentence of Words
+    for document in all_documents:
+        for sentence in document.text_grouped_into_sentences:
+            words = []
+            list_of_words = [i[0] for i in sentence]
+
+            for counter, value in enumerate(sentence):
+                    word, NEtag = value
+
+                    words.append(
+                        Token(word, counter, counter == 0, counter == len(sentence) - 1, NEtag)
+                        )
+
+            container.append(Sentence(words, list_of_words))
+
+    return container
+
+
 if __name__ == '__main__':
+
+
+    training_data = load(args.training_dir) # This is a list of Sentences, each Sentence is a list of Tokens
 
     pool = Pool(os.cpu_count() - 1)
 
-    training = Data(args.training_dir, True)
 
-    tagger = posTagger(training, re_expressions)
-
-    # print(len(tagger.data.tokens_grouped_by_sentence))
-
-    # for sentence in tagger.data.tokens_grouped_by_sentence:
-    #     print(tagger.tagger(sentence))
-
-    # results = pool.map(tagger.tagger, tagger.data.tokens_grouped_by_sentence)
-
-    for index, result in enumerate(pool.imap(tagger.tagger, tagger.data.tokens_grouped_by_sentence)):
-        tagger.data.features[index]["pos_tag"] = result[1]
-        with open(os.path.join(args.features_dir, f'{index}.json'), 'w') as f:
-            json.dump(tagger.data.features[index], f)
+    tagger = posTagger(re_expressions)
 
 
-    with open("tagger_results.json", "w") as f:
-        json.dump(tagger.data.features, f)
+    for index, result in enumerate(pool.imap(tagger.tagger, training_data)):
+        print(training_data[index].list_of_words)
+        print(result)
 
-    with open("NEtags.json", "w") as f:
-        json.dump(tagger.data.NEtags, f)
+        # tagger.data.features[index]["pos_tag"] = result[1]
+        # with open(os.path.join(args.features_dir, f'{index}.json'), 'w') as f:
+        #     json.dump(tagger.data.features[index], f)
+
+
+    # with open("tagger_results.json", "w") as f:
+    #     json.dump(tagger.data.features, f)
+
+    # with open("NEtags.json", "w") as f:
+    #     json.dump(tagger.data.NEtags, f)
