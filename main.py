@@ -68,7 +68,7 @@ def load(dirname):
 if __name__ == '__main__':
 
 
-    training_data = load(args.training_dir) # This is a list of Sentences, each Sentence is a list of Tokens
+    training_data = load(args.training_dir) # This is a list of Sentences
 
     pool = Pool(os.cpu_count() - 1)
 
@@ -80,13 +80,21 @@ if __name__ == '__main__':
         print(training_data[index].list_of_words)
         print(result)
 
-        # tagger.data.features[index]["pos_tag"] = result[1]
-        # with open(os.path.join(args.features_dir, f'{index}.json'), 'w') as f:
-        #     json.dump(tagger.data.features[index], f)
+        out_dict = {
+                "sentence_LOW": training_data[index].list_of_words,
 
+                "sentence_words": [{
+                    "token": word.token,
+                    "sentence_position": word.sentence_position,
+                    "sentence_start": word.sentence_start,
+                    "sentence_end": word.sentence_end,
+                    "NEtag": word.NEtag
+                }
 
-    # with open("tagger_results.json", "w") as f:
-    #     json.dump(tagger.data.features, f)
+                     for word in training_data[index].words_objects],
 
-    # with open("NEtags.json", "w") as f:
-    #     json.dump(tagger.data.NEtags, f)
+                "sentence_POS": result,
+                }
+
+        with open(os.path.join(args.features_dir, f'{index}.json'), 'w') as f:
+            json.dump(out_dict, f)

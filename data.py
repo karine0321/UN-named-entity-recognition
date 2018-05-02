@@ -13,7 +13,7 @@ import re
 import sys
 import time
 
-nltk.download('brown')
+nltk.download("brown")
 
 # Helper functions for class Data
 
@@ -122,14 +122,6 @@ class posTagger:
     def __init__(self, data, re_expressions):
         self.data = data # Load a data object of training or test data
         self.re_expressions = re_expressions # regex patterns for the RegexpTagger
-
-        # self.load_corpus()
-
-    # def load_corpus(self):
-    #     """
-    #     Load tagged corpus sentences
-    #     """
-    #     self.trained_sentences = conll2000.tagged_sents()
 
     def tagger(self, sentence):
         """
