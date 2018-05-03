@@ -19,8 +19,6 @@ import time
 nltk.download("brown") # for POS tagging
 nltk.download("conll2000") # for chunking
 
-
-
 class posTagger:
 
     def __init__(self, re_expressions):
