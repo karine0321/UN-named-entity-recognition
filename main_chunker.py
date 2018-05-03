@@ -7,15 +7,13 @@
 # chunk tags them,
 # and outputs chunkTaggedSentence objects
 
-from sentences import RawDocument, Sentence, Token, posTaggedSentence, chunkTaggedSentence
+from sentences import Sentence, Token, posTaggedSentence, chunkTaggedSentence
 from taggers import NEChunker, UnigramChunker, posTagger
 
 import argparse
 import itertools
 import json
 from multiprocessing import Pool
-import nltk
-from nltk.corpus import conll2000
 import os
 import re
 import sys
