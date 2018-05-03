@@ -20,15 +20,19 @@ import os
 import re
 import sys
 
-nltk.download("conll2000") # for chunking
-
 parser = argparse.ArgumentParser()
 parser.add_argument("posTagged_JSON_dir", help = "dir to read posTagged Sentence object JSON files from")
 parser.add_argument("manually_chunked_JSON", help = "dir of JSONs of manually tagged chunk tags")
+parser.add_argument("output_dir", help = "dir to write chunkTaggedSentence JSONs to")
 args = parser.parse_args()
+
+if not os.path.exists(args.output_dir):
+    os.makedirs(args.output_dir)
 
 
 if __name__ == '__main__':
+
+    pool = Pool(os.cpu_count() - 1)
 
     # import pos tagged data and convert to list of posTaggedSentence objects
     imported_pos_tagged_sentences = []
@@ -39,21 +43,38 @@ if __name__ == '__main__':
             )
 
     # Initialize chunker
+    chunker = UnigramChunker(UnigramChunker.read_from_json(args.manually_chunked_JSON))
+    # chunker = UnigramChunker(UnigramChunker.load_nltk_chunked_sentences()) # CONLL trained chunker
 
-    # chunker = UnigramChunker(UnigramChunker.read_from_json(args.manually_chunked_JSON))
 
-    chunker = UnigramChunker(UnigramChunker.load_nltk_chunked_sentences())
+    for index, result in enumerate(pool.imap(chunker.tag_sentences, imported_pos_tagged_sentences)):
 
-    for sentence in imported_pos_tagged_sentences:
-        chunk_tags = chunker.tag_sentences(sentence)
+        s = chunkTaggedSentence(imported_pos_tagged_sentences[index], result)
 
-        s = chunkTaggedSentence(sentence, chunk_tags)
+        out_dict = {
+                "sentence_LOW": s.list_of_words,
 
-        print(s.list_of_words)
+                "sentence_words": [{
+                    "token": word.token,
+                    "sentence_position": word.sentence_position,
+                    "sentence_start": word.sentence_start,
+                    "sentence_end": word.sentence_end,
+                    "NEtag": word.NEtag
+                }
 
-    # # Use this block to output formatted word,pos,chunk data for manual chunk tagging
+                     for word in s.words_objects],
+
+                "sentence_chunktags": result,
+                "sentence_POS": s.pos,
+                }
+
+        with open(os.path.join(args.output_dir, f'{index}.json'), 'w') as f:
+            json.dump(out_dict, f)
+
+
+    # # Uncomment this block to output formatted word,pos,chunk data for manual chunk tagging
     # out = []
-    # for sentence in imported_sentences:
-    #     out.append(chunker.tagger(sentence))
+    # for sentence in imported_pos_tagged_sentences:
+    #     out.append(chunker.tag_sentences(sentence))
     # with open("chunks_manual.json", "w") as f:
     #     json.dump(out, f)
