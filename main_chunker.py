@@ -4,7 +4,7 @@
 # Natural Language Processing Final Assignment
 # Pipeline Part 2: Chunking
 
-from rawdata import Sentence, Token, posTagger, posTaggedSentence, NEChunker, BigramChunker
+from rawdata import Sentence, Token, posTagger, posTaggedSentence, NEChunker, BigramChunker, chunkTaggedSentence
 
 import argparse
 import itertools
@@ -19,27 +19,37 @@ import sys
 nltk.download("conll2000") # for chunking
 
 parser = argparse.ArgumentParser()
-parser.add_argument("features_dir", help = "dir to write features data to")
+parser.add_argument("posTagged_JSON_dir", help = "dir to read posTagged Sentence object JSON files from")
+parser.add_argument("manually_chunked_JSON", help = "dir of JSONs of manually tagged chunk tags")
 args = parser.parse_args()
 
 
 if __name__ == '__main__':
 
     # import pos tagged data and convert to list of posTaggedSentence objects
-    imported_sentences = []
+    imported_pos_tagged_sentences = []
 
-    for fn in os.listdir(args.features_dir):
-            imported_sentences.append(
-                posTaggedSentence(os.path.join(args.features_dir, fn))
+    for fn in os.listdir(args.posTagged_JSON_dir):
+            imported_pos_tagged_sentences.append(
+                posTaggedSentence(os.path.join(args.posTagged_JSON_dir, fn))
             )
 
-    chunker = BigramChunker(conll2000.chunked_sents(chunk_types=['NP']))
+    # Initialize chunker
 
+    # chunker = BigramChunker(BigramChunker.read_from_json(args.manually_chunked_JSON))
 
+    chunker = BigramChunker(BigramChunker.load_nltk_chunked_sentences())
 
-    out = []
-    for sentence in imported_sentences:
-        out.append(chunker.bigram_chunk_tagger(sentence))
+    for sentence in imported_pos_tagged_sentences:
+        chunk_tags = chunker.tag_sentences(sentence)
 
-    with open("chunks_manual.json", "w") as f:
-        json.dump(out, f)
+        s = chunkTaggedSentence(sentence, chunk_tags)
+
+        print(s.list_of_words)
+
+    # # Use this block to output formatted word,pos,chunk data for manual chunk tagging
+    # out = []
+    # for sentence in imported_sentences:
+    #     out.append(chunker.tagger(sentence))
+    # with open("chunks_manual.json", "w") as f:
+    #     json.dump(out, f)
