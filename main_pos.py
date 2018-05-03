@@ -4,7 +4,8 @@
 # Natural Language Processing Final Assignment
 # Pipeline Part 1: POS tagging
 
-from rawdata import RawDocument, Sentence, Token, posTagger
+from sentences import RawDocument, Sentence, Token, posTaggedSentence, chunkTaggedSentence
+from taggers import NEChunker, UnigramChunker, posTagger
 
 import argparse
 import itertools
