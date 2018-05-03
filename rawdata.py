@@ -116,7 +116,7 @@ class posTagger:
         Bigram, unigram, and regex taggers are used before the default tagger assigns
         the most frequent tag from the Brown corpus
         Args:
-            sentence_obj : Sentence
+            sentence_obj : Sentence object
         Returns:
             list of (word, tag) tuples
         """
@@ -144,7 +144,7 @@ class posTagger:
 
 class NEChunker():
     """
-    Uses the built-in NLTK NE tagger
+    Uses the built-in NLTK NE tagger (will generate a baseline of NEtags)
     """
     def __init__(self, posTaggedSentence):
         tree = nltk.ne_chunk(posTaggedSentence.pos)
@@ -162,26 +162,64 @@ class BigramChunker(nltk.ChunkParserI):
     """
 
     def __init__(self, train_sents):
-        chunk_trained_on_tags = [
+        self.train_sents = train_sents
+
+        self.unitagger = nltk.UnigramTagger(self.train_sents)
+
+    @classmethod
+    def read_from_json(cls, json_chunked_data_fn):
+        """
+        Load train_sents from a JSON file of manually tagged chunk data
+        """
+
+        with open(json_chunked_data_fn, "r") as f:
+            data = json.load(f)
+
+        # convert inner list to tuples of (W,POS,CHUNK) and keep only POS,CHUNK
+        all_tags = [[tuple(w) for w in s] for s in data]
+        train_sents = [[(p,c) for w,p,c in s] for s in all_tags]
+
+        return train_sents
+
+    @classmethod
+    def load_nltk_chunked_sentences(cls):
+        """
+        Load CONLL2000 chunktagged sentences and convert from nltk.tree format
+        Returns:
+            List of lists where inner list is [(pos, chunk_tag), ... ] representing one sentence
+        """
+        train_sents = [
             [(pos_tag, chunk_tag) for word, pos_tag, chunk_tag in nltk.chunk.tree2conlltags(sentence)]
-            for sentence in train_sents
+            for sentence in conll2000.chunked_sents()
                 ]
 
-        self.chunk_trained_on_tags = chunk_trained_on_tags
-        self.tagger = nltk.BigramTagger(chunk_trained_on_tags)
+        return train_sents
 
-    def bigram_chunk_tagger(self, posTaggedSentence):
+
+    def tag_sentences(self, posTaggedSentence):
+        """
+        Chunktag a posTaggedSentence object
+        """
         pos_tags = [pos for (word, pos) in posTaggedSentence.pos]
 
-        pos_and_chunk_tags = self.tagger.tag(pos_tags)
+        pos_and_chunk_tags = self.unitagger.tag(pos_tags)
 
-        # # Use this to output word,pos,chunk tags
+        # # Use this block to output word,pos,chunk tags
         # chunk_tags = [chunk for (pos, chunk) in pos_and_chunk_tags]
         # words = [word for (word, pos) in posTaggedSentence.pos]
         # all_tags = list(zip(words, pos_tags, chunk_tags))
-
         # return all_tags
 
         return pos_and_chunk_tags
 
 
+class chunkTaggedSentence(Sentence):
+    """
+    Like a posTaggedSentence, but with chunk tags
+    """
+
+    def __init__(self, posTaggedSentence, pos_and_chunk_tags):
+
+        super().__init__(posTaggedSentence.words_objects, posTaggedSentence.list_of_words)
+        self.pos = posTaggedSentence.pos
+        self.chunk_tags = pos_and_chunk_tags
