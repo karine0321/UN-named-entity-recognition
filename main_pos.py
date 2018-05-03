@@ -16,13 +16,13 @@ import re
 import sys
 
 parser = argparse.ArgumentParser()
-parser.add_argument("training_dir", help = "dit containing training data")
+parser.add_argument("training_dir", help = "dir containing training data")
 parser.add_argument("test_dir", help = "dir containing tagged test data")
-parser.add_argument("features_dir", help = "dir to write features data to")
+parser.add_argument("output_dir", help = "dir to write posTaggedSentence JSONs to")
 args = parser.parse_args()
 
-if not os.path.exists(args.features_dir):
-    os.makedirs(args.features_dir)
+if not os.path.exists(args.output_dir):
+    os.makedirs(args.output_dir)
 
 # These patterns are taken from the NLTK Book, Chapter 5 http://www.nltk.org/book/ch05.html
 re_expressions = patterns = [
@@ -80,8 +80,6 @@ if __name__ == '__main__':
 
 
     for index, result in enumerate(pool.imap(tagger.tagger, training_data)):
-        print(training_data[index].list_of_words)
-        print(result)
 
         out_dict = {
                 "sentence_LOW": training_data[index].list_of_words,
@@ -99,5 +97,5 @@ if __name__ == '__main__':
                 "sentence_POS": result,
                 }
 
-        with open(os.path.join(args.features_dir, f'{index}.json'), 'w') as f:
+        with open(os.path.join(args.output_dir, f'{index}.json'), 'w') as f:
             json.dump(out_dict, f)
