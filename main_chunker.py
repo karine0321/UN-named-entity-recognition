@@ -3,8 +3,12 @@
 # Leslie Huang
 # Natural Language Processing Final Assignment
 # Pipeline Part 2: Chunking
+# This script imports posTaggedSentence objects,
+# chunk tags them,
+# and outputs chunkTaggedSentence objects
 
-from rawdata import Sentence, Token, posTagger, posTaggedSentence, NEChunker, BigramChunker, chunkTaggedSentence
+from sentences import RawDocument, Sentence, Token, posTaggedSentence, chunkTaggedSentence
+from taggers import NEChunker, UnigramChunker, posTagger
 
 import argparse
 import itertools
@@ -36,9 +40,9 @@ if __name__ == '__main__':
 
     # Initialize chunker
 
-    # chunker = BigramChunker(BigramChunker.read_from_json(args.manually_chunked_JSON))
+    # chunker = UnigramChunker(UnigramChunker.read_from_json(args.manually_chunked_JSON))
 
-    chunker = BigramChunker(BigramChunker.load_nltk_chunked_sentences())
+    chunker = UnigramChunker(UnigramChunker.load_nltk_chunked_sentences())
 
     for sentence in imported_pos_tagged_sentences:
         chunk_tags = chunker.tag_sentences(sentence)
