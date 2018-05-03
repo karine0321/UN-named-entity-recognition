@@ -19,7 +19,7 @@ mkdir -p $RUNDIR
 echo $RUNDIR
 
 cp main.py $RUNDIR
-cp data.py $RUNDIR
+cp rawdata.py $RUNDIR
 cp tagged-training -r $RUNDIR
 cp -r ner_env/ $RUNDIR
 

@@ -5,16 +5,21 @@
 
 import argparse
 import itertools
+import json
 from multiprocessing import Pool
 import nltk
+from nltk.chunk import tree2conlltags, conlltags2tree
 from nltk.corpus import brown
+from nltk.corpus import conll2000
 import os
 import re
 import sys
 import time
 
-nltk.download("brown")
+nltk.download("brown") # for POS tagging
+nltk.download("conll2000") # for chunking
 
+# Helper functions for RawDocument class
 
 def split_lines_into_token_tag(raw_text):
     """
@@ -58,14 +63,6 @@ class RawDocument():
         return raw_text
 
 
-class Sentence():
-    """
-    Sentence is a container for a list of Word objects
-    """
-    def __init__(self, words_objects, list_of_words = None):
-        self.words_objects = words_objects # List of Word objects
-        self.list_of_words = list_of_words # List of words in the sentence
-
 class Token():
     """
     Container for a single token and its features
@@ -77,6 +74,35 @@ class Token():
         self.sentence_end = sentence_end
         self.NEtag = NEtag
 
+
+class Sentence():
+    """
+    Sentence is a container for a list of Word objects
+    """
+    def __init__(self, words_objects, list_of_words):
+        self.words_objects = words_objects # List of Word objects
+        self.list_of_words = list_of_words # List of words in the sentence
+
+
+class posTaggedSentence(Sentence):
+    """
+    Like a Sentence, but with an attribute for POS tags.
+    """
+    def __init__(self, sentence_json_filepath):
+        words_objects, list_of_words, sentence_POS = self.load(sentence_json_filepath)
+
+        super().__init__(words_objects, list_of_words)
+        self.pos = sentence_POS
+
+    def load(self, sentence_json_filepath):
+        """
+        Loads each Sentence JSON that was written to file by posTagger
+        """
+        sentence_json = json.load(open(sentence_json_filepath))
+
+        words_objects = [Token(w["token"], w["sentence_position"], w["sentence_start"], w["sentence_end"], w["NEtag"]) for w in sentence_json["sentence_words"]]
+
+        return words_objects, sentence_json["sentence_LOW"], sentence_json["sentence_POS"]
 
 
 class posTagger:
@@ -93,13 +119,12 @@ class posTagger:
             sentence_obj : Sentence
         Returns:
             list of (word, tag) tuples
-
         """
         trained_sentences = brown.tagged_sents()
 
         defaultTagger = nltk.DefaultTagger(self.get_default_tag(trained_sentences))
-        #reTagger = nltk.RegexpTagger(self.re_expressions, backoff = defaultTagger)
-        uniTagger = nltk.UnigramTagger(trained_sentences, backoff = defaultTagger)
+        reTagger = nltk.RegexpTagger(self.re_expressions, backoff = defaultTagger)
+        uniTagger = nltk.UnigramTagger(trained_sentences, backoff = reTagger)
         biTagger = nltk.BigramTagger(trained_sentences, backoff = uniTagger)
 
         return biTagger.tag(sentence_obj.list_of_words)
@@ -115,4 +140,48 @@ class posTagger:
         freq_dist = nltk.FreqDist(sent[0][1] for sent in trained_sentences)
 
         return max(freq_dist)
+
+
+class NEChunker():
+    """
+    Uses the built-in NLTK NE tagger
+    """
+    def __init__(self, posTaggedSentence):
+        tree = nltk.ne_chunk(posTaggedSentence.pos)
+        iob_tags = tree2conlltags(tree)
+
+        # insert code to change IOB tag format
+
+        self.chunk_tags = iob_tags
+
+
+class BigramChunker(nltk.ChunkParserI):
+    """
+    Label sentence with chunk tags based on POS tags
+    Methods taken from the NLTK book, Chapter 7: https://www.nltk.org/book/ch07.html
+    """
+
+    def __init__(self, train_sents):
+        chunk_trained_on_tags = [
+            [(pos_tag, chunk_tag) for word, pos_tag, chunk_tag in nltk.chunk.tree2conlltags(sentence)]
+            for sentence in train_sents
+                ]
+
+        self.chunk_trained_on_tags = chunk_trained_on_tags
+        self.tagger = nltk.BigramTagger(chunk_trained_on_tags)
+
+    def bigram_chunk_tagger(self, posTaggedSentence):
+        pos_tags = [pos for (word, pos) in posTaggedSentence.pos]
+
+        pos_and_chunk_tags = self.tagger.tag(pos_tags)
+
+        # # Use this to output word,pos,chunk tags
+        # chunk_tags = [chunk for (pos, chunk) in pos_and_chunk_tags]
+        # words = [word for (word, pos) in posTaggedSentence.pos]
+        # all_tags = list(zip(words, pos_tags, chunk_tags))
+
+        # return all_tags
+
+        return pos_and_chunk_tags
+
 

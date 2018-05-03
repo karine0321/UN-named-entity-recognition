@@ -2,6 +2,7 @@
 
 # Leslie Huang
 # Natural Language Processing Final Assignment
+# Pipeline Part 1: POS tagging
 
 from rawdata import RawDocument, Sentence, Token, posTagger
 
@@ -35,7 +36,9 @@ re_expressions = patterns = [
 
 
 def load(dirname):
-
+    """
+    Load all text files from a directory and convert them to a list of Sentence objects
+    """
     all_documents = []
 
     # load training texts into a collection of RawDocument objects
@@ -66,7 +69,6 @@ def load(dirname):
 
 
 if __name__ == '__main__':
-
 
     training_data = load(args.training_dir) # This is a list of Sentences
 
