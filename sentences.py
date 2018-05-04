@@ -93,6 +93,12 @@ class saturatedToken(object):
 
         self.prev_token = None # these can only be filled in from Sentence object
         self.next_token = None
+        self.pos = None
+        self.chunktag = None
+        self.next_pos = None
+        self.prev_pos = None
+        self.next_chunktag = None
+        self.prev_chunktag = None
 
 
 class Sentence(object):
@@ -167,6 +173,10 @@ class saturatedSentence(Sentence):
         self.chunk_tags = chunkTaggedSentence.chunk_tags
 
         self.saturateTokens(countries_list, orgs_list, progs_list) # convert Tokens to saturatedTokens
+        self.add_neighbor_token_features()
+        self.add_pos_and_chunktag() # adding tags to each saturatedToken object
+        self.add_neighbor_pos_and_chunktag()
+
 
     def saturateTokens(self, countries_list, orgs_list, progs_list):
         """
@@ -178,12 +188,36 @@ class saturatedSentence(Sentence):
             ]
 
     def add_neighbor_token_features(self):
-        neighbor_tokens = [word.token for word in self.words_objects]
-        neighbor_tokens.insert(None) # for "prev" token of first word in sentence
+        neighbor_tokens = [w.token for w in self.words_objects]
+        neighbor_tokens.insert(0, None) # for "prev" token of first word in sentence
         neighbor_tokens.append(None) # for "next" token of last word in sentence
 
-        for counter, word in enumerate(self.words_objects):
-            word.prev_token = neighbor_tokens(counter)
-            word.next_token = neighbor_tokens(counter + 2)
+        for index, word in enumerate(self.words_objects):
+            word.prev_token = neighbor_tokens[index]
+            word.next_token = neighbor_tokens[index + 2]
+
+
+    def add_pos_and_chunktag(self):
+        for index, w in enumerate(self.words_objects):
+            p, c = self.chunk_tags[index]
+            w.pos = p
+            w.chunktag = c
+
+    def add_neighbor_pos_and_chunktag(self):
+        pos_seq = [w.pos for w in self.words_objects]
+        chunk_seq = [w.chunktag for w in self.words_objects]
+
+        pos_seq.insert(0, None)
+        pos_seq.append(None)
+        chunk_seq.insert(0, None)
+        chunk_seq.append(None)
+
+
+        for index, word in enumerate(self.words_objects):
+            word.prev_pos = pos_seq[index]
+            word.next_pos = pos_seq[index + 2]
+            word.prev_chunktag = chunk_seq[index]
+            word.next_chunktag = chunk_seq[index + 2]
+
 
 
