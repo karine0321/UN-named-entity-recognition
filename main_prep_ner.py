@@ -6,7 +6,7 @@
 # This script imports chunkTagged objects and
 # adds additional features for NER
 
-from sentences import Sentence, saturatedToken, Token, posTaggedSentence, chunkTaggedSentence, saturatedSentence
+from sentences import Sentence, saturatedToken, Token, POSTaggedSentence, ChunkTaggedSentence, saturatedSentence
 
 import argparse
 import itertools
@@ -24,7 +24,6 @@ args = parser.parse_args()
 
 if not os.path.exists(args.output_dir):
     os.makedirs(args.output_dir)
-
 
 
 # Some lists for pattern matching
@@ -52,9 +51,8 @@ if __name__ == '__main__':
     saturated_sentences = []
 
     for index, fn in enumerate(os.listdir(args.chunkTagged_JSON_dir)):
-        chunked_sentence = chunkTaggedSentence(
-                *chunkTaggedSentence.load_from_json(os.path.join(args.chunkTagged_JSON_dir, fn))
-            )
+        chunked_sentence = ChunkTaggedSentence.load_from_json(os.path.join(args.chunkTagged_JSON_dir, fn))
+
 
         s = saturatedSentence(chunked_sentence, countries_list, orgs_list, progs_list)
 
