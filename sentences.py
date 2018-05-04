@@ -5,6 +5,7 @@
 
 import argparse
 import itertools
+import geotext
 import json
 from multiprocessing import Pool
 import nltk
@@ -13,8 +14,8 @@ import re
 import sys
 import time
 
-# Helper functions for RawDocument class
 
+# Helper functions for RawDocument class
 def split_lines_into_token_tag(raw_text):
     """
     Helper function for group_text_into_sentences. Converts rawdata to List of Lists
@@ -109,3 +110,62 @@ class chunkTaggedSentence(Sentence):
         super().__init__(posTaggedSentence.words_objects, posTaggedSentence.list_of_words)
         self.pos = posTaggedSentence.pos
         self.chunk_tags = pos_and_chunk_tags
+
+
+class saturatedToken(Token, countries_list, orgs_list, progs_list):
+    def __init(self, Word):
+        super().__init__(Word)
+
+        self.prev_token = None # these can only be filled in from Sentence object
+        self.next_token = None
+
+        # Add a bunch of new features
+        self.add_case()
+        self.add_last_char()
+        self.add_geoText_loc(countries_list)
+        self.add_known_org(orgs_list)
+
+    def add_case(self):
+        """
+        Adds attribute for case to Word
+        """
+        self.case = "lower" if self.token == self.token.lower() else "upper"
+
+    def add_last_char(self):
+        self.last_char = self.token[-1]
+
+    def add_geoText_loc(self, countries_list):
+        self.geoText_loc = bool(GeoText(self.token).cities or GeoText(self.token).countries or (self.token in countries_list))
+
+    def add_known_org(self, orgs_list):
+        self.known_org = self.token in orgs_list
+
+    def add_known_prog(self, progs_list):
+        self.known_prog = self.token in progs_list
+
+    def add_hyphen(self):
+        self.hyphen = "-" in self.token
+
+
+class saturatedSentence(chunkTaggedSentence, countries_list, orgs_list, progs_list):
+    def __init__(self, chunkTaggedSentence):
+        super().__init__(chunkTaggedSentence)
+
+        self.saturateTokens(self, countries_list, orgs_list, progs_list)
+
+    def saturateTokens(self):
+        """
+        Make each Token in words_objects a saturatedToken
+        """
+        self.words_objects = [saturatedToken(word_obj) for word_obj in self.words_objects]
+
+    def add_neighbor_token_features(self):
+        neighbor_tokens = [word.token for word in self.words_objects]
+        neighbor_tokens.insert(None) # for "prev" token of first word in sentence
+        neighbor_tokens.append(None) # for "next" token of last word in sentence
+
+        for counter, word in enumerate(self.words_objects):
+            word.prev_token = neighbor_tokens(counter)
+            word.next_token = neighbor_tokens(counter + 2)
+
+
