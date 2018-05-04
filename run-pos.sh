@@ -1,13 +1,13 @@
 #!/bin/sh
 #
 #SBATCH --verbose
-#SBATCH --job-name=NER-pos-singletest
+#SBATCH --job-name=NER-pos-testdata
 #SBATCH --output=slurm_%j.out
 #SBATCH --error=slurm_%j.err
-#SBATCH --time=24:00:00
+#SBATCH --time=12:00:00
 #SBATCH --nodes=1
 #SBATCH --mem=60GB
-#SBATCH --cpus-per-task=8
+#SBATCH --cpus-per-task=10
 #SBATCH --mail-type=END
 #SBATCH --mail-user=lh1036@nyu.edu
 
@@ -18,9 +18,10 @@ mkdir -p $RUNDIR
 
 echo $RUNDIR
 
-cp main.py $RUNDIR
-cp rawdata.py $RUNDIR
-cp tagged-training -r $RUNDIR
+cp main_pos.py $RUNDIR
+cp sentences.py $RUNDIR
+cp taggers.py $RUNDIR
+cp tagged-test -r $RUNDIR
 cp -r ner_env/ $RUNDIR
 
 export RUNDIR
@@ -31,6 +32,6 @@ ls
 
 source ner_env/bin/activate
 
-python3 main.py tagged-training tagged-test temp_features
+python3 main_pos.py tagged-test temp_features
 
 exit
