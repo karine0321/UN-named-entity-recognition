@@ -56,19 +56,6 @@ class posTagger:
         return max(freq_dist)
 
 
-class NEChunker():
-    """
-    Uses the built-in NLTK NE tagger (will generate a baseline of NEtags)
-    """
-    def __init__(self, posTaggedSentence):
-        tree = nltk.ne_chunk(posTaggedSentence.pos)
-        iob_tags = tree2conlltags(tree)
-
-        # insert code to change IOB tag format
-
-        self.chunk_tags = iob_tags
-
-
 class UnigramChunker(nltk.ChunkParserI):
     """
     Label sentence with chunk tags based on POS tags
@@ -125,3 +112,23 @@ class UnigramChunker(nltk.ChunkParserI):
         # return all_tags
 
         return pos_and_chunk_tags
+
+
+
+class NEChunker():
+    """
+    Uses the built-in NLTK NE tagger (will generate a baseline of NEtags)
+    """
+    def __init__(self, posTaggedSentence):
+        tree = nltk.ne_chunk(posTaggedSentence.pos)
+        iob_tags = tree2conlltags(tree)
+
+        # insert code to change IOB tag format
+
+        self.chunk_tags = iob_tags
+
+
+class MaxEntNERTagger():
+
+    def __init__(self):
+        pass
