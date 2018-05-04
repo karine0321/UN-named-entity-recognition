@@ -5,7 +5,7 @@
 # Pipeline Part 1: POS tagging
 
 from sentences import RawDocument, Sentence, Token, posTaggedSentence, chunkTaggedSentence
-from taggers import posTagger
+from taggers import POSTagger
 
 import argparse
 import itertools
