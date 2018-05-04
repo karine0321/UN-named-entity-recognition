@@ -5,7 +5,7 @@
 
 import argparse
 import itertools
-import geotext
+from geotext import GeoText
 import json
 from multiprocessing import Pool
 import nltk
@@ -42,7 +42,7 @@ def group_text_into_sentences(raw_text):
     return [g for g in grouped_by_sentence if g != ["\n"]]
 
 
-class RawDocument():
+class RawDocument(object):
     """
     Initial container for a single (training or test) text.
     """
@@ -58,7 +58,7 @@ class RawDocument():
         return raw_text
 
 
-class Token():
+class Token(object):
     """
     Container for a single token and its features
     """
@@ -70,7 +70,32 @@ class Token():
         self.NEtag = NEtag
 
 
-class Sentence():
+# class saturatedToken(Token):
+#     def __init(self, token, sentence_position, sentence_start, sentence_end, NEtag):
+#         Token.__init__(self, token, sentence_position, sentence_start, sentence_end, NEtag)
+#         self.case = "lower"
+
+
+class saturatedToken(object):
+    def __init__(self, token_obj, countries_list, orgs_list, progs_list):
+        self.token = token_obj.token
+        self.sentence_position = token_obj.sentence_position
+        self.sentence_start = token_obj.sentence_start
+        self.sentence_end = token_obj.sentence_end
+        self.NEtag = token_obj.NEtag
+
+        self.case = "lower" if self.token == self.token.lower() else "upper"
+        self.last_char = self.token[-1]
+        self.geoText_loc = bool(GeoText(self.token).cities or GeoText(self.token).countries or (self.token in countries_list))
+        self.known_org = self.token in orgs_list
+        self.known_prog = self.token in progs_list
+        self.hyphen = "-" in self.token
+
+        self.prev_token = None # these can only be filled in from Sentence object
+        self.next_token = None
+
+
+class Sentence(object):
     """
     Sentence is a container for a list of Word objects
     """
@@ -83,13 +108,14 @@ class posTaggedSentence(Sentence):
     """
     Like a Sentence, but with an attribute for POS tags.
     """
-    def __init__(self, sentence_json_filepath):
-        words_objects, list_of_words, sentence_POS = self.load(sentence_json_filepath)
+    def __init__(self, Sentence, pos):
 
-        super().__init__(words_objects, list_of_words)
-        self.pos = sentence_POS
+        super().__init__(Sentence.words_objects, Sentence.list_of_words)
 
-    def load(self, sentence_json_filepath):
+        self.pos = pos
+
+    @classmethod
+    def load_from_json(self, sentence_json_filepath):
         """
         Loads each Sentence JSON that was written to file by posTagger
         """
@@ -97,7 +123,9 @@ class posTaggedSentence(Sentence):
 
         words_objects = [Token(w["token"], w["sentence_position"], w["sentence_start"], w["sentence_end"], w["NEtag"]) for w in sentence_json["sentence_words"]]
 
-        return words_objects, sentence_json["sentence_LOW"], sentence_json["sentence_POS"]
+        loaded_sentence = Sentence(words_objects, sentence_json["sentence_LOW"])
+
+        return loaded_sentence, sentence_json["sentence_POS"]
 
 
 class chunkTaggedSentence(Sentence):
@@ -105,59 +133,49 @@ class chunkTaggedSentence(Sentence):
     Like a posTaggedSentence, but with chunk tags
     """
 
-    def __init__(self, posTaggedSentence, pos_and_chunk_tags):
+    def __init__(self, posTaggedSentence, chunk_tags):
 
         super().__init__(posTaggedSentence.words_objects, posTaggedSentence.list_of_words)
         self.pos = posTaggedSentence.pos
-        self.chunk_tags = pos_and_chunk_tags
+        self.chunk_tags = chunk_tags
 
-
-class saturatedToken(Token, countries_list, orgs_list, progs_list):
-    def __init(self, Word):
-        super().__init__(Word)
-
-        self.prev_token = None # these can only be filled in from Sentence object
-        self.next_token = None
-
-        # Add a bunch of new features
-        self.add_case()
-        self.add_last_char()
-        self.add_geoText_loc(countries_list)
-        self.add_known_org(orgs_list)
-
-    def add_case(self):
+    @classmethod
+    def load_from_json(self, sentence_json_filepath):
         """
-        Adds attribute for case to Word
+        Loads each Sentence JSON that was written to file by chunkTagger
         """
-        self.case = "lower" if self.token == self.token.lower() else "upper"
+        sentence_json = json.load(open(sentence_json_filepath))
 
-    def add_last_char(self):
-        self.last_char = self.token[-1]
+        words_objects = [
+            Token(w["token"], w["sentence_position"], w["sentence_start"], w["sentence_end"], w["NEtag"])
+            for w in sentence_json["sentence_words"]
+            ]
 
-    def add_geoText_loc(self, countries_list):
-        self.geoText_loc = bool(GeoText(self.token).cities or GeoText(self.token).countries or (self.token in countries_list))
+        loaded_sentence = Sentence(words_objects, sentence_json["sentence_LOW"])
 
-    def add_known_org(self, orgs_list):
-        self.known_org = self.token in orgs_list
+        loaded_pos_sentence = posTaggedSentence(loaded_sentence, sentence_json["sentence_POS"])
 
-    def add_known_prog(self, progs_list):
-        self.known_prog = self.token in progs_list
-
-    def add_hyphen(self):
-        self.hyphen = "-" in self.token
+        return loaded_pos_sentence, sentence_json["chunk_tags"]
 
 
-class saturatedSentence(chunkTaggedSentence, countries_list, orgs_list, progs_list):
-    def __init__(self, chunkTaggedSentence):
-        super().__init__(chunkTaggedSentence)
+class saturatedSentence(Sentence):
 
-        self.saturateTokens(self, countries_list, orgs_list, progs_list)
+    def __init__(self, chunkTaggedSentence, countries_list, orgs_list, progs_list):
+        super().__init__(chunkTaggedSentence.words_objects, chunkTaggedSentence.list_of_words)
 
-    def saturateTokens(self):
+        self.pos = chunkTaggedSentence.pos
+        self.chunk_tags = chunkTaggedSentence.chunk_tags
+
+        self.saturateTokens(countries_list, orgs_list, progs_list) # convert Tokens to saturatedTokens
+
+    def saturateTokens(self, countries_list, orgs_list, progs_list):
         """
         Make each Token in words_objects a saturatedToken
         """
-        self.words_objects = [saturatedToken(word_obj) for word_obj in self.words_objects]
+        self.words_objects = [
+            saturatedToken(word_obj, countries_list, orgs_list, progs_list)
+            for word_obj in self.words_objects
+            ]
 
     def add_neighbor_token_features(self):
         neighbor_tokens = [word.token for word in self.words_objects]
