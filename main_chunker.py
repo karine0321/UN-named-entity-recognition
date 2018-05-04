@@ -7,8 +7,8 @@
 # chunk tags them,
 # and outputs chunkTaggedSentence objects
 
-from sentences import Sentence, Token, posTaggedSentence, chunkTaggedSentence
-from taggers import UnigramChunker, posTagger
+from sentences import Sentence, Token, POSTaggedSentence, ChunkTaggedSentence
+from taggers import UnigramChunker, POSTagger
 
 import argparse
 import itertools
@@ -38,18 +38,18 @@ if __name__ == '__main__':
     for fn in os.listdir(args.posTagged_JSON_dir):
 
         imported_pos_tagged_sentences.append(
-            posTaggedSentence(*posTaggedSentence.load_from_json((os.path.join(args.posTagged_JSON_dir, fn))
+            POSTaggedSentence.load_from_json((os.path.join(args.posTagged_JSON_dir, fn))
                 )
-            )
+
         )
 
     # Initialize chunker
-    chunker = UnigramChunker(UnigramChunker.read_from_json(args.manually_chunked_JSON))
-    # chunker = UnigramChunker(UnigramChunker.load_nltk_chunked_sentences()) # CONLL trained chunker
+    chunker = UnigramChunker.read_from_json(args.manually_chunked_JSON)
+    # chunker = UnigramChunker.load_nltk_chunked_sentences() # CONLL trained chunker
 
     for index, result in enumerate(pool.imap(chunker.tag_sentences, imported_pos_tagged_sentences)):
 
-        s = chunkTaggedSentence(imported_pos_tagged_sentences[index], result)
+        s = ChunkTaggedSentence(imported_pos_tagged_sentences[index], result)
 
         out_dict = {
                 "sentence_LOW": s.list_of_words,
