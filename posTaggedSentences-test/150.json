@@ -1,0 +1,1 @@
+{"sentence_LOW": ["and", "to"], "sentence_words": [{"token": "and", "sentence_position": 0, "sentence_start": true, "sentence_end": false, "NEtag": "O"}, {"token": "to", "sentence_position": 1, "sentence_start": false, "sentence_end": true, "NEtag": "O"}], "sentence_POS": [["and", "CC"], ["to", "TO"]]}
