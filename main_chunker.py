@@ -36,14 +36,16 @@ if __name__ == '__main__':
     imported_pos_tagged_sentences = []
 
     for fn in os.listdir(args.posTagged_JSON_dir):
-            imported_pos_tagged_sentences.append(
-                posTaggedSentence(os.path.join(args.posTagged_JSON_dir, fn))
+
+        imported_pos_tagged_sentences.append(
+            posTaggedSentence(*posTaggedSentence.load_from_json((os.path.join(args.posTagged_JSON_dir, fn))
+                )
             )
+        )
 
     # Initialize chunker
     chunker = UnigramChunker(UnigramChunker.read_from_json(args.manually_chunked_JSON))
     # chunker = UnigramChunker(UnigramChunker.load_nltk_chunked_sentences()) # CONLL trained chunker
-
 
     for index, result in enumerate(pool.imap(chunker.tag_sentences, imported_pos_tagged_sentences)):
 
@@ -62,7 +64,7 @@ if __name__ == '__main__':
 
                      for word in s.words_objects],
 
-                "sentence_chunktags": result,
+                "chunk_tags": result,
                 "sentence_POS": s.pos,
                 }
 
