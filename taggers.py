@@ -19,7 +19,7 @@ import time
 nltk.download("brown") # for POS tagging
 nltk.download("conll2000") # for chunking
 
-class posTagger:
+class POSTagger:
 
     def __init__(self, re_expressions):
         self.re_expressions = re_expressions # regex patterns for the RegexpTagger
@@ -80,7 +80,7 @@ class UnigramChunker(nltk.ChunkParserI):
         all_tags = [[tuple(w) for w in s] for s in data]
         train_sents = [[(p,c) for w,p,c in s] for s in all_tags]
 
-        return train_sents
+        return cls(train_sents)
 
     @classmethod
     def load_nltk_chunked_sentences(cls):
@@ -94,7 +94,7 @@ class UnigramChunker(nltk.ChunkParserI):
             for sentence in conll2000.chunked_sents()
                 ]
 
-        return train_sents
+        return cls(train_sents)
 
 
     def tag_sentences(self, posTaggedSentence):
