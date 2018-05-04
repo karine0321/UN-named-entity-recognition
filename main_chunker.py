@@ -8,7 +8,7 @@
 # and outputs chunkTaggedSentence objects
 
 from sentences import Sentence, Token, posTaggedSentence, chunkTaggedSentence
-from taggers import NEChunker, UnigramChunker, posTagger
+from taggers import UnigramChunker, posTagger
 
 import argparse
 import itertools
