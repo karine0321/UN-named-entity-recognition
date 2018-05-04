@@ -5,7 +5,7 @@
 # Pipeline Part 1: POS tagging
 
 from sentences import RawDocument, Sentence, Token, posTaggedSentence, chunkTaggedSentence
-from taggers import NEChunker, UnigramChunker, posTagger
+from taggers import posTagger
 
 import argparse
 import itertools
@@ -16,8 +16,7 @@ import re
 import sys
 
 parser = argparse.ArgumentParser()
-parser.add_argument("training_dir", help = "dir containing training data")
-parser.add_argument("test_dir", help = "dir containing tagged test data")
+parser.add_argument("input_dir", help = "dir containing training or test data")
 parser.add_argument("output_dir", help = "dir to write posTaggedSentence JSONs to")
 args = parser.parse_args()
 
@@ -71,7 +70,7 @@ def load(dirname):
 
 if __name__ == '__main__':
 
-    training_data = load(args.training_dir) # This is a list of Sentences
+    input_data = load(args.input_dir) # This is a list of Sentences
 
     pool = Pool(os.cpu_count() - 1)
 
@@ -79,10 +78,10 @@ if __name__ == '__main__':
     tagger = posTagger(re_expressions)
 
 
-    for index, result in enumerate(pool.imap(tagger.tagger, training_data)):
+    for index, result in enumerate(pool.imap(tagger.tagger, input_data)):
 
         out_dict = {
-                "sentence_LOW": training_data[index].list_of_words,
+                "sentence_LOW": input_data[index].list_of_words,
 
                 "sentence_words": [{
                     "token": word.token,
@@ -92,7 +91,7 @@ if __name__ == '__main__':
                     "NEtag": word.NEtag
                 }
 
-                     for word in training_data[index].words_objects],
+                     for word in input_data[index].words_objects],
 
                 "sentence_POS": result,
                 }
