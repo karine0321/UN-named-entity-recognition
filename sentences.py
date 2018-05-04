@@ -70,12 +70,6 @@ class Token(object):
         self.NEtag = NEtag
 
 
-# class saturatedToken(Token):
-#     def __init(self, token, sentence_position, sentence_start, sentence_end, NEtag):
-#         Token.__init__(self, token, sentence_position, sentence_start, sentence_end, NEtag)
-#         self.case = "lower"
-
-
 class saturatedToken(object):
     def __init__(self, token_obj, countries_list, orgs_list, progs_list):
         self.token = token_obj.token
@@ -100,6 +94,10 @@ class saturatedToken(object):
         self.next_chunktag = None
         self.prev_chunktag = None
 
+    @classmethod
+    def load_from_json(self, json_filepath):
+        pass
+
 
 class Sentence(object):
     """
@@ -110,31 +108,33 @@ class Sentence(object):
         self.list_of_words = list_of_words # List of words in the sentence
 
 
-class posTaggedSentence(Sentence):
+class POSTaggedSentence(Sentence):
     """
     Like a Sentence, but with an attribute for POS tags.
     """
-    def __init__(self, Sentence, pos):
+    def __init__(self, sentence, pos):
 
-        super().__init__(Sentence.words_objects, Sentence.list_of_words)
+        super().__init__(sentence.words_objects, sentence.list_of_words)
 
         self.pos = pos
 
     @classmethod
-    def load_from_json(self, sentence_json_filepath):
+    def load_from_json(cls, sentence_json_filepath):
         """
         Loads each Sentence JSON that was written to file by posTagger
         """
         sentence_json = json.load(open(sentence_json_filepath))
 
-        words_objects = [Token(w["token"], w["sentence_position"], w["sentence_start"], w["sentence_end"], w["NEtag"]) for w in sentence_json["sentence_words"]]
+        words_objects = [Token(w["token"], w["sentence_position"], w["sentence_start"], w["sentence_end"], w["NEtag"])
+            for w in sentence_json["sentence_words"]
+            ]
 
         loaded_sentence = Sentence(words_objects, sentence_json["sentence_LOW"])
 
-        return loaded_sentence, sentence_json["sentence_POS"]
+        return cls(loaded_sentence, sentence_json["sentence_POS"])
 
 
-class chunkTaggedSentence(Sentence):
+class ChunkTaggedSentence(Sentence):
     """
     Like a posTaggedSentence, but with chunk tags
     """
@@ -146,7 +146,7 @@ class chunkTaggedSentence(Sentence):
         self.chunk_tags = chunk_tags
 
     @classmethod
-    def load_from_json(self, sentence_json_filepath):
+    def load_from_json(cls, sentence_json_filepath):
         """
         Loads each Sentence JSON that was written to file by chunkTagger
         """
@@ -159,9 +159,9 @@ class chunkTaggedSentence(Sentence):
 
         loaded_sentence = Sentence(words_objects, sentence_json["sentence_LOW"])
 
-        loaded_pos_sentence = posTaggedSentence(loaded_sentence, sentence_json["sentence_POS"])
+        loaded_pos_sentence = POSTaggedSentence(loaded_sentence, sentence_json["sentence_POS"])
 
-        return loaded_pos_sentence, sentence_json["chunk_tags"]
+        return cls(loaded_pos_sentence, sentence_json["chunk_tags"])
 
 
 class saturatedSentence(Sentence):
