@@ -11,6 +11,7 @@ import nltk
 from nltk.chunk import tree2conlltags, conlltags2tree
 from nltk.corpus import brown
 from nltk.corpus import conll2000
+from nltk.classify import MaxentClassifier
 import os
 import re
 import sys
@@ -113,22 +114,92 @@ class UnigramChunker(nltk.ChunkParserI):
 
         return pos_and_chunk_tags
 
+# class NEChunker():
+#     """
+#     Uses the built-in NLTK NE tagger (will generate a baseline of NEtags)
+#     """
+#     def __init__(self, posTaggedSentence):
+#         tree = nltk.ne_chunk(posTaggedSentence.pos)
+#         iob_tags = tree2conlltags(tree)
+
+#         # insert code to change IOB tag format
+
+#         self.ne_tags = tree2conlltags(tree)
 
 
-class NEChunker():
+
+
+# Helper functions for MaxEntNERTagger
+
+def load_from_json(dirname):
     """
-    Uses the built-in NLTK NE tagger (will generate a baseline of NEtags)
+    Load data from JSON containing dicts
     """
-    def __init__(self, posTaggedSentence):
-        tree = nltk.ne_chunk(posTaggedSentence.pos)
-        iob_tags = tree2conlltags(tree)
+    data = []
+    for fn in os.listdir(dirname):
+        with open(os.path.join(dirname, fn), "r") as f:
+            sentence = json.load(f)
 
-        # insert code to change IOB tag format
+            data += sentence
 
-        self.chunk_tags = iob_tags
+    return data
 
 
-class MaxEntNERTagger():
+def label_maxent_test_data(word_dict, predicted_class):
+    """
+    Helper function to format MaxEnt test data with labels for output
+    """
+    word_dict["NEtag"] = predicted_class
 
-    def __init__(self):
-        pass
+    return word_dict
+
+
+class MaxEntNERTagger(object):
+
+    def __init__(self, training_data, test_data, n_iter, output_dir):
+        self.training_data = training_data
+        self.test_data = test_data
+        self.METagger(n_iter, output_dir)
+
+
+    @classmethod
+    def load_and_format_data(cls, training_dirname, test_dirname, n_iter, output_dir):
+        """
+        Load training and test data from JSON and format them for MaxEntClassifier
+        """
+        training = load_from_json(training_dirname)
+        test = load_from_json(test_dirname)
+
+        me_training = []
+
+        for word_dict in training:
+            NEtag = word_dict.pop("NEtag")
+            me_training.append(
+                (word_dict, NEtag)
+                )
+
+        me_test = []
+
+        for word_dict in test:
+            NEtag = word_dict.pop("NEtag")
+            me_test.append(word_dict)
+
+        return cls(me_training, me_test, n_iter, output_dir)
+
+    def METagger(self, n_iter, output_dir):
+        """
+        Runs METagger in a mp.pool
+        """
+        pool = Pool(os.cpu_count() - 1)
+
+        me_classifier = MaxentClassifier.train(self.training_data, max_iter = n_iter)
+
+        # for index, result in enumerate(pool.imap(classifier.classify, self.test_data)):
+        #     prediction = label_maxent_test_data(self.test_data[index], result)
+
+        #     with open(os.path.join(output_dir, f'{index}.json'), 'w') as f:
+        #         json.dump(prediction, f)
+
+
+
+
