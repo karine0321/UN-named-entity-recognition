@@ -129,7 +129,7 @@ class UnigramChunker(nltk.ChunkParserI):
 
 
 
-# Helper functions for MaxEntNERTagger
+# Helper function for ClassifierData class
 
 def load_from_json(dirname):
     """
@@ -145,25 +145,14 @@ def load_from_json(dirname):
     return data
 
 
-def label_maxent_test_data(word_dict, predicted_class):
-    """
-    Helper function to format MaxEnt test data with labels for output
-    """
-    word_dict["NEtag"] = predicted_class
+class ClassifierData(object):
 
-    return word_dict
-
-
-class MaxEntNERTagger(object):
-
-    def __init__(self, training_data, test_data, n_iter, output_dir):
+    def __init__(self, training_data, test_data):
         self.training_data = training_data
         self.test_data = test_data
-        self.METagger(n_iter, output_dir)
-
 
     @classmethod
-    def load_and_format_data(cls, training_dirname, test_dirname, n_iter, output_dir):
+    def load_and_format_data(cls, training_dirname, test_dirname):
         """
         Load training and test data from JSON and format them for MaxEntClassifier
         """
@@ -184,22 +173,7 @@ class MaxEntNERTagger(object):
             NEtag = word_dict.pop("NEtag")
             me_test.append(word_dict)
 
-        return cls(me_training, me_test, n_iter, output_dir)
-
-    def METagger(self, n_iter, output_dir):
-        """
-        Runs METagger in a mp.pool
-        """
-        pool = Pool(os.cpu_count() - 1)
-
-        me_classifier = MaxentClassifier.train(self.training_data, max_iter = n_iter)
-
-        # for index, result in enumerate(pool.imap(classifier.classify, self.test_data)):
-        #     prediction = label_maxent_test_data(self.test_data[index], result)
-
-        #     with open(os.path.join(output_dir, f'{index}.json'), 'w') as f:
-        #         json.dump(prediction, f)
-
+        return cls(me_training, me_test)
 
 
 
