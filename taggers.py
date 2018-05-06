@@ -4,6 +4,7 @@
 # Natural Language Processing Final Assignment
 
 import argparse
+import copy
 import itertools
 import json
 from multiprocessing import Pool
@@ -147,17 +148,31 @@ def load_from_json(dirname):
 
 class ClassifierData(object):
 
-    def __init__(self, training_data, test_data):
+    def __init__(self, training_data, test_data, test_output_target):
         self.training_data = training_data
         self.test_data = test_data
+        self.test_output_target = test_output_target
 
     @classmethod
-    def load_and_format_data(cls, training_dirname, test_dirname):
+    def load_and_format_data(cls, training_dirname, test_dirname, test_output_target):
         """
         Load training and test data from JSON and format them for MaxEntClassifier
         """
         training = load_from_json(training_dirname)
         test = load_from_json(test_dirname)
+
+        # Make a copy of test data and write version formatted for scoring
+        test_for_output = copy.deepcopy(test)
+        output = []
+
+        for w in test_for_output:
+            NEtag = w.pop("NEtag")
+            output.append(
+                [w, {"NEtag": NEtag}]
+                )
+
+        with open(test_output_target, "w") as f:
+            json.dump(output, f, indent = 2)
 
         me_training = []
 
@@ -173,7 +188,4 @@ class ClassifierData(object):
             NEtag = word_dict.pop("NEtag")
             me_test.append(word_dict)
 
-        return cls(me_training, me_test)
-
-
-
+        return cls(me_training, me_test, test_output_target)
