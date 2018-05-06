@@ -90,8 +90,10 @@ def label_test_data(word_dict, predicted_classes):
 
     return (word_dict, predicted_classes)
 
+
 if __name__ == '__main__':
 
+    # Load the test and training data, and output test data for scoring
     classifier_data = ClassifierData.load_and_format_data(args.training_dir,
         args.test_dir, args.test_output)
 
@@ -103,21 +105,20 @@ if __name__ == '__main__':
     nb_pred = NBTagger(classifier_data.training_data, classifier_data.test_data, args.output_dir)
 
     # output data
-
     out_data = []
 
     for index, word_dict in enumerate(classifier_data.test_data):
         out = [word_dict,
             {
-                "me_pred": me_pred[index],
-                "dt_pred": dt_pred[index],
-                "nb_pred": nb_pred[index],
+                "me_pred": me_pred[index][1],
+                "dt_pred": dt_pred[index][1],
+                "nb_pred": nb_pred[index][1],
             }
         ]
 
         out_data.append(out)
 
     with open(args.output_file, "w") as f:
-        json.dump(out_data, f)
+        json.dump(out_data, f, indent = 2)
 
 
