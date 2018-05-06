@@ -22,9 +22,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument("training_dir", help = "dir to read preppedforNERSentences JSON files from")
 parser.add_argument("test_dir", help = "dir to read preppedforNERSentences training JSON files from")
 parser.add_argument("n_iterations", help = "num iters for MaxEnt Classifier")
-parser.add_argument("entropy", help = "entropy value for DecisionTree Classifier")
 parser.add_argument("output_dir", help = "dir to write output to")
 parser.add_argument("output_file", help = "file to write all results to")
+parser.add_argument("test_output", help = "file to write test data to (for scoring)")
 args = parser.parse_args()
 
 
@@ -65,11 +65,11 @@ def NBTagger(training_data, test_data, output_dir):
     return predictions
 
 
-def DecisionTagger(training_data, test_data, entropy, output_dir):
+def DecisionTagger(training_data, test_data, output_dir):
 
     pool = Pool(os.cpu_count() - 1)
 
-    decision_classifier = nltk.DecisionTreeClassifier.train(training_data, entropy = entropy)
+    decision_classifier = nltk.DecisionTreeClassifier.train(training_data)
 
     predictions = []
 
@@ -93,22 +93,31 @@ def label_test_data(word_dict, predicted_classes):
 if __name__ == '__main__':
 
     classifier_data = ClassifierData.load_and_format_data(args.training_dir,
-        args.test_dir)
+        args.test_dir, args.test_output)
 
     # run the classifiers
+    me_pred = METagger(classifier_data.training_data, classifier_data.test_data, int(args.n_iterations), args.output_dir)
+
+    dt_pred = DecisionTagger(classifier_data.training_data, classifier_data.test_data, args.output_dir)
 
     nb_pred = NBTagger(classifier_data.training_data, classifier_data.test_data, args.output_dir)
-    dt_pred = DecisionTagger(classifier_data.training_data, classifier_data.test_data, args.entropy, args.output_dir)
-    me_pred = METagger(classifier_data.training_data, classifier_data.test_data, args.n_iterations, args.output_dir)
 
     # output data
-    all_pred = zip(nb_pred, dt_pred, me_pred)
 
-    iter_pred = iter(all_pred)
-    for index, value in enumerate(classifier_data.test_data):
-        labeled_featureset = [value, next(iter_pred)]
+    out_data = []
 
-        with open(args.output_file, "w") as f:
-            json.dump(labeled_featureset, f)
+    for index, word_dict in enumerate(classifier_data.test_data):
+        out = [word_dict,
+            {
+                "me_pred": me_pred[index],
+                "dt_pred": dt_pred[index],
+                "nb_pred": nb_pred[index],
+            }
+        ]
+
+        out_data.append(out)
+
+    with open(args.output_file, "w") as f:
+        json.dump(out_data, f)
 
 
