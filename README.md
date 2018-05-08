@@ -4,6 +4,8 @@
 
 ### How to run:
 
+`pip install -r requirements.txt` for the dependencies of this project
+
 #### Part-of-Speech tagging (on `tagged-test/` and `tagged-training/`) using a sequence of NLTK taggers (Bigram, Unigram, Regex, Default)
 
 
