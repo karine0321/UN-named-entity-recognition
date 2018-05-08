@@ -41,12 +41,15 @@ def METagger(training_data, test_data, n_iter, output_dir):
     me_classifier = MaxentClassifier.train(training_data, max_iter = n_iter)
     predictions = []
 
-    for index, result in enumerate(pool.imap(me_classifier.classify, test_data)):
-        prediction = label_test_data(test_data[index], result)
-        predictions.append(prediction)
+    with open(os.path.join(output_dir, "me_pred.json"), 'w') as f:
 
-        with open(os.path.join(output_dir, f'{index}_me.json'), 'w') as f:
+        for index, result in enumerate(pool.imap(me_classifier.classify, test_data)):
+            prediction = label_test_data(test_data[index], result)
+            predictions.append(prediction)
+
             json.dump(prediction, f)
+            f.write("\n")
+
     return predictions
 
 
@@ -56,12 +59,14 @@ def NBTagger(training_data, test_data, output_dir):
     nb_classifier = nltk.NaiveBayesClassifier.train(training_data)
     predictions = []
 
-    for index, result in enumerate(pool.imap(nb_classifier.classify, test_data)):
-        prediction = label_test_data(test_data[index], result)
-        predictions.append(prediction)
+    with open(os.path.join(output_dir, "nb_pred.json"), 'w') as f:
 
-        with open(os.path.join(output_dir, f'{index}_nb.json'), 'w') as f:
+        for index, result in enumerate(pool.imap(nb_classifier.classify, test_data)):
+            prediction = label_test_data(test_data[index], result)
+            predictions.append(prediction)
+
             json.dump(prediction, f)
+
     return predictions
 
 
@@ -73,12 +78,14 @@ def DecisionTagger(training_data, test_data, output_dir):
 
     predictions = []
 
-    for index, result in enumerate(pool.imap(decision_classifier.classify, test_data)):
-        prediction = label_test_data(test_data[index], result)
-        predictions.append(prediction)
+    with open(os.path.join(output_dir, "dt_pred.json"), 'w') as f:
 
-        with open(os.path.join(output_dir, f'{index}_dt.json'), 'w') as f:
+        for index, result in enumerate(pool.imap(decision_classifier.classify, test_data)):
+            prediction = label_test_data(test_data[index], result)
+            predictions.append(prediction)
+
             json.dump(prediction, f)
+            f.write("\n")
 
     return predictions
 

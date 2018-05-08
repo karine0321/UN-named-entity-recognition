@@ -4,7 +4,7 @@
 # Natural Language Processing Final Assignment
 # Pipeline Part 1: POS tagging
 
-from sentences import RawDocument, Sentence, Token, posTaggedSentence, chunkTaggedSentence
+from sentences import RawDocument, Sentence, Token, POSTaggedSentence, ChunkTaggedSentence
 from taggers import POSTagger
 
 import argparse
@@ -75,7 +75,7 @@ if __name__ == '__main__':
     pool = Pool(os.cpu_count() - 1)
 
 
-    tagger = posTagger(re_expressions)
+    tagger = POSTagger(re_expressions)
 
 
     for index, result in enumerate(pool.imap(tagger.tagger, input_data)):
