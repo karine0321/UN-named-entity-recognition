@@ -4,23 +4,21 @@
 
 ### How to run:
 
-#### Part-of-Speech tagging (on `tagged-test/` and `tagged-training/`) separately:
+#### Part-of-Speech tagging (on `tagged-test/` and `tagged-training/`) using a sequence of NLTK taggers (Bigram, Unigram, Regex, Default)
+
 
 `python3 main_pos.py input_dir output_dir`
 
-POS tagging using a sequence of NLTK taggers (Bigram, Unigram, Regex, Default)
 
-#####Arguments:
+Arguments:
 
 - `input_dir` is a directory containing text files with a token and a Named Entity tag on each line separated by a tab, with a line of whitespace separating sentences
 - the script generates `output_dir` containing one JSON file per sentence in the `input_dir`
 - Each JSON (file) is a dictionary of (1) a list of the words in the sentence as strings, (2) a list of [word, POS] pairs, and (3) a list of dictionaries, each of which represent a word and several features
 
-#### Chunking
+#### Chunking using an NLTK Unigram Tagger and manually tagged training data
 
 `python3 main_chunker.py input_dir training_chunk_data.json output_dir`
-
-Chunk tagging using an NLTK Unigram Tagger and manually tagged training data
 
 Arguments:
 
@@ -31,18 +29,14 @@ Arguments:
 #### Feature preparation
 `python3 main_prep_for_ner.py input_dir output_dir`
 
-Adding more features for the classifiers
-
 Arguments:
 
 - `input_dir` is the output of the previous step
 - `output_dir` contains JSON files that correspond to those in `input_dir`, with additional features added to the word-dictionaries (see (3) in Step 1)
 
-#### Ensemble Named Entity tagging
+#### Ensemble Named Entity tagging with MaxEnt MM, multiclass Naive Bayes, and Decision Tree Classifiers
 
 `python3 main_ner.py training_dir test_dir num_iterations output_dir predicted_classifications.json true_classifications.json` 
-
-NER with MaxEnt MM, multiclass Naive Bayes, and Decision Tree Classifiers
 
 Arguments:
 
