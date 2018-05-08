@@ -96,7 +96,7 @@ floods	O
 in	O
 Pakistan	I-LOC
 (see	O
-A/64/PV.110	0
+A/64/PV.110	O
 )	O
 .	O
 
@@ -1800,7 +1800,7 @@ Convention	I-MISC
 on	I-MISC
 Climate	I-MISC
 Change	I-MISC
-(	0
+(	O
 UNFCCC	I-MISC
 )	O
 ,	O

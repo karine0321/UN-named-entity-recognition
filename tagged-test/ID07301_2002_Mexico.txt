@@ -2007,7 +2007,7 @@ of	O
 the	O
 United	I-ORG
 Nations	I-ORG
-High	0
+High	O
 Commissioner	O
 for	O
 Human	O

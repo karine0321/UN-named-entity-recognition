@@ -370,7 +370,7 @@ Mission	I-MISC
 in	I-MISC
 East	I-MISC
 Timor	I-MISC
-(	0
+(	O
 UNAMET	I-MISC
 )	O
 group	O
@@ -2249,7 +2249,7 @@ Minister	O
 announced	O
 during	O
 the	O
-Summit	0
+Summit	O
 our	O
 intention	O
 to	O

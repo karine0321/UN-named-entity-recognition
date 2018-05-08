@@ -958,7 +958,7 @@ Myanmar	I-LOC
 Universal	I-MISC
 Periodic	I-MISC
 Review	I-MISC
-(	0
+(	O
 UPR	I-MISC
 )	O
 report	O

@@ -776,8 +776,8 @@ Security	I-ORG
 Council	I-ORG
 resolution	O
 1325	O
-(	0
-2000	0
+(	O
+2000	O
 )	O
 on	O
 women	O

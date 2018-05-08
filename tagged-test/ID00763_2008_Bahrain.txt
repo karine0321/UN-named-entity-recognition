@@ -1145,7 +1145,7 @@ consequences	O
 As	O
 the	O
 Secretary-	O
-General	0
+General	O
 said	O
 in	O
 his	O

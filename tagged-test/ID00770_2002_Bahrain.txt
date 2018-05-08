@@ -1427,7 +1427,7 @@ and	O
 to	O
 reactivate	O
 the	O
-Arab	I-MIS
+Arab	I-MISC
 peace	O
 initiative	O
 at	O

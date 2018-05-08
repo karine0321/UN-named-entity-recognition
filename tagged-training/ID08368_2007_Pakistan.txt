@@ -597,7 +597,7 @@ resolutions	O
 )	O
 and	O
 338	O
-(	0
+(	O
 1973	0
 )	O
 and	O
@@ -1315,7 +1315,7 @@ the	O
 incipient	O
 United	I-LOC
 States	I-LOC
--	0
+-	O
 India	I-LOC
 nuclear	O
 deal	O

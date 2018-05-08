@@ -111,7 +111,7 @@ States	I-LOC
 yesterday	O
 (	O
 see	O
-A/67/PV.6	0
+A/67/PV.6	O
 )	O
 ,	O
 the	O

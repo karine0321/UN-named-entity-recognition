@@ -2071,7 +2071,7 @@ of	O
 Palestinian	I-MISC
 and	O
 Israeli	I-MISC
-States	0
+States	O
 in	O
 peace	O
 and	O
