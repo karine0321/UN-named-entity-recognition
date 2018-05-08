@@ -21,7 +21,7 @@ echo $RUNDIR
 cp main_pos.py $RUNDIR
 cp sentences.py $RUNDIR
 cp taggers.py $RUNDIR
-cp tagged-test -r $RUNDIR
+cp tagged-training -r $RUNDIR
 cp -r ner_env/ $RUNDIR
 
 export RUNDIR
@@ -32,6 +32,6 @@ ls
 
 source ner_env/bin/activate
 
-python3 main_pos.py tagged-test temp_features
+python3 main_pos.py tagged-training temp_features
 
 exit
