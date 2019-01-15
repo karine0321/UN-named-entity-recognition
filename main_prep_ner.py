@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 # Leslie Huang
-# Natural Language Processing Final Assignment
 # Pipeline Part 3: Prep for NER
 # This script imports chunkTagged objects and
 # adds additional features for NER

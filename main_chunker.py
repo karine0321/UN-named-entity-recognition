@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 # Leslie Huang
-# Natural Language Processing Final Assignment
 # Pipeline Part 2: Chunking
 # This script imports posTaggedSentence objects,
 # chunk tags them,

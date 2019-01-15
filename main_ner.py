@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 # Leslie Huang
-# Natural Language Processing Final Assignment
 # Pipeline Part 4: NER
 # This script runs an ensemble of classifiers for NER
 

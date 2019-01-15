@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 # Leslie Huang
-# Natural Language Processing Final Assignment
 # Pipeline Part 1: POS tagging
 
 from sentences import RawDocument, Sentence, Token, POSTaggedSentence, ChunkTaggedSentence
