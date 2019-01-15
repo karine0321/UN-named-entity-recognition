@@ -1,2 +1,5 @@
 *.csv
 *.json
+
+_old_files
+__pycache__
